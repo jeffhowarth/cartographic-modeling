@@ -1084,11 +1084,19 @@
 <hr />
 <h2 id="image-visualization"><strong>Image visualization</strong></h2>
 <h3 id="make-a-histogram-to-see-data-distribution">Make a histogram to see data distribution</h3>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// Make a histogram to see data distribution.  </span>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// Make a viz dictionary.</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">naip</span><span class="p">.</span><span class="nx">earliest</span><span class="p">.</span><span class="nx">i</span><span class="p">;</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">naip</span><span class="p">.</span><span class="nx">earliest</span><span class="p">.</span><span class="nx">nc</span><span class="p">;</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">input_viz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">min</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">],</span><span class="w">                       </span><span class="c1">// List of min in same order as band list.</span>
+<span class="w">  </span><span class="nx">max</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">255</span><span class="p">,</span><span class="mf">255</span><span class="p">,</span><span class="mf">255</span><span class="p">],</span><span class="w">                 </span><span class="c1">// List of max in same order as band list.</span>
+<span class="w">  </span><span class="nx">bands</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;R&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;B&#39;</span><span class="p">]</span><span class="w">              </span><span class="c1">// In this example, R is index 0, G is index 1, and B is index 2.</span>
+<span class="p">};</span>
+
+<span class="c1">// Make a histogram to see data distribution.  </span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w">                            </span><span class="c1">// This targets a band number by the list index. 0 will target R.</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">INPUT</span><span class="p">;</span><span class="w">                        </span><span class="c1">// This targets an image. Replace IMAGE with image variable.</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input_viz</span><span class="p">;</span><span class="w">                    </span><span class="c1">// This targets the viz parameters for the image.</span>
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">histogram</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">makeHistogram</span><span class="p">(</span>
 <span class="w">  </span><span class="nx">i</span><span class="p">,</span><span class="w">                                  </span><span class="c1">// Must be an image (not an image collection).</span>
