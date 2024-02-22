@@ -164,7 +164,7 @@ var output = input
 
 //  This CRS is good for Vermont. Replace if you work elsewhere.
 
-var crs = "EPSG 31245";
+var crs = "EPSG:32145";
 
 //  Input must be a feature collection.
 //  Output is a feature collection.
@@ -186,7 +186,7 @@ var output = input
 
 //  This CRS is good for Vermont. Replace if you work elsewhere.
 
-var crs = "EPSG 31245";
+var crs = "EPSG:32145";
 
 //  Input must be a feature collection.
 //  Output is a feature collection.
@@ -195,7 +195,7 @@ var crs = "EPSG 31245";
 //  Remember to following naming rules for properties (no spaces).
 
 var output = input
-  .map(t.howManyAcres(crs, 'sq_km'))
+  .map(t.howManySqKm(crs, 'sq_km'))
 ;
 ```
 
