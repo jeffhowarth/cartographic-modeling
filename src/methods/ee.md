@@ -110,6 +110,23 @@ print(
 ;
 ```
 
+### Print number of objects in a collection  
+
+```js
+// -------------------------------------------------------------
+//  PRINT NUMBER OF OBJECTS IN A COLLECTION. 
+
+//  Replace 'LABEL' with appropriate header.  
+//  Replace collection with appropriate variable.
+// -------------------------------------------------------------
+
+print(
+    "LABEL",
+    collection.size()
+    )
+;
+```
+
 ---  
 
 ## __Filter a collection__  
@@ -137,7 +154,7 @@ var output = input
 
 ```js
 // -------------------------------------------------------------
-//  FILTER COLLECTION BY ATTRIBUTE. 
+//  FILTER COLLECTION BY REGION. 
 
 //  Input must be a feature collection.
 //  BOUNDS may be a point, line, or polygon geometry, feature, or feature collection.
@@ -201,7 +218,48 @@ var output = input
 
 ---  
 
+## __Measure spatial properties of an image__  
+
+### Make pixel area image  
+
+```js
+// -------------------------------------------------------------
+//  MAKE PIXEL AREA IMAGE.
+
+//  Returns an image with values that represent pixel area in acres. 
+//  Modify second line to alter units. 
+// -------------------------------------------------------------
+
+var output = ee.Image.pixelArea()
+  .divide(4046.86)                  // converts to acres
+```
+
+---  
+
 ## __Aggregate features in a collection__  
+
+### Sum the values in a table column (FC propoerty)  
+
+```js
+// -------------------------------------------------------------
+//  SUM THE VALUES IN A TABLE COLUMN (FC PROPERTY) 
+
+//  Input must be a feature collection.
+//  Replace 'PROPERTY' with the property name (STRING) to sum.  
+//  Output is a number object.
+// -------------------------------------------------------------
+
+var answer = input.aggregate_sum('PROPERTY');
+
+// Print results to console.  
+
+print(
+  'ANSWER',
+  answer,                 //  This will report the answer with eleven decimal places.
+  answer.round()          //  This will round to nearest integer.
+);
+
+```
 
 ### Dissolve features in collection by property  
 
@@ -217,6 +275,38 @@ var output = input
 
 
 var output = t.dissolveByProperty(input, 'PROPERTY')
+```
+
+## __Overlay operations__  
+
+### Zonal summary of dough within cutters  
+
+```js
+// -------------------------------------------------------------
+//  ZONAL SUMMARY OF DOUGH WITHIN CUTTERS.
+
+//  Adjust CRS for your study region.  
+//  DOUGH must be an image with values to summarize. 
+//  CUTTERS must be a feature collection.  
+//  Adjust REDUCER for desired summary statistic.
+//  Adjust SCALE to tune processing time vs acceptable accuracy.  
+//  ZS will be a feature collection.
+//  The name of ZS property will reflect the REDUCER.   
+//  In below example, ZS property is 'sum'.  
+// -------------------------------------------------------------
+
+var crs = "EPSG:32145";             // Good for Vermont.
+
+var zs = dough
+  .reduceRegions(
+    {
+      collection: cutters, 
+      reducer: ee.Reducer.sum(), 
+      scale: 3, 
+      crs: crs
+    }
+  )
+;
 ```
 
 ## __NAIP imagery__  

@@ -141,13 +141,15 @@ markdown_extensions:
 nav:
   - introduction: index.md  
   - CONCEPTS:  
-    - spatial: spatial-concepts.md  
-    - planning: planning-concepts.md  
-    - change: change-concepts.md     
-    - data models: data-models.md  
-    - data operations: data-operations.md    
+    - spatial: concepts/spatial.md  
+    - planning: concepts/planning.md  
+    - change: concepts/change.md     
+    - data models: concepts/data-models.md  
+    - data operations: concepts/data-operations.md    
   - METHODS:  
-    - earth engine: ee.md
+    - earth engine: methods/ee.md
+  - PROBLEMS:  
+    - area: problems/area.md  
 
 
   
