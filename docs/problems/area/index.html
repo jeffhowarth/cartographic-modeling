@@ -511,10 +511,10 @@
       
         <li class="md-nav__item">
   <a href="#of-a-theme-within-regions" class="md-nav__link">
-    Of a theme within regions?
+    of a theme within regions?
   </a>
   
-    <nav class="md-nav" aria-label="Of a theme within regions?">
+    <nav class="md-nav" aria-label="of a theme within regions?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -531,10 +531,10 @@
       
         <li class="md-nav__item">
   <a href="#of-a-theme-within-sites-across-regions" class="md-nav__link">
-    Of a theme within sites across regions?
+    of a theme within sites across regions?
   </a>
   
-    <nav class="md-nav" aria-label="Of a theme within sites across regions?">
+    <nav class="md-nav" aria-label="of a theme within sites across regions?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -654,10 +654,10 @@
       
         <li class="md-nav__item">
   <a href="#of-a-theme-within-regions" class="md-nav__link">
-    Of a theme within regions?
+    of a theme within regions?
   </a>
   
-    <nav class="md-nav" aria-label="Of a theme within regions?">
+    <nav class="md-nav" aria-label="of a theme within regions?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -674,10 +674,10 @@
       
         <li class="md-nav__item">
   <a href="#of-a-theme-within-sites-across-regions" class="md-nav__link">
-    Of a theme within sites across regions?
+    of a theme within sites across regions?
   </a>
   
-    <nav class="md-nav" aria-label="Of a theme within sites across regions?">
+    <nav class="md-nav" aria-label="of a theme within sites across regions?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -737,7 +737,7 @@
 
 <h1 id="area-problems"><strong>area problems</strong></h1>
 <p>Please work through this problem set and then give your best shot at the challenge problem.  </p>
-<p>Please note that for the first four solutions, I provide the answers so that you can check your work.  </p>
+<p>Please note that for the first four solutions, I provide outlines and answers to help guide and check your work. Your task is to write scripts based on the outlines that generate the answers.     </p>
 <p>To get started, create a folder in your working repository named <strong>area</strong>.</p>
 <hr />
 <h2 id="how-much"><strong>How much?</strong></h2>
@@ -852,7 +852,7 @@
 <li>How sensitive is the raster solution to your choice of scale?  </li>
 </ol>
 <hr />
-<h2 id="of-a-theme-within-regions"><strong>Of a theme within regions?</strong></h2>
+<h2 id="of-a-theme-within-regions"><strong>of a theme within regions?</strong></h2>
 <p>The first two solutions gave us how much area within each and all regions, where a feature collection represents a set of regions.   </p>
 <p>The next problem looks to measure the amount of a theme <em>within</em> a set of regions.  </p>
 <p>The basic question is: <em>how much area of a particular theme occurs within a region or set of regions?</em>  </p>
@@ -934,8 +934,8 @@
 </details>
 
 <hr />
-<h2 id="of-a-theme-within-sites-across-regions"><strong>Of a theme within sites across regions?</strong></h2>
-<p>In the previous problems, we allowed the extent of a feature collection define the extent of our analysis.  </p>
+<h2 id="of-a-theme-within-sites-across-regions"><strong>of a theme within sites across regions?</strong></h2>
+<p>In the previous problems, we allowed the extent of a feature collection to define the extent of our analysis.  </p>
 <p>The next problem looks to make comparisons of THEMES in SITES across COMPARISON REGIONS.  </p>
 <p>Perhaps you can suggest better terms to describe the general case for this after you work through the problem, but here is the concrete example:  </p>
 <p><em>How many acres of rare or significant natural communities does the College own in each town?</em>  </p>
@@ -1039,7 +1039,7 @@
 
 <hr />
 <h3 id="reflection_1"><strong>Reflection</strong></h3>
-<p>Please think about these two questions:  </p>
+<p>Please think about these three questions:  </p>
 <ol>
 <li>How many cutters do we have in this solution?  </li>
 <li>How does the total area reported in this solution compare to previous?</li>
@@ -1099,20 +1099,18 @@
 <p>Start a new script in your <strong>area</strong> folder called <strong>05_theme_in_sites_across_regions_challenge.js</strong>.</p>
 <p>Insert a code snippet like this as a header:    </p>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-<span class="c1">//  THEME IN SITES ACROSS REGIONS </span>
-
-<span class="c1">//  Challenge Problem </span>
+<span class="c1">//  THEME IN SITES ACROSS REGIONS CHALLENGE</span>
 
 <span class="c1">//  Compare total area of THEME to total area of SUBJECT. </span>
 
 <span class="c1">//  Last modified: insert date</span>
 <span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
 </code></pre></div>
-<p>You should be able to recyle the majority of your last solution. You just need to do a little surgery. Here are some clues:  </p>
+<p>You should be able to recycle the majority of your last solution. You just need to do a little surgery. Here are some clues:  </p>
 <ul>
-<li>Your dough will need to bands.<ol>
-<li>One of pixel areas with locations that are not THEME AND SITE erased.</li>
-<li>Another of pixel areas with locations that are not THEME erased.  </li>
+<li>Your dough will need two bands.<ol>
+<li>One of pixel areas for locations that are THEME and SITE.</li>
+<li>Another of pixel areas for locations that are THEME.  </li>
 </ol>
 </li>
 </ul>

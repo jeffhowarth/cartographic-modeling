@@ -2,7 +2,7 @@
 
 Please work through this problem set and then give your best shot at the challenge problem.  
 
-Please note that for the first four solutions, I provide the answers so that you can check your work.  
+Please note that for the first four solutions, I provide outlines and answers to help guide and check your work. Your task is to write scripts based on the outlines that generate the answers.     
 
 To get started, create a folder in your working repository named __area__.
 
@@ -120,7 +120,7 @@ Think about the following:
 
 ---  
 
-## __Of a theme within regions?__    
+## __of a theme within regions?__    
 
 The first two solutions gave us how much area within each and all regions, where a feature collection represents a set of regions.   
 
@@ -194,9 +194,9 @@ Work through the steps below.
 
 ---  
 
-## __Of a theme within sites across regions?__  
+## __of a theme within sites across regions?__  
 
-In the previous problems, we allowed the extent of a feature collection define the extent of our analysis.  
+In the previous problems, we allowed the extent of a feature collection to define the extent of our analysis.  
 
 The next problem looks to make comparisons of THEMES in SITES across COMPARISON REGIONS.  
 
@@ -281,7 +281,7 @@ Work through the steps below.
 
 ### __Reflection__  
 
-Please think about these two questions:  
+Please think about these three questions:  
 
 1. How many cutters do we have in this solution?  
 2. How does the total area reported in this solution compare to previous?
@@ -358,9 +358,7 @@ Insert a code snippet like this as a header:
 
 ```js
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//  THEME IN SITES ACROSS REGIONS 
-
-//  Challenge Problem 
+//  THEME IN SITES ACROSS REGIONS CHALLENGE
 
 //  Compare total area of THEME to total area of SUBJECT. 
 
@@ -368,11 +366,11 @@ Insert a code snippet like this as a header:
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 
-You should be able to recyle the majority of your last solution. You just need to do a little surgery. Here are some clues:  
+You should be able to recycle the majority of your last solution. You just need to do a little surgery. Here are some clues:  
 
-* Your dough will need to bands.
-    1. One of pixel areas with locations that are not THEME AND SITE erased.
-    2. Another of pixel areas with locations that are not THEME erased.  
+* Your dough will need two bands.
+    1. One of pixel areas for locations that are THEME and SITE.
+    2. Another of pixel areas for locations that are THEME.  
 
 ```js
 var dough = dough_theme_sites.addBands(dough_theme);
@@ -382,6 +380,5 @@ var dough = dough_theme_sites.addBands(dough_theme);
     1. yProperties  
     2. .setSeriesNames  
     3. colors   
-
 
 No pressure. Please let me know if you have questions.  
