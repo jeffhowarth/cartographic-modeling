@@ -168,6 +168,41 @@ var output = input
 ;
 ```
 
+---   
+
+## __Convert data models__  
+
+### Convert FC to binary image.  
+
+```js
+// -------------------------------------------------------------
+//  CONVERT TO BINARY IMAGE. 
+
+//  INPUT must be a feature collection. 
+//  BINARY will be an image with a single band named 'THEME'.
+//  Alter THEME to give the band a custom name.  
+//  Follow naming conventions for bands (no spaces). 
+// -------------------------------------------------------------
+
+var binary = input
+  .map(function(f){return f.set('tag', 1)})
+  .reduceToImage(
+    {
+      properties: ['tag'], 
+      reducer: ee.Reducer.max()
+    }
+  )
+  .unmask()
+  .rename(['THEME'])
+;
+
+print(
+  "BINARY",
+  binary
+  )
+;
+```
+
 ---  
 
 ## __Measure spatial properties in a collection__  
@@ -278,6 +313,28 @@ var output = t.dissolveByProperty(input, 'PROPERTY')
 ```
 
 ## __Overlay operations__  
+
+### Erase values at locations without a mask  
+
+```js
+// -------------------------------------------------------------
+//  ERASE VALUES AT LOCATIONS WITHOUT A MASK.
+
+//  INPUT is an image with values to erase.
+//  BINARY is a binary image {0,1}.
+//  OE (output erased) is an image. 
+// -------------------------------------------------------------
+
+var oe = input
+  .multiply(binary)
+
+print(
+  "ERASED",
+  oe
+  )
+;
+```
+
 
 ### Zonal summary of dough within cutters  
 

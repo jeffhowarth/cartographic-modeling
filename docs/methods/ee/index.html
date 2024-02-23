@@ -545,6 +545,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#convert-data-models" class="md-nav__link">
+    Convert data models
+  </a>
+  
+    <nav class="md-nav" aria-label="Convert data models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#convert-fc-to-binary-image" class="md-nav__link">
+    Convert FC to binary image.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#measure-spatial-properties-in-a-collection" class="md-nav__link">
     Measure spatial properties in a collection
   </a>
@@ -625,6 +645,13 @@
   
     <nav class="md-nav" aria-label="Overlay operations">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erase-values-at-locations-without-a-mask" class="md-nav__link">
+    Erase values at locations without a mask
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#zonal-summary-of-dough-within-cutters" class="md-nav__link">
@@ -904,6 +931,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#convert-data-models" class="md-nav__link">
+    Convert data models
+  </a>
+  
+    <nav class="md-nav" aria-label="Convert data models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#convert-fc-to-binary-image" class="md-nav__link">
+    Convert FC to binary image.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#measure-spatial-properties-in-a-collection" class="md-nav__link">
     Measure spatial properties in a collection
   </a>
@@ -984,6 +1031,13 @@
   
     <nav class="md-nav" aria-label="Overlay operations">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erase-values-at-locations-without-a-mask" class="md-nav__link">
+    Erase values at locations without a mask
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#zonal-summary-of-dough-within-cutters" class="md-nav__link">
@@ -1187,6 +1241,36 @@
 <span class="p">;</span>
 </code></pre></div>
 <hr />
+<h2 id="convert-data-models"><strong>Convert data models</strong></h2>
+<h3 id="convert-fc-to-binary-image">Convert FC to binary image.</h3>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  CONVERT TO BINARY IMAGE. </span>
+
+<span class="c1">//  INPUT must be a feature collection. </span>
+<span class="c1">//  BINARY will be an image with a single band named &#39;THEME&#39;.</span>
+<span class="c1">//  Alter THEME to give the band a custom name.  </span>
+<span class="c1">//  Follow naming conventions for bands (no spaces). </span>
+<span class="c1">// -------------------------------------------------------------</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">binary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">f</span><span class="p">){</span><span class="k">return</span><span class="w"> </span><span class="nx">f</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)})</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">reduceToImage</span><span class="p">(</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">properties</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;tag&#39;</span><span class="p">],</span><span class="w"> </span>
+<span class="w">      </span><span class="nx">reducer</span><span class="o">:</span><span class="w"> </span><span class="nx">ee</span><span class="p">.</span><span class="nx">Reducer</span><span class="p">.</span><span class="nx">max</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">)</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">unmask</span><span class="p">()</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">rename</span><span class="p">([</span><span class="s1">&#39;THEME&#39;</span><span class="p">])</span>
+<span class="p">;</span>
+
+<span class="nx">print</span><span class="p">(</span>
+<span class="w">  </span><span class="s2">&quot;BINARY&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">binary</span>
+<span class="w">  </span><span class="p">)</span>
+<span class="p">;</span>
+</code></pre></div>
+<hr />
 <h2 id="measure-spatial-properties-in-a-collection"><strong>Measure spatial properties in a collection</strong></h2>
 <h3 id="area-of-features-acres-in-fc">Area of features (acres) in FC</h3>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
@@ -1274,6 +1358,24 @@
 <span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">dissolveByProperty</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;PROPERTY&#39;</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="overlay-operations"><strong>Overlay operations</strong></h2>
+<h3 id="erase-values-at-locations-without-a-mask">Erase values at locations without a mask</h3>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  ERASE VALUES AT LOCATIONS WITHOUT A MASK.</span>
+
+<span class="c1">//  INPUT is an image with values to erase.</span>
+<span class="c1">//  BINARY is a binary image {0,1}.</span>
+<span class="c1">//  OE (output erased) is an image. </span>
+<span class="c1">// -------------------------------------------------------------</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">oe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="nx">binary</span><span class="p">)</span>
+
+<span class="nx">print</span><span class="p">(</span>
+<span class="w">  </span><span class="s2">&quot;ERASED&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">oe</span>
+<span class="w">  </span><span class="p">)</span>
+<span class="p">;</span>
+</code></pre></div>
 <h3 id="zonal-summary-of-dough-within-cutters">Zonal summary of dough within cutters</h3>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 <span class="c1">//  ZONAL SUMMARY OF DOUGH WITHIN CUTTERS.</span>

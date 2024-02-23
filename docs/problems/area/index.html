@@ -509,6 +509,74 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#of-a-theme-within-regions" class="md-nav__link">
+    Of a theme within regions?
+  </a>
+  
+    <nav class="md-nav" aria-label="Of a theme within regions?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raster-solution_1" class="md-nav__link">
+    Raster solution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#of-a-theme-within-sites-across-regions" class="md-nav__link">
+    Of a theme within sites across regions?
+  </a>
+  
+    <nav class="md-nav" aria-label="Of a theme within sites across regions?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raster-solution_2" class="md-nav__link">
+    Raster solution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflection_1" class="md-nav__link">
+    Reflection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map" class="md-nav__link">
+    Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart" class="md-nav__link">
+    Chart
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge-problem" class="md-nav__link">
+    Challenge Problem
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -584,6 +652,74 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#of-a-theme-within-regions" class="md-nav__link">
+    Of a theme within regions?
+  </a>
+  
+    <nav class="md-nav" aria-label="Of a theme within regions?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raster-solution_1" class="md-nav__link">
+    Raster solution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#of-a-theme-within-sites-across-regions" class="md-nav__link">
+    Of a theme within sites across regions?
+  </a>
+  
+    <nav class="md-nav" aria-label="Of a theme within sites across regions?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raster-solution_2" class="md-nav__link">
+    Raster solution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflection_1" class="md-nav__link">
+    Reflection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map" class="md-nav__link">
+    Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart" class="md-nav__link">
+    Chart
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge-problem" class="md-nav__link">
+    Challenge Problem
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -600,7 +736,9 @@
 
 
 <h1 id="area-problems"><strong>area problems</strong></h1>
-<p>Create a folder in your working repository named <strong>area</strong>.</p>
+<p>Please work through this problem set and then give you best shot at the challenge problem. I will post a form to the course calendar where you can submit links to your scripts.  </p>
+<p>Please note that for the first four solutions, I provide the answers so that you can check your work.  </p>
+<p>To get started, create a folder in your working repository named <strong>area</strong>.</p>
 <hr />
 <h2 id="how-much"><strong>How much?</strong></h2>
 <p>We can start with a basic question: how much area does a feature collection contain?  </p>
@@ -670,7 +808,7 @@
 <p>Work through the steps below.  </p>
 <ol>
 <li>Load the data module.</li>
-<li>Define a CUTTER:  <ol>
+<li>Define CUTTERS:  <ol>
 <li>Load feature collection from address.</li>
 <li>Use the address for parcels owned by college (data.college.fc_address).  </li>
 <li>Inspect the properties of the feature collection.<ol>
@@ -703,15 +841,292 @@
 <br>
 (B) Number of objects in zs collection: <b>286</b> 
 <br> 
-Total acres of college-owned parcels: <b>7009</b>  
+(C) Total acres of college-owned parcels: <b>7009</b>  
 </details>
 
-<h3 id="reflection">Reflection</h3>
+<hr />
+<h3 id="reflection"><strong>Reflection</strong></h3>
 <p>Think about the following:  </p>
 <ol>
 <li>Compare your answers from the two solutions: how close are they?  </li>
 <li>How sensitive is the raster solution to your choice of scale?  </li>
 </ol>
+<hr />
+<h2 id="of-a-theme-within-regions"><strong>Of a theme within regions?</strong></h2>
+<p>The first two solutions gave us how much area within each and all regions, where a feature collection represents a set of regions.   </p>
+<p>The next problem looks to measure the amount of a theme <em>within</em> a set of regions.  </p>
+<p>The basic question is: <em>how much area of a particular theme occurs within a region or set of regions?</em>  </p>
+<p>For example:</p>
+<p><em>How many acres of rare or significant natural communities does the College own?</em>  </p>
+<p>This type of problem can be easily solved with a raster overlay operation that builds on the basic solution solved previously.     </p>
+<hr />
+<h3 id="raster-solution_1"><strong>Raster solution</strong></h3>
+<p>Start a new script in your <strong>area</strong> folder called <strong>03_theme_in_regions.js</strong>.</p>
+<p>Insert a code snippet like this as a header:    </p>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="c1">//  THEME IN REGIONS  </span>
+<span class="c1">//  Example: How many acres of rare or significant natural </span>
+<span class="c1">//  communities does Middlebury College own?  </span>
+
+<span class="c1">//  Last modified: insert date</span>
+<span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</code></pre></div>
+<p>Work through the steps below.  </p>
+<ol>
+<li>Load the data module.</li>
+<li>Load the task module.</li>
+<li>Define CUTTERS:  <ol>
+<li>Load feature collection from address.</li>
+<li>Use the address for parcels owned by college (data.college.fc_address).  </li>
+<li>Inspect the properties of the feature collection.<ol>
+<li>Print the number of objects in the collection. (A)  </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Define THEME:  <ol>
+<li>Load feature collection from address.</li>
+<li>Use the address for rare natural communities (data.rarity.vt.nc.fc_address). </li>
+<li>Inspect the properties of the feature collection.<ol>
+<li>Print first feature in FC.</li>
+<li>Print unique values in FC.<ol>
+<li>Explore &lsquo;S_RANK&rsquo;.</li>
+<li>Explore &lsquo;S_NAME&rsquo;.  </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Convert FC to binary image.<ol>
+<li>Use THEME as input.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Define the DOUGH:  <ol>
+<li>Make pixel area image. </li>
+<li>Erase values at locations without a mask.  <ol>
+<li>Multiply the pixel area image by the theme binary. </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Compute Zonal Summary (zs):  <ol>
+<li>Zonal summary of dough within cutters. </li>
+</ol>
+</li>
+<li>Print results:<ol>
+<li>Print number of objects in the zs collection. (B)</li>
+<li>Summarize the total area of all features in the zs collection.<ol>
+<li>Sum the values in a table column (FC property). (C)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<details closed>
+<summary>Check your answers for THEME IN REGIONS raster solution.</summary>
+<br>
+(A) Number of parcels owned by the college: <b>286</b> 
+<br>
+(B) Number of objects in zs collection: <b>286</b> 
+<br> 
+(C) Total acres of rare natural communities on college-owned parcels: <b>1284</b>  
+</details>
+
+<hr />
+<h2 id="of-a-theme-within-sites-across-regions"><strong>Of a theme within sites across regions?</strong></h2>
+<p>In the previous problems, we allowed the extent of a feature collection define the extent of our analysis.  </p>
+<p>The next problem looks to make comparisons of THEMES in SITES across COMPARISON REGIONS.  </p>
+<p>Perhaps you can suggest better terms to describe the general case for this after you work through the problem, but here is the concrete example:  </p>
+<p><em>How many acres of rare or significant natural communities does the College own in each town?</em>  </p>
+<p>In this example, the THEME is rare or significant natural communities, the SITES are college parcels, and the REGIONS are towns in Vermont.  </p>
+<p>This type of problem can again be easily solved with a raster overlay operation that builds on the previous solution.  </p>
+<h3 id="raster-solution_2"><strong>Raster solution</strong></h3>
+<p>Start a new script in your <strong>area</strong> folder called <strong>04_theme_in_sites_across_regions.js</strong>.</p>
+<p>Insert a code snippet like this as a header:    </p>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="c1">//  THEME IN SITES ACROSS REGIONS  </span>
+<span class="c1">//  Example: How many acres of rare or significant natural </span>
+<span class="c1">//  communities does Middlebury College own in each town?  </span>
+
+<span class="c1">//  Last modified: insert date</span>
+<span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</code></pre></div>
+<p>Work through the steps below.  </p>
+<ol>
+<li>Load the data module.</li>
+<li>Load the task module.</li>
+<li>Define SITES:  <ol>
+<li>Load feature collection from address.</li>
+<li>Use the address for parcels owned by college (data.college.fc_address).  </li>
+<li>Inspect the properties of the feature collection.<ol>
+<li>Print the number of objects in the collection. (A)  </li>
+</ol>
+</li>
+<li>Convert FC to binary image.<ol>
+<li>Use SITES as input.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Define REGIONS. <ol>
+<li>Load feature collection from address.</li>
+<li>Use the address for parcels owned by college (data.gov.town.fc_address).  </li>
+<li>Filter collection by bounds.<ol>
+<li>Filter for towns that intersect college parcels. </li>
+</ol>
+</li>
+<li>Inspect the properties of the feature collection.<ol>
+<li>Print the number of objects in the collection. (B)  </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Define THEME:  <ol>
+<li>Load feature collection from address.</li>
+<li>Use the address for rare natural communities (data.rarity.vt.nc.fc_address). </li>
+<li>Inspect the properties of the feature collection.<ol>
+<li>Print first feature in FC.</li>
+<li>Print unique values in FC.<ol>
+<li>Explore &lsquo;S_RANK&rsquo;.</li>
+<li>Explore &lsquo;COMM_TYPE&rsquo;.  </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Convert FC to binary image.<ol>
+<li>Use THEME as input.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Define the DOUGH:  <ol>
+<li>Make pixel area image. </li>
+<li>Erase values at locations without a mask.  <ol>
+<li>Multiply the pixel area image by the theme binary.</li>
+<li>Also multiply the pixel area image by the cutter binary.  </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Compute Zonal Summary (zs):  <ol>
+<li>Zonal summary of dough within cutters. <ol>
+<li>Use REGIONS as your cutters!</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Print results:<ol>
+<li>Print number of objects in the zs collection. (C)</li>
+<li>Summarize the total area of all features in the zs collection.<ol>
+<li>Sum the values in a table column (FC property). (D)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<details closed>
+<summary>Check your answers for THEME IN SITES ACROSS REGIONS raster solution.</summary>
+<br>
+(A) Number of parcels owned by the college: <b>286</b> 
+<br>
+(B) Number of towns that intersect college lands: <b>9</b> 
+<br> 
+(C) Number of REGIONS in the zs output: <b>9</b> 
+<br> 
+(D) Total acres of rare natural communities on college-owned parcels: <b>1301</b>  
+</details>
+
+<hr />
+<h3 id="reflection_1"><strong>Reflection</strong></h3>
+<p>Please think about these two questions:  </p>
+<ol>
+<li>How many cutters do we have in this solution?  </li>
+<li>How does the total area reported in this solution compare to previous?</li>
+<li>Why might they differ?  </li>
+</ol>
+<hr />
+<h3 id="map">Map</h3>
+<p>You can adapt this snippet to map the layers.</p>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// ------------------------------------------------------------------------------------------------------</span>
+<span class="c1">//  MAP</span>
+<span class="c1">// ------------------------------------------------------------------------------------------------------</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">palettes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">cutters</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#78b3e0&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">theme</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#7A995C&#39;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">;</span>
+
+<span class="nb">Map</span><span class="p">.</span><span class="nx">centerObject</span><span class="p">(</span><span class="nx">regions</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
+<span class="nb">Map</span><span class="p">.</span><span class="nx">setOptions</span><span class="p">(</span><span class="s1">&#39;hybrid&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">regions_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#ffffff&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span><span class="w"> </span><span class="nx">fillColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;ffffff00&#39;</span><span class="p">};</span>
+
+<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">regions</span><span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="nx">regions_style</span><span class="p">),</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="s2">&quot;Regions&quot;</span><span class="p">);</span>
+<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">sites</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="nx">palettes</span><span class="p">.</span><span class="nx">cutters</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;Sites&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="mf">0.75</span><span class="p">);</span>
+<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">theme</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="nx">palettes</span><span class="p">.</span><span class="nx">theme</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;Theme&quot;</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h3 id="chart">Chart</h3>
+<p>You can adapt this script to chart your results.  </p>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// ------------------------------------------------------------------------------------------------------</span>
+<span class="c1">//  Charts  </span>
+<span class="c1">// ------------------------------------------------------------------------------------------------------</span>
+
+<span class="c1">// Make a bar chart for the total acreage per town.</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">chart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ui</span><span class="p">.</span><span class="nx">Chart</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">byFeature</span><span class="p">(</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">features</span><span class="o">:</span><span class="w"> </span><span class="nx">zs</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="s2">&quot;sum&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">),</span><span class="w"> </span>
+<span class="w">    </span><span class="nx">xProperty</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;TOWNNAME&#39;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="nx">yProperties</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;sum&#39;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">})</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">setSeriesNames</span><span class="p">([</span><span class="s1">&#39;Rare Nat Communities&#39;</span><span class="p">])</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">setChartType</span><span class="p">(</span><span class="s1">&#39;ColumnChart&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">setOptions</span><span class="p">({</span>
+<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Town Comparison&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">hAxis</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Town&#39;</span><span class="p">},</span>
+<span class="w">    </span><span class="nx">vAxis</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Acres&#39;</span><span class="p">},</span>
+<span class="w">    </span><span class="nx">colors</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">palettes</span><span class="p">.</span><span class="nx">theme</span><span class="p">]</span>
+<span class="w">  </span><span class="p">});</span>
+
+<span class="nx">print</span><span class="p">(</span><span class="nx">chart</span><span class="p">);</span>
+</code></pre></div>
+<h2 id="challenge-problem">Challenge Problem</h2>
+<p>The last problem reports the amount of area of a THEME within SITES across REGIONS. Can you modify this solution to make a chart that looks like this?</p>
+<p><img alt="Week 2 Challenge Problem" src="https://geography.middlebury.edu/howarth/cart_modeling/images/wk02_cp.png" /></p>
+<p>Start a new script in your <strong>area</strong> folder called <strong>05_theme_in_sites_across_regions_challenge.js</strong>.</p>
+<p>Insert a code snippet like this as a header:    </p>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="c1">//  THEME IN SITES ACROSS REGIONS </span>
+
+<span class="c1">//  Challenge Problem </span>
+
+<span class="c1">//  Compare total area of THEME to total area of SUBJECT. </span>
+
+<span class="c1">//  Last modified: insert date</span>
+<span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+</code></pre></div>
+<p>You should be able to recyle the majority of your last solution. You just need to do a little surgery. Here are some clues:  </p>
+<ul>
+<li>Your dough will need to bands.<ol>
+<li>One of pixel areas with locations that are not THEME AND SITE erased.</li>
+<li>Another of pixel areas with locations that are not THEME erased.  </li>
+</ol>
+</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">dough</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">dough_theme_sites</span><span class="p">.</span><span class="nx">addBands</span><span class="p">(</span><span class="nx">dough_theme</span><span class="p">);</span>
+</code></pre></div>
+<ul>
+<li>You will need to alter some parameters in the Chart to reflect that you are charting two series:  <ol>
+<li>yProperties  </li>
+<li>.setSeriesNames  </li>
+<li>colors   </li>
+</ol>
+</li>
+</ul>
+<p>No pressure. Please let me know if you have questions.  </p>
 
 
 
