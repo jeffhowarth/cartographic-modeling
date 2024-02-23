@@ -1,6 +1,6 @@
 # __area problems__  
 
-Please work through this problem set and then give you best shot at the challenge problem. I will post a form to the course calendar where you can submit links to your scripts.  
+Please work through this problem set and then give your best shot at the challenge problem.  
 
 Please note that for the first four solutions, I provide the answers so that you can check your work.  
 
