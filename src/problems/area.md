@@ -43,7 +43,7 @@ Work through the steps below.
 2. Load the tasks module.
 3. Define a SUBJECT. 
     1. Load feature collection from address.
-    2. Use the address for parcels owned by college (data.college.fc_address).  
+    2. Use the address for parcels owned by college (data.cadastre.college.fc_address).  
     3. Inspect the properties of the feature collection.
         1. Print the number of objects in the collection. (A)  
 4. Calculate area of each SUBJECT feature.  
