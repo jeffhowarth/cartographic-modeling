@@ -150,6 +150,8 @@ nav:
     - earth engine: methods/ee.md
   - PROBLEMS:  
     - area: problems/area.md  
+    - nominal: problems/nominal.md  
+    
 
 
   
