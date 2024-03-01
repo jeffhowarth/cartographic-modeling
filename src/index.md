@@ -1,6 +1,6 @@
 # __cartographic modeling__  
 
-A collection of concepts and workflows that apply cartographic modeling to landscape with methods for [Google Earth Engine][gee]{target=_blank} and [Whitebox Tools Open Core][wb]{target=_blank}.      
+A collection of concepts, methods, problems, and workflows that apply cartographic modeling to landscape analysis and planning with [Google Earth Engine][gee]{target=_blank} and [Whitebox Tools Open Core][wb]{target=_blank}.      
 
 --- 
 

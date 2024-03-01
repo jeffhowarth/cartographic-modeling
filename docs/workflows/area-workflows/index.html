@@ -12,20 +12,20 @@
         <meta name="author" content="Jeff Howarth">
       
       
-        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/problems/area/">
+        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/workflows/area-workflows/">
       
       
-        <link rel="prev" href="../../methods/ee/">
+        <link rel="prev" href="../../problems/nominal-problems/">
       
       
-        <link rel="next" href="../nominal/">
+        <link rel="next" href="../nominal-workflows/">
       
       <link rel="icon" href="../../assets/myIcon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>area - cartographic modeling</title>
+        <title>area workflows - cartographic modeling</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#area-problems" class="md-skip">
+        <a href="#area-workflows" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              area
+              area workflows
             
           </span>
         </div>
@@ -407,18 +407,16 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
         
@@ -433,10 +431,83 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           PROBLEMS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problems/area-problems/" class="md-nav__link">
+        area problems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problems/nominal-problems/" class="md-nav__link">
+        nominal problems
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          WORKFLOWS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          WORKFLOWS
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -456,12 +527,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          area
+          area workflows
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        area
+        area workflows
       </a>
       
         
@@ -480,30 +551,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-much" class="md-nav__link">
-    How much?
+  <a href="#vector-approach" class="md-nav__link">
+    Vector approach
   </a>
   
-    <nav class="md-nav" aria-label="How much?">
+    <nav class="md-nav" aria-label="Vector approach">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vector-solution" class="md-nav__link">
-    Vector solution
+  <a href="#load-modules" class="md-nav__link">
+    Load modules.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#raster-solution" class="md-nav__link">
-    Raster solution
+  <a href="#define-a-subject" class="md-nav__link">
+    Define a SUBJECT.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reflection" class="md-nav__link">
-    Reflection
+  <a href="#calculate-area-of-each-subject-feature" class="md-nav__link">
+    Calculate area of each SUBJECT feature.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-results" class="md-nav__link">
+    Print results.
   </a>
   
 </li>
@@ -514,16 +592,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#of-a-theme-within-regions" class="md-nav__link">
-    of a theme within regions?
+  <a href="#raster-approach" class="md-nav__link">
+    Raster approach
   </a>
   
-    <nav class="md-nav" aria-label="of a theme within regions?">
+    <nav class="md-nav" aria-label="Raster approach">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#raster-solution_1" class="md-nav__link">
-    Raster solution
+  <a href="#load-modules_1" class="md-nav__link">
+    Load modules.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-cutters" class="md-nav__link">
+    Define CUTTERS.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-the-dough" class="md-nav__link">
+    Define the DOUGH.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute-zonal-summary-zs" class="md-nav__link">
+    Compute Zonal Summary (zs).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-results_1" class="md-nav__link">
+    Print results.
   </a>
   
 </li>
@@ -534,37 +640,113 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#of-a-theme-within-sites-across-regions" class="md-nav__link">
-    of a theme within sites across regions?
+  <a href="#theme-within-regions" class="md-nav__link">
+    Theme within regions
   </a>
   
-    <nav class="md-nav" aria-label="of a theme within sites across regions?">
+    <nav class="md-nav" aria-label="Theme within regions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#raster-solution_2" class="md-nav__link">
-    Raster solution
+  <a href="#load-modules_2" class="md-nav__link">
+    Load modules.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reflection_1" class="md-nav__link">
-    Reflection
+  <a href="#define-cutters_1" class="md-nav__link">
+    Define CUTTERS.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#map" class="md-nav__link">
-    Map
+  <a href="#define-binary-theme" class="md-nav__link">
+    Define binary THEME.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chart" class="md-nav__link">
-    Chart
+  <a href="#define-the-dough_1" class="md-nav__link">
+    Define the DOUGH.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute-zonal-summary-zs_1" class="md-nav__link">
+    Compute Zonal Summary (zs).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-results_2" class="md-nav__link">
+    Print results.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theme-within-sites-across-regions" class="md-nav__link">
+    Theme within sites across regions
+  </a>
+  
+    <nav class="md-nav" aria-label="Theme within sites across regions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#load-modules_3" class="md-nav__link">
+    Load modules.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-sites" class="md-nav__link">
+    Define SITES.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-regions" class="md-nav__link">
+    Define REGIONS.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-theme" class="md-nav__link">
+    Define THEME.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-the-dough_2" class="md-nav__link">
+    Define the DOUGH.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute-zonal-summary-zs_2" class="md-nav__link">
+    Compute Zonal Summary (zs).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-results_3" class="md-nav__link">
+    Print results.
   </a>
   
 </li>
@@ -576,7 +758,7 @@
       
         <li class="md-nav__item">
   <a href="#challenge-problem" class="md-nav__link">
-    Challenge Problem
+    Challenge problem
   </a>
   
 </li>
@@ -596,8 +778,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../nominal/" class="md-nav__link">
-        nominal
+      <a href="../nominal-workflows/" class="md-nav__link">
+        nominal workflows
       </a>
     </li>
   
@@ -637,30 +819,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-much" class="md-nav__link">
-    How much?
+  <a href="#vector-approach" class="md-nav__link">
+    Vector approach
   </a>
   
-    <nav class="md-nav" aria-label="How much?">
+    <nav class="md-nav" aria-label="Vector approach">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vector-solution" class="md-nav__link">
-    Vector solution
+  <a href="#load-modules" class="md-nav__link">
+    Load modules.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#raster-solution" class="md-nav__link">
-    Raster solution
+  <a href="#define-a-subject" class="md-nav__link">
+    Define a SUBJECT.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reflection" class="md-nav__link">
-    Reflection
+  <a href="#calculate-area-of-each-subject-feature" class="md-nav__link">
+    Calculate area of each SUBJECT feature.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-results" class="md-nav__link">
+    Print results.
   </a>
   
 </li>
@@ -671,16 +860,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#of-a-theme-within-regions" class="md-nav__link">
-    of a theme within regions?
+  <a href="#raster-approach" class="md-nav__link">
+    Raster approach
   </a>
   
-    <nav class="md-nav" aria-label="of a theme within regions?">
+    <nav class="md-nav" aria-label="Raster approach">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#raster-solution_1" class="md-nav__link">
-    Raster solution
+  <a href="#load-modules_1" class="md-nav__link">
+    Load modules.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-cutters" class="md-nav__link">
+    Define CUTTERS.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-the-dough" class="md-nav__link">
+    Define the DOUGH.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute-zonal-summary-zs" class="md-nav__link">
+    Compute Zonal Summary (zs).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-results_1" class="md-nav__link">
+    Print results.
   </a>
   
 </li>
@@ -691,37 +908,113 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#of-a-theme-within-sites-across-regions" class="md-nav__link">
-    of a theme within sites across regions?
+  <a href="#theme-within-regions" class="md-nav__link">
+    Theme within regions
   </a>
   
-    <nav class="md-nav" aria-label="of a theme within sites across regions?">
+    <nav class="md-nav" aria-label="Theme within regions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#raster-solution_2" class="md-nav__link">
-    Raster solution
+  <a href="#load-modules_2" class="md-nav__link">
+    Load modules.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reflection_1" class="md-nav__link">
-    Reflection
+  <a href="#define-cutters_1" class="md-nav__link">
+    Define CUTTERS.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#map" class="md-nav__link">
-    Map
+  <a href="#define-binary-theme" class="md-nav__link">
+    Define binary THEME.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chart" class="md-nav__link">
-    Chart
+  <a href="#define-the-dough_1" class="md-nav__link">
+    Define the DOUGH.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute-zonal-summary-zs_1" class="md-nav__link">
+    Compute Zonal Summary (zs).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-results_2" class="md-nav__link">
+    Print results.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theme-within-sites-across-regions" class="md-nav__link">
+    Theme within sites across regions
+  </a>
+  
+    <nav class="md-nav" aria-label="Theme within sites across regions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#load-modules_3" class="md-nav__link">
+    Load modules.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-sites" class="md-nav__link">
+    Define SITES.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-regions" class="md-nav__link">
+    Define REGIONS.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-theme" class="md-nav__link">
+    Define THEME.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-the-dough_2" class="md-nav__link">
+    Define the DOUGH.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute-zonal-summary-zs_2" class="md-nav__link">
+    Compute Zonal Summary (zs).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print-results_3" class="md-nav__link">
+    Print results.
   </a>
   
 </li>
@@ -733,7 +1026,7 @@
       
         <li class="md-nav__item">
   <a href="#challenge-problem" class="md-nav__link">
-    Challenge Problem
+    Challenge problem
   </a>
   
 </li>
@@ -753,107 +1046,68 @@
                   
 
 
-<h1 id="area-problems"><strong>area problems</strong></h1>
-<p>Please work through this problem set and then give your best shot at the challenge problem.  </p>
-<p>Please note that for the first four solutions, I provide outlines and answers to help guide and check your work. Your task is to write scripts based on the outlines that generate the answers.     </p>
-<p>To get started, create a folder in your working repository named <strong>area</strong>.</p>
+<h1 id="area-workflows"><strong>area workflows</strong></h1>
+<p>This page outlines workflows to solve the <a href="../../problems/area-problems/">area problems</a> with earth engine methods defined on the <a href="../../methods/ee/">methods page</a>.  </p>
 <hr />
-<h2 id="how-much"><strong>How much?</strong></h2>
-<p>We can start with a basic question: how much area does a feature collection contain?  </p>
-<p>For example:  </p>
-<p><em>How much land does Middlebury College own in Vermont?</em>    </p>
-<p>We can answer this question with either a vector or raster solution.  </p>
-<p>The solutions below all reference code blocks from the <a href="../../methods/ee/" target="_blank">ee methods</a> page.</p>
-<hr />
-<h3 id="vector-solution"><strong>Vector solution</strong></h3>
-<p>Start a new script in your <strong>area</strong> folder called <strong>01_basic_vector.js</strong>.</p>
-<p>Insert a code snippet like this as a header:   </p>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-<span class="c1">//  BASIC VECTOR SOLUTION</span>
-<span class="c1">//  Example: How much land does Middlebury College own?</span>
-
-<span class="c1">//  Last modified: insert date</span>
-<span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-</code></pre></div>
-<p>Work through the steps below.  </p>
+<h2 id="vector-approach"><strong>Vector approach</strong></h2>
+<p>Here is a workflow to solve the <a href="../../problems/area-problems/#vector-approach">vector-based approach</a> to the area problem.</p>
+<h3 id="load-modules">Load modules.</h3>
 <ol>
-<li>Load the data module.</li>
-<li>Load the tasks module.</li>
-<li>Define a SUBJECT. <ol>
-<li>Load feature collection from address.</li>
-<li>Use the address for parcels owned by college (data.cadastre.college.fc_address).  </li>
-<li>Inspect the properties of the feature collection.<ol>
-<li>Print the number of objects in the collection. (A)  </li>
+<li><a href="../../methods/ee/#data-module">Load the data module.</a>  </li>
+<li><a href="../../methods/ee/#tasks-module">Load the tasks module.</a></li>
 </ol>
-</li>
+<h3 id="define-a-subject">Define a SUBJECT.</h3>
+<ol>
+<li><a href="../../methods/ee/#load-fc-from-address">Load feature collection from address</a> &rarr; data.cadastre.college.fc_address </li>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print the number of objects in the collection.</a> &rarr; Answer A below  </li>
 </ol>
-</li>
-<li>Calculate area of each SUBJECT feature.  <ol>
-<li>Area of features (acres) in FC. </li>
+<h3 id="calculate-area-of-each-subject-feature">Calculate area of each SUBJECT feature.</h3>
+<ol>
+<li><a href="../../methods/ee/#area-of-features-acres-in-fc">Area of features (acres) in FC.</a></li>
 </ol>
-</li>
-<li>Print results:<ol>
-<li>Print number of objects in the SUBJECT collection. (B)</li>
-<li>Summarize the total area of all features in the zs collection.<ol>
-<li>Sum the values in a table column (FC property). (C)</li>
-</ol>
-</li>
-</ol>
-</li>
+<h3 id="print-results">Print results.</h3>
+<ol>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print number of objects in the SUBJECT collection.</a> &rarr; Answer B below</li>
+<li><a href="../../methods/ee/#sum-the-values-in-a-table-column-fc-propoerty">Sum the values in a table column (FC property).</a> &rarr; Answer C below</li>
 </ol>
 <details closed>
 <summary>Check your answers for vector solution.</summary>
 <br>
 (A) Number of parcels owned by the college: <b>286</b> 
-<br> 
-(B) Number of objects in the SUBJECT collection: <b>286</b> 
+<br>
+(B) Number of objects in SUBJECT collection: <b>286</b> 
 <br> 
 (C) Total acres of college-owned parcels: <b>7009</b>  
 </details>
 
 <hr />
-<h3 id="raster-solution"><strong>Raster solution</strong></h3>
-<p>In earth engine, a raster solution employs a ZONAL operation.     </p>
-<p>Start a new script in your <strong>area</strong> folder called <strong>02_basic_raster.js</strong>.</p>
-<p>Insert a code snippet like this as a header:    </p>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-<span class="c1">//  BASIC RASTER SOLUTION</span>
-<span class="c1">//  Example: How much land does Middlebury College own?</span>
-
-<span class="c1">//  Last modified: insert date</span>
-<span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-</code></pre></div>
-<p>Work through the steps below.  </p>
+<h2 id="raster-approach"><strong>Raster approach</strong></h2>
+<p>Work through the steps below to solve the <a href="../../problems/area-problems/#raster-approach">raster-based approach</a> to the area problem.  </p>
+<h3 id="load-modules_1">Load modules.</h3>
 <ol>
-<li>Load the data module.</li>
-<li>Define CUTTERS:  <ol>
-<li>Load feature collection from address.</li>
-<li>Use the address for parcels owned by college (data.college.fc_address).  </li>
-<li>Inspect the properties of the feature collection.<ol>
-<li>Print the number of objects in the collection. (A)  </li>
+<li><a href="../../methods/ee/#data-module">Load the data module.</a>  </li>
+<li><a href="../../methods/ee/#tasks-module">Load the tasks module.</a>  </li>
 </ol>
-</li>
+<h3 id="define-cutters">Define CUTTERS.</h3>
+<ol>
+<li><a href="../../methods/ee/#load-fc-from-address">Load feature collection from address</a> &rarr; data.cadastre.college.fc_address </li>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print the number of objects in the collection.</a> &rarr; Answer A below  </li>
 </ol>
-</li>
-<li>Define the DOUGH:  <ol>
-<li>Make pixel area image. </li>
+<h3 id="define-the-dough">Define the DOUGH.</h3>
+<ol>
+<li><a href="../../methods/ee/#make-pixel-area-image">Make pixel area image.</a>   </li>
 </ol>
-</li>
-<li>Compute Zonal Summary (zs):  <ol>
-<li>Zonal summary of dough within cutters. </li>
+<h3 id="compute-zonal-summary-zs">Compute Zonal Summary (zs).</h3>
+<ol>
+<li><a href="../../methods/ee/#zonal-summary-of-dough-within-cutters">Zonal summary of dough within cutters.</a> </li>
 </ol>
-</li>
-<li>Print results:<ol>
-<li>Print number of objects in the zs collection. (B)</li>
-<li>Summarize the total area of all features in the zs collection.<ol>
-<li>Sum the values in a table column (FC property). (C)</li>
-</ol>
-</li>
-</ol>
-</li>
+<h3 id="print-results_1">Print results.</h3>
+<ol>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print number of objects in the SUBJECT collection.</a> &rarr; Answer B below</li>
+<li><a href="../../methods/ee/#sum-the-values-in-a-table-column-fc-propoerty">Sum the values in a table column (FC property).</a> &rarr; Answer C below</li>
 </ol>
 <details closed>
-<summary>Check your answers for raster solution.</summary>
+<summary>Check your answers for raster-based solution.</summary>
 <br>
 (A) Number of parcels owned by the college: <b>286</b> 
 <br>
@@ -863,83 +1117,45 @@
 </details>
 
 <hr />
-<h3 id="reflection"><strong>Reflection</strong></h3>
-<p>Think about the following:  </p>
+<h2 id="theme-within-regions"><strong>Theme within regions</strong></h2>
+<p>Work through the steps below to solve the <a href="../../problems/area-problems/#theme-within-regions">theme within regions</a> area problem.  </p>
+<h3 id="load-modules_2">Load modules.</h3>
 <ol>
-<li>Compare your answers from the two solutions: how close are they?  </li>
-<li>How sensitive is the raster solution to your choice of scale?  </li>
+<li><a href="../../methods/ee/#data-module">Load the data module.</a>  </li>
+<li><a href="../../methods/ee/#tasks-module">Load the tasks module.</a>  </li>
 </ol>
-<hr />
-<h2 id="of-a-theme-within-regions"><strong>of a theme within regions?</strong></h2>
-<p>The first two solutions gave us how much area within each and all regions, where a feature collection represents a set of regions.   </p>
-<p>The next problem looks to measure the amount of a theme <em>within</em> a set of regions.  </p>
-<p>The basic question is: <em>how much area of a particular theme occurs within a region or set of regions?</em>  </p>
-<p>For example:</p>
-<p><em>How many acres of rare or significant natural communities does the College own?</em>  </p>
-<p>This type of problem can be easily solved with a raster overlay operation that builds on the basic solution solved previously.     </p>
-<hr />
-<h3 id="raster-solution_1"><strong>Raster solution</strong></h3>
-<p>Start a new script in your <strong>area</strong> folder called <strong>03_theme_in_regions.js</strong>.</p>
-<p>Insert a code snippet like this as a header:    </p>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-<span class="c1">//  THEME IN REGIONS  </span>
-<span class="c1">//  Example: How many acres of rare or significant natural </span>
-<span class="c1">//  communities does Middlebury College own?  </span>
-
-<span class="c1">//  Last modified: insert date</span>
-<span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-</code></pre></div>
-<p>Work through the steps below.  </p>
+<h3 id="define-cutters_1">Define CUTTERS.</h3>
 <ol>
-<li>Load the data module.</li>
-<li>Load the task module.</li>
-<li>Define CUTTERS:  <ol>
-<li>Load feature collection from address.</li>
-<li>Use the address for parcels owned by college (data.college.fc_address).  </li>
-<li>Inspect the properties of the feature collection.<ol>
-<li>Print the number of objects in the collection. (A)  </li>
+<li><a href="../../methods/ee/#load-fc-from-address">Load feature collection from address</a> &rarr; data.cadastre.college.fc_address </li>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print the number of objects in the collection.</a> &rarr; Answer A below  </li>
 </ol>
-</li>
-</ol>
-</li>
-<li>Define THEME:  <ol>
-<li>Load feature collection from address.</li>
-<li>Use the address for rare natural communities (data.rarity.vt.nc.fc_address). </li>
+<h3 id="define-binary-theme">Define binary THEME.</h3>
+<ol>
+<li><a href="../../methods/ee/#load-fc-from-address">Load feature collection from address.</a> &rarr; data.rarity.vt.nc.fc_address </li>
 <li>Inspect the properties of the feature collection.<ol>
-<li>Print first feature in FC.</li>
-<li>Print unique values in FC.<ol>
+<li><a href="../../methods/ee/#print-first-feature-in-fc">Print first feature in FC.</a></li>
+<li><a href="../../methods/ee/#print-unique-values-in-fc">Print unique values in FC.</a><ol>
 <li>Explore &lsquo;S_RANK&rsquo;.</li>
 <li>Explore &lsquo;S_NAME&rsquo;.  </li>
 </ol>
 </li>
-</ol>
-</li>
-<li>Convert FC to binary image.<ol>
-<li>Use THEME as input.</li>
+<li><a href="../../methods/ee/#convert-fc-to-binary-image">Convert FC to binary image.</a> &rarr; THEME as input</li>
 </ol>
 </li>
 </ol>
-</li>
-<li>Define the DOUGH:  <ol>
-<li>Make pixel area image. </li>
-<li>Erase values at locations without a mask.  <ol>
-<li>Multiply the pixel area image by the theme binary. </li>
+<h3 id="define-the-dough_1">Define the DOUGH.</h3>
+<ol>
+<li><a href="../../methods/ee/#make-pixel-area-image">Make pixel area image.</a>   </li>
+<li><a href="../../methods/ee/#erase-values-at-locations-without-a-mask">Erase values at locations without a mask.</a> &rarr; pixel area and theme binary </li>
 </ol>
-</li>
+<h3 id="compute-zonal-summary-zs_1">Compute Zonal Summary (zs).</h3>
+<ol>
+<li><a href="../../methods/ee/#zonal-summary-of-dough-within-cutters">Zonal summary of dough within cutters.</a> </li>
 </ol>
-</li>
-<li>Compute Zonal Summary (zs):  <ol>
-<li>Zonal summary of dough within cutters. </li>
-</ol>
-</li>
-<li>Print results:<ol>
-<li>Print number of objects in the zs collection. (B)</li>
-<li>Summarize the total area of all features in the zs collection.<ol>
-<li>Sum the values in a table column (FC property). (C)</li>
-</ol>
-</li>
-</ol>
-</li>
+<h3 id="print-results_2">Print results.</h3>
+<ol>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print number of objects in the SUBJECT collection.</a> &rarr; Answer B below</li>
+<li><a href="../../methods/ee/#sum-the-values-in-a-table-column-fc-propoerty">Sum the values in a table column (FC property).</a> &rarr; Answer C below</li>
 </ol>
 <details closed>
 <summary>Check your answers for THEME IN REGIONS raster solution.</summary>
@@ -952,96 +1168,52 @@
 </details>
 
 <hr />
-<h2 id="of-a-theme-within-sites-across-regions"><strong>of a theme within sites across regions?</strong></h2>
-<p>In the previous problems, we allowed the extent of a feature collection to define the extent of our analysis.  </p>
-<p>The next problem looks to make comparisons of THEMES in SITES across COMPARISON REGIONS.  </p>
-<p>Perhaps you can suggest better terms to describe the general case for this after you work through the problem, but here is the concrete example:  </p>
-<p><em>How many acres of rare or significant natural communities does the College own in each town?</em>  </p>
-<p>In this example, the THEME is rare or significant natural communities, the SITES are college parcels, and the REGIONS are towns in Vermont.  </p>
-<p>This type of problem can again be easily solved with a raster overlay operation that builds on the previous solution.  </p>
-<h3 id="raster-solution_2"><strong>Raster solution</strong></h3>
-<p>Start a new script in your <strong>area</strong> folder called <strong>04_theme_in_sites_across_regions.js</strong>.</p>
-<p>Insert a code snippet like this as a header:    </p>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-<span class="c1">//  THEME IN SITES ACROSS REGIONS  </span>
-<span class="c1">//  Example: How many acres of rare or significant natural </span>
-<span class="c1">//  communities does Middlebury College own in each town?  </span>
-
-<span class="c1">//  Last modified: insert date</span>
-<span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-</code></pre></div>
-<p>Work through the steps below.  </p>
+<h2 id="theme-within-sites-across-regions"><strong>Theme within sites across regions</strong></h2>
+<p>Work through the steps below to solve the <a href="../../problems/area-problems/#theme-within-sites-across-regions">theme within sites across regions</a> area problem.</p>
+<h3 id="load-modules_3">Load modules.</h3>
 <ol>
-<li>Load the data module.</li>
-<li>Load the task module.</li>
-<li>Define SITES:  <ol>
-<li>Load feature collection from address.</li>
-<li>Use the address for parcels owned by college (data.college.fc_address).  </li>
+<li><a href="../../methods/ee/#data-module">Load the data module.</a>  </li>
+<li><a href="../../methods/ee/#tasks-module">Load the tasks module.</a>  </li>
+</ol>
+<h3 id="define-sites">Define SITES.</h3>
+<ol>
+<li><a href="../../methods/ee/#load-fc-from-address">Load feature collection from address</a> &rarr; data.cadastre.college.fc_address </li>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print the number of objects in the collection.</a> &rarr; Answer A below     </li>
+<li><a href="../../methods/ee/#convert-fc-to-binary-image">Convert FC to binary image.</a> &rarr; Use SITES as input.</li>
+</ol>
+<h3 id="define-regions">Define REGIONS.</h3>
+<ol>
+<li><a href="../../methods/ee/#load-fc-from-address">Load feature collection from address</a> &rarr; data.gov.town.fc_address    </li>
+<li><a href="../../methods/ee/#filter-collection-by-bounds">Filter collection by bounds.</a> &rarr; towns that intersect college parcels</li>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print the number of objects in the collection.</a> &rarr; Answer ABbelow </li>
+</ol>
+<h3 id="define-theme">Define THEME.</h3>
+<ol>
+<li><a href="../../methods/ee/#load-fc-from-address">Load feature collection from address.</a> &rarr; data.rarity.vt.nc.fc_address </li>
 <li>Inspect the properties of the feature collection.<ol>
-<li>Print the number of objects in the collection. (A)  </li>
-</ol>
-</li>
-<li>Convert FC to binary image.<ol>
-<li>Use SITES as input.</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Define REGIONS. <ol>
-<li>Load feature collection from address.</li>
-<li>Use the address for parcels owned by college (data.gov.town.fc_address).  </li>
-<li>Filter collection by bounds.<ol>
-<li>Filter for towns that intersect college parcels. </li>
-</ol>
-</li>
-<li>Inspect the properties of the feature collection.<ol>
-<li>Print the number of objects in the collection. (B)  </li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Define THEME:  <ol>
-<li>Load feature collection from address.</li>
-<li>Use the address for rare natural communities (data.rarity.vt.nc.fc_address). </li>
-<li>Inspect the properties of the feature collection.<ol>
-<li>Print first feature in FC.</li>
-<li>Print unique values in FC.<ol>
+<li><a href="../../methods/ee/#print-first-feature-in-fc">Print first feature in FC.</a></li>
+<li><a href="../../methods/ee/#print-unique-values-in-fc">Print unique values in FC.</a><ol>
 <li>Explore &lsquo;S_RANK&rsquo;.</li>
-<li>Explore &lsquo;COMM_TYPE&rsquo;.  </li>
+<li>Explore &lsquo;S_NAME&rsquo;.  </li>
 </ol>
 </li>
 </ol>
 </li>
-<li>Convert FC to binary image.<ol>
-<li>Use THEME as input.</li>
+<li><a href="../../methods/ee/#convert-fc-to-binary-image">Convert FC to binary image.</a> &rarr; THEME as input  </li>
 </ol>
-</li>
+<h3 id="define-the-dough_2">Define the DOUGH.</h3>
+<ol>
+<li><a href="../../methods/ee/#make-pixel-area-image">Make pixel area image.</a>   </li>
+<li><a href="../../methods/ee/#erase-values-at-locations-without-a-mask">Erase values at locations without a mask.</a> &rarr; pixel area and theme binary and sites binary</li>
 </ol>
-</li>
-<li>Define the DOUGH:  <ol>
-<li>Make pixel area image. </li>
-<li>Erase values at locations without a mask.  <ol>
-<li>Multiply the pixel area image by the theme binary.</li>
-<li>Also multiply the pixel area image by the cutter binary.  </li>
+<h3 id="compute-zonal-summary-zs_2">Compute Zonal Summary (zs).</h3>
+<ol>
+<li><a href="../../methods/ee/#zonal-summary-of-dough-within-cutters">Zonal summary of dough within cutters.</a> &rarr; REGIONS as cutters!</li>
 </ol>
-</li>
-</ol>
-</li>
-<li>Compute Zonal Summary (zs):  <ol>
-<li>Zonal summary of dough within cutters. <ol>
-<li>Use REGIONS as your cutters!</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Print results:<ol>
-<li>Print number of objects in the zs collection. (C)</li>
-<li>Summarize the total area of all features in the zs collection.<ol>
-<li>Sum the values in a table column (FC property). (D)</li>
-</ol>
-</li>
-</ol>
-</li>
+<h3 id="print-results_3">Print results.</h3>
+<ol>
+<li><a href="../../methods/ee/#print-number-of-objects-in-a-collection">Print number of objects in the SUBJECT collection.</a> &rarr; Answer C below</li>
+<li><a href="../../methods/ee/#sum-the-values-in-a-table-column-fc-propoerty">Sum the values in a table column (FC property).</a> &rarr; Answer D below  </li>
 </ol>
 <details closed>
 <summary>Check your answers for THEME IN SITES ACROSS REGIONS raster solution.</summary>
@@ -1055,76 +1227,8 @@
 (D) Total acres of rare natural communities on college-owned parcels: <b>1301</b>  
 </details>
 
-<hr />
-<h3 id="reflection_1"><strong>Reflection</strong></h3>
-<p>Please think about these three questions:  </p>
-<ol>
-<li>How many cutters do we have in this solution?  </li>
-<li>How does the total area reported in this solution compare to previous?</li>
-<li>Why might they differ?  </li>
-</ol>
-<hr />
-<h3 id="map">Map</h3>
-<p>You can adapt this snippet to map the layers.</p>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// ------------------------------------------------------------------------------------------------------</span>
-<span class="c1">//  MAP</span>
-<span class="c1">// ------------------------------------------------------------------------------------------------------</span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">palettes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">cutters</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#78b3e0&#39;</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">theme</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#7A995C&#39;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">;</span>
-
-<span class="nb">Map</span><span class="p">.</span><span class="nx">centerObject</span><span class="p">(</span><span class="nx">regions</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
-<span class="nb">Map</span><span class="p">.</span><span class="nx">setOptions</span><span class="p">(</span><span class="s1">&#39;hybrid&#39;</span><span class="p">);</span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">regions_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#ffffff&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span><span class="w"> </span><span class="nx">fillColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;ffffff00&#39;</span><span class="p">};</span>
-
-<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">regions</span><span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="nx">regions_style</span><span class="p">),</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="s2">&quot;Regions&quot;</span><span class="p">);</span>
-<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">sites</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="nx">palettes</span><span class="p">.</span><span class="nx">cutters</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;Sites&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="mf">0.75</span><span class="p">);</span>
-<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">theme</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="nx">palettes</span><span class="p">.</span><span class="nx">theme</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;Theme&quot;</span><span class="p">);</span>
-</code></pre></div>
-<hr />
-<h3 id="chart">Chart</h3>
-<p>You can adapt this script to chart your results.  </p>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// ------------------------------------------------------------------------------------------------------</span>
-<span class="c1">//  Charts  </span>
-<span class="c1">// ------------------------------------------------------------------------------------------------------</span>
-
-<span class="c1">// Make a bar chart for the total acreage per town.</span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">chart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ui</span><span class="p">.</span><span class="nx">Chart</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">byFeature</span><span class="p">(</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">features</span><span class="o">:</span><span class="w"> </span><span class="nx">zs</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="s2">&quot;sum&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">),</span><span class="w"> </span>
-<span class="w">    </span><span class="nx">xProperty</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;TOWNNAME&#39;</span><span class="p">,</span><span class="w"> </span>
-<span class="w">    </span><span class="nx">yProperties</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;sum&#39;</span><span class="p">]</span>
-<span class="w">  </span><span class="p">})</span>
-<span class="w">  </span><span class="p">.</span><span class="nx">setSeriesNames</span><span class="p">([</span><span class="s1">&#39;Rare Nat Communities&#39;</span><span class="p">])</span>
-<span class="w">  </span><span class="p">.</span><span class="nx">setChartType</span><span class="p">(</span><span class="s1">&#39;ColumnChart&#39;</span><span class="p">)</span>
-<span class="w">  </span><span class="p">.</span><span class="nx">setOptions</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Town Comparison&#39;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">hAxis</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Town&#39;</span><span class="p">},</span>
-<span class="w">    </span><span class="nx">vAxis</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Acres&#39;</span><span class="p">},</span>
-<span class="w">    </span><span class="nx">colors</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">palettes</span><span class="p">.</span><span class="nx">theme</span><span class="p">]</span>
-<span class="w">  </span><span class="p">});</span>
-
-<span class="nx">print</span><span class="p">(</span><span class="nx">chart</span><span class="p">);</span>
-</code></pre></div>
-<h2 id="challenge-problem">Challenge Problem</h2>
-<p>The last problem reports the amount of area of a THEME within SITES across REGIONS. Can you modify this solution to make a chart that looks like this?</p>
-<p><img alt="Week 2 Challenge Problem" src="https://geography.middlebury.edu/howarth/cart_modeling/images/wk02_cp.png" /></p>
-<p>Start a new script in your <strong>area</strong> folder called <strong>05_theme_in_sites_across_regions_challenge.js</strong>.</p>
-<p>Insert a code snippet like this as a header:    </p>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-<span class="c1">//  THEME IN SITES ACROSS REGIONS CHALLENGE</span>
-
-<span class="c1">//  Compare total area of THEME to total area of SUBJECT. </span>
-
-<span class="c1">//  Last modified: insert date</span>
-<span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-</code></pre></div>
-<p>You should be able to recycle the majority of your last solution. You just need to do a little surgery. Here are some clues:  </p>
+<h2 id="challenge-problem"><strong>Challenge problem</strong></h2>
+<p>Here are some clues to solve the <a href="../../problems/area-problems/#challenge-problem">area challenge problem</a>.  </p>
 <ul>
 <li>Your dough will need two bands.<ol>
 <li>One of pixel areas for locations that are THEME and SITE.</li>
@@ -1142,7 +1246,7 @@
 </ol>
 </li>
 </ul>
-<p>No pressure. Please let me know if you have questions.  </p>
+<hr />
 
 
 
@@ -1164,7 +1268,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../methods/ee/" class="md-footer__link md-footer__link--prev" aria-label="Previous: earth engine" rel="prev">
+          <a href="../../problems/nominal-problems/" class="md-footer__link md-footer__link--prev" aria-label="Previous: nominal problems" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1173,20 +1277,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                earth engine
+                nominal problems
               </div>
             </div>
           </a>
         
         
           
-          <a href="../nominal/" class="md-footer__link md-footer__link--next" aria-label="Next: nominal" rel="next">
+          <a href="../nominal-workflows/" class="md-footer__link md-footer__link--next" aria-label="Next: nominal workflows" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                nominal
+                nominal workflows
               </div>
             </div>
             <div class="md-footer__button md-icon">

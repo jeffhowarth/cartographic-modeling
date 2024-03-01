@@ -149,9 +149,11 @@ nav:
   - METHODS:  
     - earth engine: methods/ee.md
   - PROBLEMS:  
-    - area: problems/area.md  
-    - nominal: problems/nominal.md  
-    
+    - area problems: problems/area-problems.md  
+    - nominal problems: problems/nominal-problems.md  
+  - WORKFLOWS:  
+    - area workflows: workflows/area-workflows.md  
+    - nominal workflows: workflows/nominal-workflows.md   
 
 
   

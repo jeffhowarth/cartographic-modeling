@@ -1,17 +1,23 @@
 # __nominal problems__
 
-## The case of Vermont's Land Cover dataset 
+## __The case of Vermont's Land Cover dataset__ 
 
 [Statewide High-Resolution Land Cover Dataset](https://vcgi.vermont.gov/data-release/statewide-high-resolution-vermont-land-cover-data-now-available){target=_blank}  
 
 [Hosted by Awesome Community Dataset](https://github.com/samapriya/awesome-gee-community-datasets){target=_blank}  
 
-## Problem 
+### __Problem__   
 
 Improve base layer to:  
 
 1. Distinguish agricultural lands from grass/shrub and bare classes;  
 2. Distinguish tree canopy, grass/shrub of yards and human landscaping from places with greater potential for natural communities.  
+
+### __Goal__  
+
+
+
+
 
 ## Get started  
 
