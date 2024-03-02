@@ -744,7 +744,7 @@
   
     <li class="md-nav__item">
       <a href="../../workflows/proximity-workflows/" class="md-nav__link">
-        proximity workflow
+        proximity workflows
       </a>
     </li>
   
@@ -807,9 +807,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          clearings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         clearings
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    challenge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deliverable" class="md-nav__link">
+    deliverable
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -842,6 +887,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    challenge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deliverable" class="md-nav__link">
+    deliverable
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -856,6 +930,114 @@
 
 
 <h1 id="clearings"><strong>clearings</strong></h1>
+<h2 id="introduction">introduction</h2>
+<p>This problem is based on work that I did for the Town of <a href="https://cornwallvt.com/cornwall-conservation-commission/">Cornwall&rsquo;s Conservation Commission in Vermont</a> as part of an effort to create <a href="https://jhowarth.users.earthengine.app/view/cornwall-connectivity">an atlas of wildlife habitat connectivity</a>.  </p>
+<p>I wanted to make a map that showed locations that were in some stage of recovery from human disturbance; locations where successional processes were playing a role in the structure and composition of land cover, as opposed to places where human activity was the dominant influence on structure and composition.  </p>
+<p>I also wanted to avoid both the weeds and the baggage of human vs. nature thinking. So I did not care so much if people cut down trees or sugared or extracted resources from land as long as these activities did not interrupt successional processes from playing a role in the structure and composition of land cover over an extended interval of time.     </p>
+<p>One approach to this problem is to bring together maps of undisturbed lands, like tree canopy, wetlands, surface waters. In other words, this approach aims to map the <em>positive values of space</em>. <a href="https://anr.vermont.gov/node/1182">Vermont Conservation Design</a> is a good example of this approach. This project mapped habitat blocks by first identifying positive values of space and then subtracting small parts from them (for example, removing zones influenced by roads within blocks). </p>
+<p>For the Cornwall project, I tried a different approach. I first mapped the <em>negative values of space</em> for forest wildlife habitat and then took the inverse to map the positive space for forest wildlife habitat. I thought this reflected the ecological history of Vermont when white immigrants and their industries cleared the indigenous forest in the process of settling the land. So I mapped things that <em>cleared</em> underlying land cover and then took the inverse of this to map <em>recovering</em> lands.     </p>
+<p>I found this approach to require a simpler model (with fewer steps) than the alternative approach. </p>
+<h2 id="challenge">challenge</h2>
+<p>Make a binary map of clearings, where clearings use these inputs:  </p>
+<hr />
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th align="left">NAME</th>
+<th align="left">DATA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Agricultural lands</td>
+<td align="left">data.lc.ag</td>
+</tr>
+<tr>
+<td align="left">e911 Footprints</td>
+<td align="left">data.e911.footprints</td>
+</tr>
+<tr>
+<td align="left">Building Roofprints</td>
+<td align="left">data.lc.buildings</td>
+</tr>
+<tr>
+<td align="left">Land cover</td>
+<td align="left">data.lc.base</td>
+</tr>
+<tr>
+<td align="left">Roads</td>
+<td align="left">data.lc.roads</td>
+</tr>
+<tr>
+<td align="left">Railroads</td>
+<td align="left">data.lc.rr</td>
+</tr>
+</tbody>
+</table>
+<p></center>  </p>
+<hr />
+<p>Clearings should identify locations that meet one or more of these 10 conditions:  </p>
+<hr />
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th align="center">CONDITION</th>
+<th align="left">DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="left">Buildings, roads, other pavement, and railroad land cover classes are all clearings.</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="left">Orchards clear all other land cover classes.</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="left">Quarries clear all other land covers.</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="left">Stadiums clear all other land cover.</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="left">Pistes (ski runs) clear all other land cover.</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="left">Airports clear all other land cover.</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="left">Buildings have a zone of influence that clears all other land cover within 100 feet.</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="left">All railroads and roads (except Class 4 roads) clear all other land cover within 50 feet.</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="left">Ag clears all other land cover except tree canopy and lands within 20 ft of trees.</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="left">Golf courses clear all land cover except tree canopy and lands within 20 ft of trees.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<hr />
+<p>Please note that this problem will require you to select features by attribute for some layers. For example, you will need to isolate orchards from the e911 footprint layer. To do this, you may find it helpful to look at the &ldquo;Entity and Attribute Information&rdquo; in the layer&rsquo;s metadata. You can find links to metadata in the data repo for e911 footprints and roads.   </p>
+<h2 id="deliverable">deliverable</h2>
+<p>Write a script that produces a single binary image that satisfies the ten conditions described above. Please take care to organize your script into meaningful chunks and comment your work.   </p>
+<p>No pressure. Give it your best shot. Let me know if you have questions.  </p>
+<p>We will go over a solution next week with cards.  </p>
+<hr />
 
 
 
@@ -877,7 +1059,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../workflows/proximity-workflows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: proximity workflow" rel="prev">
+          <a href="../../workflows/proximity-workflows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: proximity workflows" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -886,7 +1068,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                proximity workflow
+                proximity workflows
               </div>
             </div>
           </a>
