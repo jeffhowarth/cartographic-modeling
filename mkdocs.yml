@@ -150,14 +150,16 @@ nav:
     - load modules: methods/load-modules.md  
     - load data: methods/load-data.md  
     - inspect properties: methods/inspect-properties.md  
+    - map layers: methods/map-layers.md  
     - filter collection: methods/filter-collection.md  
     - convert data model: methods/convert-data-model.md  
     - measure area: methods/area.md  
+    - measure distance: methods/distance.md  
     - aggregate table: methods/aggregate-table.md  
     - local operations: methods/local-operations.md
     - zonal operations: methods/zonal-operations.md  
+    -  viz: methods/image-viz.md  
     - naip images: methods/naip.md 
-    - image viz: methods/image-viz.md  
   - PROBLEMS:  
     - area problems: problems/area-problems.md  
     - nominal problems: problems/nominal-problems.md  

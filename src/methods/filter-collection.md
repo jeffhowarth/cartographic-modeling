@@ -10,12 +10,17 @@
 //  Set CRITERION (see options in ee.Filter docs).
 //  Set "property_name".
 //  Set "value".
+```
+
+```js
 // -------------------------------------------------------------
 
 var output = input
     .filter(ee.Filter.CRITERION("property_name", "value"))
 ;
 ```
+
+---  
 
 ## by bounds  
 
@@ -26,8 +31,9 @@ var output = input
 //  Input must be a feature collection.
 //  BOUNDS may be a point, line, or polygon geometry, feature, or feature collection.
 //  Output is a collection, where each object intersects.
+```  
 
-
+```js
 // -------------------------------------------------------------
 
 var output = input

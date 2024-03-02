@@ -369,6 +369,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -445,6 +449,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../methods/map-layers/" class="md-nav__link">
+        map layers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../methods/filter-collection/" class="md-nav__link">
         filter collection
       </a>
@@ -475,6 +493,20 @@
     <li class="md-nav__item">
       <a href="../../methods/area/" class="md-nav__link">
         measure area
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/distance/" class="md-nav__link">
+        measure distance
       </a>
     </li>
   
@@ -529,8 +561,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/naip/" class="md-nav__link">
-        naip images
+      <a href="../../methods/image-viz/" class="md-nav__link">
+        viz
       </a>
     </li>
   
@@ -543,8 +575,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/image-viz/" class="md-nav__link">
-        image viz
+      <a href="../../methods/naip/" class="md-nav__link">
+        naip images
       </a>
     </li>
   
@@ -771,7 +803,7 @@
   
     <li class="md-nav__item">
       <a href="../../workflows/proximity-workflows/" class="md-nav__link">
-        proximity workflows
+        proximity workflow
       </a>
     </li>
   
@@ -902,10 +934,10 @@
 <h1 id="proximity-problems"><strong>proximity problems</strong></h1>
 <h2 id="introduction"><strong>Introduction</strong></h2>
 <p>Proximity problems deal with <em>relative distance</em>, or how far a location is from another location. </p>
-<p>A classic proximity problem involves classifying a threshold distance from a feature or collection of features.  </p>
+<p>A classic proximity problem involves classifying a threshold distance from a feature or collection of features. Often this zone of influence is called a <em>buffer</em>.   </p>
 <h2 id="illustration"><strong>Illustration</strong></h2>
-<p>To illustrate, we will use <a href="https://vcgi.vermont.gov/data-release/statewide-high-resolution-vermont-land-cover-data-now-available" target="_blank">Vermont&rsquo;s  Statewide High-Resolution Land Cover Dataset</a>.</p>
-<p>Your goal is to specify a zone based on distance to nearest human structures.   </p>
+<p>To illustrate, we will use an ancillary dataset from <a href="https://vcgi.vermont.gov/data-release/statewide-high-resolution-vermont-land-cover-data-now-available" target="_blank">Vermont&rsquo;s  Statewide High-Resolution Land Cover Dataset</a> hosted on my data repo. </p>
+<p>Your goal is to use the &ldquo;3D Building Roofprint&rsquo; collection to specify a zone that is 100 feet to the nearest human structure.   </p>
 <h2 id="implementation"><strong>Implementation</strong></h2>
 <p>Start a new script called <strong>proximity_problem.js</strong>.</p>
 <p>Insert a header, then load the data and task modules.   </p>
@@ -921,7 +953,7 @@
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;users/jhowarth/public:modules/tasks.js&#39;</span><span class="p">);</span>
 </code></pre></div>
-<p>Now write a script that produces a binary raster layer of all locations within 50 meters of a human structure (from data.cadastre.college).  </p>
+<p>Now write a script that produces a binary raster layer of all locations within 100 feet of a human structure (from data.lc.buildings).  </p>
 <p>If you would like a template and answers to help you check your work, then <a href="../../workflows/proximity-workflows/">here is a workflow</a>.</p>
 <hr />
 

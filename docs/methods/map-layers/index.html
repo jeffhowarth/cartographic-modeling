@@ -12,20 +12,20 @@
         <meta name="author" content="Jeff Howarth">
       
       
-        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/workflows/proximity-workflows/">
+        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/methods/map-layers/">
       
       
-        <link rel="prev" href="../nominal-workflows/">
+        <link rel="prev" href="../inspect-properties/">
       
       
-        <link rel="next" href="../../challenges/clearings/">
+        <link rel="next" href="../filter-collection/">
       
       <link rel="icon" href="../../assets/myIcon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>proximity workflow - cartographic modeling</title>
+        <title>map layers - cartographic modeling</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#proximity-workflows" class="md-skip">
+        <a href="#viz-for-raster" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              proximity workflow
+              map layers
             
           </span>
         </div>
@@ -334,14 +334,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
         
@@ -380,7 +382,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           METHODS
@@ -393,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         introduction
       </a>
     </li>
@@ -407,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/load-modules/" class="md-nav__link">
+      <a href="../load-modules/" class="md-nav__link">
         load modules
       </a>
     </li>
@@ -421,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/load-data/" class="md-nav__link">
+      <a href="../load-data/" class="md-nav__link">
         load data
       </a>
     </li>
@@ -435,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/inspect-properties/" class="md-nav__link">
+      <a href="../inspect-properties/" class="md-nav__link">
         inspect properties
       </a>
     </li>
@@ -447,11 +449,69 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../methods/map-layers/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          map layers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         map layers
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#viz-for-raster" class="md-nav__link">
+    viz for raster
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-viz-for-vector" class="md-nav__link">
+    simple viz for vector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-layer" class="md-nav__link">
+    add layer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casing-and-fill-viz-for-vector" class="md-nav__link">
+    casing and fill viz for vector
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -463,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/filter-collection/" class="md-nav__link">
+      <a href="../filter-collection/" class="md-nav__link">
         filter collection
       </a>
     </li>
@@ -477,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/convert-data-model/" class="md-nav__link">
+      <a href="../convert-data-model/" class="md-nav__link">
         convert data model
       </a>
     </li>
@@ -491,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/area/" class="md-nav__link">
+      <a href="../area/" class="md-nav__link">
         measure area
       </a>
     </li>
@@ -505,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/distance/" class="md-nav__link">
+      <a href="../distance/" class="md-nav__link">
         measure distance
       </a>
     </li>
@@ -519,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/aggregate-table/" class="md-nav__link">
+      <a href="../aggregate-table/" class="md-nav__link">
         aggregate table
       </a>
     </li>
@@ -533,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/local-operations/" class="md-nav__link">
+      <a href="../local-operations/" class="md-nav__link">
         local operations
       </a>
     </li>
@@ -547,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/zonal-operations/" class="md-nav__link">
+      <a href="../zonal-operations/" class="md-nav__link">
         zonal operations
       </a>
     </li>
@@ -561,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/image-viz/" class="md-nav__link">
+      <a href="../image-viz/" class="md-nav__link">
         viz
       </a>
     </li>
@@ -575,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/naip/" class="md-nav__link">
+      <a href="../naip/" class="md-nav__link">
         naip images
       </a>
     </li>
@@ -680,16 +740,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
         
@@ -706,7 +764,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           WORKED FLOWS
@@ -719,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../area-workflows/" class="md-nav__link">
+      <a href="../../workflows/area-workflows/" class="md-nav__link">
         area workflows
       </a>
     </li>
@@ -733,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nominal-workflows/" class="md-nav__link">
+      <a href="../../workflows/nominal-workflows/" class="md-nav__link">
         nominal workflows
       </a>
     </li>
@@ -745,87 +803,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          proximity workflow
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../workflows/proximity-workflows/" class="md-nav__link">
         proximity workflow
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#define-college-lands-study-sites" class="md-nav__link">
-    Define college lands study sites.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#load-building-roofprints-on-college-lands" class="md-nav__link">
-    Load building roofprints on college lands.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-100-foot-zones-of-influence-for-each-building-on-college-lands" class="md-nav__link">
-    Map 100 foot zones of influence for each building on college lands.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-binary-proximity-zone" class="md-nav__link">
-    Map binary proximity zone
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge-problems" class="md-nav__link">
-    Challenge Problems
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reflections" class="md-nav__link">
-    Reflections
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -907,8 +889,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -917,43 +897,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#define-college-lands-study-sites" class="md-nav__link">
-    Define college lands study sites.
+  <a href="#viz-for-raster" class="md-nav__link">
+    viz for raster
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#load-building-roofprints-on-college-lands" class="md-nav__link">
-    Load building roofprints on college lands.
+  <a href="#simple-viz-for-vector" class="md-nav__link">
+    simple viz for vector
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#map-100-foot-zones-of-influence-for-each-building-on-college-lands" class="md-nav__link">
-    Map 100 foot zones of influence for each building on college lands.
+  <a href="#add-layer" class="md-nav__link">
+    add layer
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#map-binary-proximity-zone" class="md-nav__link">
-    Map binary proximity zone
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge-problems" class="md-nav__link">
-    Challenge Problems
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reflections" class="md-nav__link">
-    Reflections
+  <a href="#casing-and-fill-viz-for-vector" class="md-nav__link">
+    casing and fill viz for vector
   </a>
   
 </li>
@@ -973,59 +939,125 @@
                   
 
 
-<h1 id="proximity-workflows"><strong>proximity workflows</strong></h1>
-<p>It is good practice to self check your work by printing new outputs to the console panel and adding new outputs as layers to the map panel. The workflow below does not prompt you to do this; you should be in the habit of doing this automatically. Please reference the <a href="../../methods/inspect-properties/" target="_blank">inspect properties</a> and <a href="../../methods/map-layers/" target_blank="target_blank">map layer</a> methods as needed.</p>
-<hr />
-<h2 id="define-college-lands-study-sites">Define college lands study sites.</h2>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  1. DEFINE STUDY SITE. </span>
-<span class="c1">// -------------------------------------------------------------</span>
+  <h1>map layers</h1>
+
+<h2 id="viz-for-raster">viz for raster</h2>
+<p><div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  VIZ PARAMETERS FOR RASTER DATA</span>
+
+<span class="c1">//  Replace VIZ with custom name.</span>
+<span class="c1">//  Adjust BAND_NAME to define band or list of bands to display. </span>
+<span class="c1">//  Adjust min value to minimum value displayed with color.</span>
+<span class="c1">//  Adjust max value to maximum value displayed with color.</span>
+<span class="c1">//  Adjust gamma to brighten or darken midtones.</span>
+<span class="c1">//  Min, max, gamma can be custom for each band from list order.</span>
 </code></pre></div>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection</a> &rarr; data.cadastre.college </li>
-<li>Set up your map to center on study site and show hybrid base layer. </li>
-</ol>
-<hr />
-<h2 id="load-building-roofprints-on-college-lands">Load building roofprints on college lands.</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  2. LOAD BUILDING ROOFPRINTS ON COLLEGE LANDS. </span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">VIZ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">bands</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;BAND_NAME&#39;</span><span class="p">],</span>
+<span class="w">        </span><span class="nx">min</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">],</span>
+<span class="w">        </span><span class="nx">max</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">255</span><span class="p">],</span>
+<span class="w">        </span><span class="nx">gamma</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">;</span>
+
 <span class="c1">// -------------------------------------------------------------</span>
-</code></pre></div>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection</a> &rarr; data.lc.buildings </li>
-<li><a href="../../methods/filter-collection/#by-bounds">Filter collection by region</a> &rarr; buildings on college parcels.</li>
-</ol>
+</code></pre></div></p>
 <hr />
-<h2 id="map-100-foot-zones-of-influence-for-each-building-on-college-lands">Map 100 foot zones of influence for each building on college lands.</h2>
+<h2 id="simple-viz-for-vector">simple viz for vector</h2>
+<p><div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  SIMPLE VIZ PARAMETERS FOR VECTOR DATA</span>
+
+<span class="c1">//  Replace VIZ with custom name.</span>
+<span class="c1">//  Adjust COLOR with HTML color name or hex code.</span>
+
+<span class="c1">//  RESOURCE: https://htmlcolorcodes.com/color-names/</span>
+</code></pre></div>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  3. MAP 100 FT ZOI FOR EACH BUILDING ON COLLEGE LANDS.  </span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">VIZ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Orchid&#39;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">;</span>
+
 <span class="c1">// -------------------------------------------------------------</span>
-</code></pre></div>
-<ol>
-<li><a href="../../methods/distance/#buffer-features-in-collection-by-feet">Buffer each feature in a collection.</a>   </li>
-</ol>
+</code></pre></div></p>
 <hr />
-<h2 id="map-binary-proximity-zone">Map binary proximity zone</h2>
+<h2 id="add-layer">add layer</h2>
+<p><div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  ADD LAYER TO MAP</span>
+
+<span class="c1">//  Replace DATA with name of collection, image, geometry.</span>
+<span class="c1">//  Replace VIZ with parameters for vector or raster data.  </span>
+<span class="c1">//  Replace LAYER_NAME with name as a string.</span>
+<span class="c1">//  Change FALSE to true to show by default.</span>
+<span class="c1">//  Change 1 to decimal between 0 and 1 to adjust opacity.</span>
+</code></pre></div>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  4. MAP BINARY PROXIMITY ZONE.  </span>
+
+<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span>
+<span class="w">    </span><span class="nx">DATA</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">VIZ</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">LAYER_NAME</span><span class="p">,</span>
+<span class="w">    </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="mf">1</span>
+<span class="p">)</span>
+
 <span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div></p>
+<hr />
+<h2 id="casing-and-fill-viz-for-vector">casing and fill viz for vector</h2>
+<p><div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  CASING AND FILL VIZ FOR VECTOR DATA</span>
+
+<span class="c1">//  This allows you to control display of both casing and fill.</span>
+<span class="c1">//  OUTPUT is a single-band image. </span>
+
+<span class="c1">//  STEP 1: DEFINE VIZ PARAMETERS</span>
+
+<span class="c1">//  Replace VIZ with custom name.</span>
+<span class="c1">//  Casing color --&gt; Adjust HTML color name or hex code.</span>
+<span class="c1">//  Casing size --&gt; Adjust WEIGHT.</span>
+<span class="c1">//  Fill color --&gt; Adjust HTML hex code; last two characters control opacity. </span>
+
+<span class="c1">//  STEP 2: STYLE VECTOR WITH VIZ PARAMETERS</span>
+
+<span class="c1">//  INPUT is vector data to display.</span>
+<span class="c1">//  VIZ is style parameters.</span>
+<span class="c1">//  OUTPUT is image data with styled casing and fill.</span>
+
+<span class="c1">//  STEP 3: ADD STYLED DATA TO MAP.</span>
+
+<span class="c1">//  OUTPUT is from step 2. </span>
+<span class="c1">//  Viz parameter slot must be {} placeholder.</span>
+<span class="c1">//  Adjust &#39;LAYER NAME&#39;. </span>
+<span class="c1">//  Adjust boolean show argument.   </span>
+
+<span class="c1">//  RESOURCES: </span>
+
+<span class="c1">//  https://htmlcolorcodes.com/color-names/</span>
+<span class="c1">//  https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4</span>
+<span class="c1">//  </span>
 </code></pre></div>
-<ol>
-<li><a href="../../methods/convert-data-model/#feature-collection-to-binary">Convert fc to binary image.</a></li>
-</ol>
-<hr />
-<h2 id="challenge-problems">Challenge Problems</h2>
-<ol>
-<li>Could you solve step 3 with a raster solution (where you do not use the f.buffer method to map proximity)?</li>
-<li>Could you solve step 4 with a vector solution (what you do not convert fc to binary image)?  </li>
-</ol>
-<hr />
-<h2 id="reflections">Reflections</h2>
-<ol>
-<li>What are pros and cons of vector solution to define proximity zones compared to raster solution?    </li>
-<li>What are pros and cons of raster solution to make binary image versus the vector solution of dissolving features?    </li>
-</ol>
-<hr />
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">VIZ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#DA70D6&#39;</span>
+<span class="w">        </span><span class="nx">weight</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span>
+<span class="w">        </span><span class="nx">fillColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#DA70D600&#39;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">;</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">OUTPUT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">INPUT</span><span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="nx">VIZ</span><span class="p">);</span>
+
+<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">OUTPUT</span><span class="p">,</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="s2">&quot;LAYER NAME&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
+
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div></p>
 
 
 
@@ -1047,7 +1079,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../nominal-workflows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: nominal workflows" rel="prev">
+          <a href="../inspect-properties/" class="md-footer__link md-footer__link--prev" aria-label="Previous: inspect properties" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1056,20 +1088,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                nominal workflows
+                inspect properties
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../challenges/clearings/" class="md-footer__link md-footer__link--next" aria-label="Next: clearings" rel="next">
+          <a href="../filter-collection/" class="md-footer__link md-footer__link--next" aria-label="Next: filter collection" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                clearings
+                filter collection
               </div>
             </div>
             <div class="md-footer__button md-icon">

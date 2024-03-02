@@ -2,15 +2,22 @@
 
 ## __Introduction__    
 
-Nominal problems concern changing the _names at locations_. Often, the names describe _kinds of things_ (categories, classes, types). There are three kinds of nominal change:   
+Nominal problems concern transforming (making purposeful changes) to _names at locations_. Often, the names describe _kinds of things_ (categories, classes, types). You can think of nominal operations as those that alter the _lexicon_ of the map, or the number of names that are available to describe spatial variation in a layer.   
 
-| Task                  | Lexicon                                                                       |
-| :--                   | :--                                                                           |
-| __Rename__            | Output has _same_ names as input, but they occur in different locations.      |
-| __Generalize__        | Output has _fewer_ names than input.                                          |
-| __Specify__           | Output has _more_ names than input.                                           |
+---  
 
-In practice, you often apply these changes surgically, altering a subset of names in a subregion of the layer.     
+<center>
+
+| Operation             | Lexicon to describe spatial variation                                                     |
+| :--                   | :--                                                                                       |
+| __Generalize__        | Use _fewer_ names.                                          |
+| __Specify__           | Use _more_ names.                                           |
+
+</center>
+
+---  
+
+In practice, you often apply nominal operations surgically, altering a subset of names in a subregion of the layer.     
 
 ## __Illustration__  
 

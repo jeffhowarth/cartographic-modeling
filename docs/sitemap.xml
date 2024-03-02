@@ -51,6 +51,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/distance/</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/filter-collection/</loc>
          <lastmod>2024-03-02</lastmod>
          <changefreq>daily</changefreq>
@@ -82,6 +87,11 @@
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/local-operations/</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/map-layers/</loc>
          <lastmod>2024-03-02</lastmod>
          <changefreq>daily</changefreq>
     </url>

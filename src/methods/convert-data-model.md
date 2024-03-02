@@ -8,6 +8,9 @@
 //  BINARY will be an image with a single band named 'THEME'.
 //  Alter THEME to give the band a custom name.  
 //  Follow naming conventions for bands (no spaces). 
+```
+
+```js
 // -------------------------------------------------------------
 
 var binary = input

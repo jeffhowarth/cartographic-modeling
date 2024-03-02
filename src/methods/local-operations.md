@@ -7,6 +7,9 @@
 //  INPUT is an image with values to erase.
 //  BINARY is a binary image {0,1}.
 //  OE (output erased) is an image. 
+```
+
+```js
 // -------------------------------------------------------------
 
 var oe = input

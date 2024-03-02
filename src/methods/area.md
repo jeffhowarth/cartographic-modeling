@@ -14,11 +14,17 @@ var crs = "EPSG:32145";
 //  Each output feature has new property 'acres' that holds the area of feature.
 //  Replace 'acres' with something else to define an alternative property name. 
 //  Remember to following naming rules for properties.   
+```
+
+```js  
+// -------------------------------------------------------------
 
 var output = input
   .map(t.howManyAcres(crs, 'acres'))
 ;
 ```
+
+---  
 
 ## sq km of each features in collection 
 
@@ -36,11 +42,17 @@ var crs = "EPSG:32145";
 //  Each output feature has new property 'sq_km' that holds the area of feature.
 //  Replace 'sq_km' with something else to define an alternative property name.  
 //  Remember to following naming rules for properties (no spaces).
+```
+
+```js 
+// -------------------------------------------------------------
 
 var output = input
   .map(t.howManySqKm(crs, 'sq_km'))
 ;
 ```
+
+---  
 
 ## make pixel area image  
 
@@ -50,6 +62,9 @@ var output = input
 
 //  Returns an image with values that represent pixel area in acres. 
 //  Modify second line to alter units. 
+```
+
+```js  
 // -------------------------------------------------------------
 
 var output = ee.Image.pixelArea()

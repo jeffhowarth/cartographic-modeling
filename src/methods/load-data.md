@@ -6,7 +6,9 @@
 
 //  Replace LAYER with a key from the data repo;
 //  or replace argument with EE address string. 
+```
 
+```js
 // -------------------------------------------------------------
 
 var output = ee.FeatureCollection(data.LAYER.fc_address);
@@ -23,6 +25,9 @@ var output = ee.FeatureCollection(data.LAYER.fc_address);
 
 //  Replace LAYER with a key from the data repo;
 //  or replace argument with EE address string.  
+```
+
+```js
 // -------------------------------------------------------------
 
 var output = ee.ImageCollection(data.LAYER.ic);
@@ -39,6 +44,9 @@ var output = ee.ImageCollection(data.LAYER.ic);
 
 //  Replace LAYER with a key from the data repo;
 //  or replace argument with EE address string.  
+```
+
+```js  
 // -------------------------------------------------------------
 
 var output = ee.Image(data.LAYER.i);

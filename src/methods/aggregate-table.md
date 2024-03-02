@@ -7,6 +7,9 @@
 //  Input must be a feature collection.
 //  Replace 'PROPERTY' with the property name (STRING) to sum.  
 //  Output is a number object.
+```
+
+```js
 // -------------------------------------------------------------
 
 var answer = input.aggregate_sum('PROPERTY');
@@ -21,6 +24,8 @@ print(
 
 ```
 
+---  
+
 ## dissolve features in collection by property  
 
 ```js
@@ -31,10 +36,12 @@ print(
 //  Replace 'PROPERTY' with the property name to dissolve features.  
 //  Output is a feature collection (with singlepart and multipart features),
 //  where each feature represents the region of a unique property value.  
+```
+
+```js
 // -------------------------------------------------------------
 
-
-var output = t.dissolveByProperty(input, 'PROPERTY')
+var output = t.dissolveByProperty(input, 'PROPERTY');
 
 ```
 

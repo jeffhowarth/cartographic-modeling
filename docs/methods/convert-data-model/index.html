@@ -371,6 +371,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -435,6 +439,20 @@
     <li class="md-nav__item">
       <a href="../inspect-properties/" class="md-nav__link">
         inspect properties
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../map-layers/" class="md-nav__link">
+        map layers
       </a>
     </li>
   
@@ -526,6 +544,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../distance/" class="md-nav__link">
+        measure distance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../aggregate-table/" class="md-nav__link">
         aggregate table
       </a>
@@ -568,8 +600,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../naip/" class="md-nav__link">
-        naip images
+      <a href="../image-viz/" class="md-nav__link">
+        viz
       </a>
     </li>
   
@@ -582,8 +614,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../image-viz/" class="md-nav__link">
-        image viz
+      <a href="../naip/" class="md-nav__link">
+        naip images
       </a>
     </li>
   
@@ -753,7 +785,7 @@
   
     <li class="md-nav__item">
       <a href="../../workflows/proximity-workflows/" class="md-nav__link">
-        proximity workflows
+        proximity workflow
       </a>
     </li>
   
@@ -875,7 +907,8 @@
 <span class="c1">//  BINARY will be an image with a single band named &#39;THEME&#39;.</span>
 <span class="c1">//  Alter THEME to give the band a custom name.  </span>
 <span class="c1">//  Follow naming conventions for bands (no spaces). </span>
-<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">binary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">f</span><span class="p">){</span><span class="k">return</span><span class="w"> </span><span class="nx">f</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)})</span>

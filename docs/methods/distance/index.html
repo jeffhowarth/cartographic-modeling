@@ -12,20 +12,20 @@
         <meta name="author" content="Jeff Howarth">
       
       
-        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/workflows/proximity-workflows/">
+        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/methods/distance/">
       
       
-        <link rel="prev" href="../nominal-workflows/">
+        <link rel="prev" href="../area/">
       
       
-        <link rel="next" href="../../challenges/clearings/">
+        <link rel="next" href="../aggregate-table/">
       
       <link rel="icon" href="../../assets/myIcon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>proximity workflow - cartographic modeling</title>
+        <title>measure distance - cartographic modeling</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#proximity-workflows" class="md-skip">
+        <a href="#buffer-features-in-collection-by-feet" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              proximity workflow
+              measure distance
             
           </span>
         </div>
@@ -334,14 +334,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
         
@@ -380,7 +382,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           METHODS
@@ -393,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         introduction
       </a>
     </li>
@@ -407,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/load-modules/" class="md-nav__link">
+      <a href="../load-modules/" class="md-nav__link">
         load modules
       </a>
     </li>
@@ -421,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/load-data/" class="md-nav__link">
+      <a href="../load-data/" class="md-nav__link">
         load data
       </a>
     </li>
@@ -435,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/inspect-properties/" class="md-nav__link">
+      <a href="../inspect-properties/" class="md-nav__link">
         inspect properties
       </a>
     </li>
@@ -449,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/map-layers/" class="md-nav__link">
+      <a href="../map-layers/" class="md-nav__link">
         map layers
       </a>
     </li>
@@ -463,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/filter-collection/" class="md-nav__link">
+      <a href="../filter-collection/" class="md-nav__link">
         filter collection
       </a>
     </li>
@@ -477,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/convert-data-model/" class="md-nav__link">
+      <a href="../convert-data-model/" class="md-nav__link">
         convert data model
       </a>
     </li>
@@ -491,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/area/" class="md-nav__link">
+      <a href="../area/" class="md-nav__link">
         measure area
       </a>
     </li>
@@ -503,11 +505,48 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../methods/distance/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          measure distance
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         measure distance
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#buffer-features-in-collection-by-feet" class="md-nav__link">
+    Buffer features in collection by feet
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -519,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/aggregate-table/" class="md-nav__link">
+      <a href="../aggregate-table/" class="md-nav__link">
         aggregate table
       </a>
     </li>
@@ -533,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/local-operations/" class="md-nav__link">
+      <a href="../local-operations/" class="md-nav__link">
         local operations
       </a>
     </li>
@@ -547,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/zonal-operations/" class="md-nav__link">
+      <a href="../zonal-operations/" class="md-nav__link">
         zonal operations
       </a>
     </li>
@@ -561,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/image-viz/" class="md-nav__link">
+      <a href="../image-viz/" class="md-nav__link">
         viz
       </a>
     </li>
@@ -575,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methods/naip/" class="md-nav__link">
+      <a href="../naip/" class="md-nav__link">
         naip images
       </a>
     </li>
@@ -680,16 +719,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
         
@@ -706,7 +743,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           WORKED FLOWS
@@ -719,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../area-workflows/" class="md-nav__link">
+      <a href="../../workflows/area-workflows/" class="md-nav__link">
         area workflows
       </a>
     </li>
@@ -733,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nominal-workflows/" class="md-nav__link">
+      <a href="../../workflows/nominal-workflows/" class="md-nav__link">
         nominal workflows
       </a>
     </li>
@@ -745,87 +782,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          proximity workflow
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../workflows/proximity-workflows/" class="md-nav__link">
         proximity workflow
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#define-college-lands-study-sites" class="md-nav__link">
-    Define college lands study sites.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#load-building-roofprints-on-college-lands" class="md-nav__link">
-    Load building roofprints on college lands.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-100-foot-zones-of-influence-for-each-building-on-college-lands" class="md-nav__link">
-    Map 100 foot zones of influence for each building on college lands.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-binary-proximity-zone" class="md-nav__link">
-    Map binary proximity zone
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge-problems" class="md-nav__link">
-    Challenge Problems
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reflections" class="md-nav__link">
-    Reflections
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -907,8 +868,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -917,43 +876,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#define-college-lands-study-sites" class="md-nav__link">
-    Define college lands study sites.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#load-building-roofprints-on-college-lands" class="md-nav__link">
-    Load building roofprints on college lands.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-100-foot-zones-of-influence-for-each-building-on-college-lands" class="md-nav__link">
-    Map 100 foot zones of influence for each building on college lands.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-binary-proximity-zone" class="md-nav__link">
-    Map binary proximity zone
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge-problems" class="md-nav__link">
-    Challenge Problems
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reflections" class="md-nav__link">
-    Reflections
+  <a href="#buffer-features-in-collection-by-feet" class="md-nav__link">
+    Buffer features in collection by feet
   </a>
   
 </li>
@@ -973,58 +897,20 @@
                   
 
 
-<h1 id="proximity-workflows"><strong>proximity workflows</strong></h1>
-<p>It is good practice to self check your work by printing new outputs to the console panel and adding new outputs as layers to the map panel. The workflow below does not prompt you to do this; you should be in the habit of doing this automatically. Please reference the <a href="../../methods/inspect-properties/" target="_blank">inspect properties</a> and <a href="../../methods/map-layers/" target_blank="target_blank">map layer</a> methods as needed.</p>
-<hr />
-<h2 id="define-college-lands-study-sites">Define college lands study sites.</h2>
+  <h1>measure distance</h1>
+
+<h2 id="buffer-features-in-collection-by-feet">Buffer features in collection by feet</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  1. DEFINE STUDY SITE. </span>
-<span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  BUFFER FEATURES IN COLLECTION BY FEET.</span>
+
+<span class="c1">//  INPUT is a feature collection. </span>
+<span class="c1">//  DISTANCE is a number in units feet.</span>
+<span class="c1">//  OUTPUT is a single part feature collection of polygons.  </span>
 </code></pre></div>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection</a> &rarr; data.cadastre.college </li>
-<li>Set up your map to center on study site and show hybrid base layer. </li>
-</ol>
-<hr />
-<h2 id="load-building-roofprints-on-college-lands">Load building roofprints on college lands.</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  2. LOAD BUILDING ROOFPRINTS ON COLLEGE LANDS. </span>
-<span class="c1">// -------------------------------------------------------------</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">OUTPUT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">INPUT</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">bufferFeet</span><span class="p">(</span><span class="nx">DISTANCE</span><span class="p">));</span>
 </code></pre></div>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection</a> &rarr; data.lc.buildings </li>
-<li><a href="../../methods/filter-collection/#by-bounds">Filter collection by region</a> &rarr; buildings on college parcels.</li>
-</ol>
-<hr />
-<h2 id="map-100-foot-zones-of-influence-for-each-building-on-college-lands">Map 100 foot zones of influence for each building on college lands.</h2>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  3. MAP 100 FT ZOI FOR EACH BUILDING ON COLLEGE LANDS.  </span>
-<span class="c1">// -------------------------------------------------------------</span>
-</code></pre></div>
-<ol>
-<li><a href="../../methods/distance/#buffer-features-in-collection-by-feet">Buffer each feature in a collection.</a>   </li>
-</ol>
-<hr />
-<h2 id="map-binary-proximity-zone">Map binary proximity zone</h2>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  4. MAP BINARY PROXIMITY ZONE.  </span>
-<span class="c1">// -------------------------------------------------------------</span>
-</code></pre></div>
-<ol>
-<li><a href="../../methods/convert-data-model/#feature-collection-to-binary">Convert fc to binary image.</a></li>
-</ol>
-<hr />
-<h2 id="challenge-problems">Challenge Problems</h2>
-<ol>
-<li>Could you solve step 3 with a raster solution (where you do not use the f.buffer method to map proximity)?</li>
-<li>Could you solve step 4 with a vector solution (what you do not convert fc to binary image)?  </li>
-</ol>
-<hr />
-<h2 id="reflections">Reflections</h2>
-<ol>
-<li>What are pros and cons of vector solution to define proximity zones compared to raster solution?    </li>
-<li>What are pros and cons of raster solution to make binary image versus the vector solution of dissolving features?    </li>
-</ol>
 <hr />
 
 
@@ -1047,7 +933,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../nominal-workflows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: nominal workflows" rel="prev">
+          <a href="../area/" class="md-footer__link md-footer__link--prev" aria-label="Previous: measure area" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1056,20 +942,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                nominal workflows
+                measure area
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../challenges/clearings/" class="md-footer__link md-footer__link--next" aria-label="Next: clearings" rel="next">
+          <a href="../aggregate-table/" class="md-footer__link md-footer__link--next" aria-label="Next: aggregate table" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                clearings
+                aggregate table
               </div>
             </div>
             <div class="md-footer__button md-icon">

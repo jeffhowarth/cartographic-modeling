@@ -18,7 +18,7 @@
         <link rel="prev" href="../convert-data-model/">
       
       
-        <link rel="next" href="../aggregate-table/">
+        <link rel="next" href="../distance/">
       
       <link rel="icon" href="../../assets/myIcon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
@@ -371,6 +371,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -435,6 +439,20 @@
     <li class="md-nav__item">
       <a href="../inspect-properties/" class="md-nav__link">
         inspect properties
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../map-layers/" class="md-nav__link">
+        map layers
       </a>
     </li>
   
@@ -540,6 +558,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../distance/" class="md-nav__link">
+        measure distance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../aggregate-table/" class="md-nav__link">
         aggregate table
       </a>
@@ -582,8 +614,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../naip/" class="md-nav__link">
-        naip images
+      <a href="../image-viz/" class="md-nav__link">
+        viz
       </a>
     </li>
   
@@ -596,8 +628,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../image-viz/" class="md-nav__link">
-        image viz
+      <a href="../naip/" class="md-nav__link">
+        naip images
       </a>
     </li>
   
@@ -767,7 +799,7 @@
   
     <li class="md-nav__item">
       <a href="../../workflows/proximity-workflows/" class="md-nav__link">
-        proximity workflows
+        proximity workflow
       </a>
     </li>
   
@@ -909,11 +941,14 @@
 <span class="c1">//  Each output feature has new property &#39;acres&#39; that holds the area of feature.</span>
 <span class="c1">//  Replace &#39;acres&#39; with something else to define an alternative property name. </span>
 <span class="c1">//  Remember to following naming rules for properties.   </span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">howManyAcres</span><span class="p">(</span><span class="nx">crs</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;acres&#39;</span><span class="p">))</span>
 <span class="p">;</span>
 </code></pre></div>
+<hr />
 <h2 id="sq-km-of-each-features-in-collection">sq km of each features in collection</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 <span class="c1">//  CALCULATE AREA (SQUARE KM) OF FEATURES IN COLLECTION. </span>
@@ -928,18 +963,22 @@
 <span class="c1">//  Each output feature has new property &#39;sq_km&#39; that holds the area of feature.</span>
 <span class="c1">//  Replace &#39;sq_km&#39; with something else to define an alternative property name.  </span>
 <span class="c1">//  Remember to following naming rules for properties (no spaces).</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">howManySqKm</span><span class="p">(</span><span class="nx">crs</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;sq_km&#39;</span><span class="p">))</span>
 <span class="p">;</span>
 </code></pre></div>
+<hr />
 <h2 id="make-pixel-area-image">make pixel area image</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 <span class="c1">//  MAKE PIXEL AREA IMAGE.</span>
 
 <span class="c1">//  Returns an image with values that represent pixel area in acres. </span>
 <span class="c1">//  Modify second line to alter units. </span>
-<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ee</span><span class="p">.</span><span class="nx">Image</span><span class="p">.</span><span class="nx">pixelArea</span><span class="p">()</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">divide</span><span class="p">(</span><span class="mf">4046.86</span><span class="p">)</span><span class="w">                  </span><span class="c1">// converts to acres</span>
@@ -982,13 +1021,13 @@
         
         
           
-          <a href="../aggregate-table/" class="md-footer__link md-footer__link--next" aria-label="Next: aggregate table" rel="next">
+          <a href="../distance/" class="md-footer__link md-footer__link--next" aria-label="Next: measure distance" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                aggregate table
+                measure distance
               </div>
             </div>
             <div class="md-footer__button md-icon">

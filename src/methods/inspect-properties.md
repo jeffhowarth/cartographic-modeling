@@ -6,6 +6,9 @@
 
 //  Replace 'LABEL' with appropriate header.  
 //  Replace fc with appropriate variable.
+```
+
+```js
 // -------------------------------------------------------------
 
 print(
@@ -15,6 +18,8 @@ print(
 ;
 ```
 
+---  
+
 ## print unique values in FC  
 
 ```js
@@ -23,6 +28,9 @@ print(
 
 //  Replace 'LABEL' with appropriate header.  
 //  Replace fc with appropriate variable.
+```
+
+```js
 // -------------------------------------------------------------
 
 print(
@@ -32,6 +40,8 @@ print(
 ;
 ```
 
+---  
+
 ## print size of collection  
 
 ```js
@@ -40,6 +50,9 @@ print(
 
 //  Replace 'LABEL' with appropriate header.  
 //  Replace collection with appropriate variable.
+```
+
+```js  
 // -------------------------------------------------------------
 
 print(
