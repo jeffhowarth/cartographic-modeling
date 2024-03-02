@@ -1,29 +1,21 @@
-# __nominal workflows__
+# __proximity workflows__  
 
-It is good practice to self check your work by printing new outputs to console and adding new outputs as layers to the map. Try to get into the habit of pausing your progress after each step so that you can check if your output looks right before continuing.     
+It is good practice to self check your work by printing new outputs to console and adding new outputs as layers to the map. Try to get into the habit of pausing your progress after each step so that you can check if your output looks right before continuing. 
 
-## __Define study site__  
+## Load building footprint layer
 
-1. [Load FC from address.][load-fc] --> data.cadastre.college 
+1. [Load feature collection][load-fc] --> data.lc.buildings. 
 
-### Make ag binary. 
+## Buffer buildings to identify 50 meter zones of influence.   
 
-1. [Load FC from address.][load-fc] --> data.lc.ag
-2. [Convert ag FC to binary image.][convert-fc-binary]    
+1. Buffer each feature in a collection. 
 
-### Generalize base layer to make grass/shrub/bare binary  
+## Create binary proximity zone
 
-1. Reclassify a nominal image.  
+1. [Convert fc to binary image.][convert-fc-binary]
 
-### Isolate ag land in grass/shrub/bare lands to bring into land cover. 
 
-1. Intersect two binaries. 
-
-### Classify grass/shrub/bare lands that are agricultural.  
-
-1. Output max values of locations. 
-
----
+---  
 
 [load-data-module]: ../methods/load-modules.md#data-module 
 [load-task-module]: ../methods/load-modules.md#tasks-module

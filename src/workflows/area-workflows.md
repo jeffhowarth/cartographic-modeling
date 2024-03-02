@@ -1,6 +1,6 @@
 # __area workflows__  
 
-This page outlines workflows to solve the [area problems][area-problems] with earth engine methods defined on the [methods page][ee-methods].  
+This page outlines workflows to solve the [area problems][area-problems] with earth engine methods defined on the [methods pages][ee-methods].  
 
 ---  
 
@@ -24,8 +24,8 @@ Here is a workflow to solve the [vector-based approach][area01] to the area prob
 
 ### Print results. 
 
-1. [Print number of objects in the SUBJECT collection.][print-size] --> Answer B below
-2. [Sum the values in a table column (FC property).][sum-table] --> Answer C below
+1. [Print size of collection.][print-size] --> Answer B below
+2. [Sum the values in a table column.][sum-table] --> Answer C below
 
 <details closed>
 <summary>Check your answers for vector solution.</summary>
@@ -51,7 +51,7 @@ Work through the steps below to solve the [raster-based approach][area02] to the
 ### Define CUTTERS.    
     
 1. [Load feature collection from address][load-fc] --> data.cadastre.college.fc_address 
-2. [Print the number of objects in the collection.][print-size] --> Answer A below  
+2. [Print size collection.][print-size] --> Answer A below  
 
 ### Define the DOUGH.    
     
@@ -63,7 +63,7 @@ Work through the steps below to solve the [raster-based approach][area02] to the
 
 ### Print results.   
     
-1. [Print number of objects in the SUBJECT collection.][print-size] --> Answer B below
+1. [Print size of collection.][print-size] --> Answer B below
 2. [Sum the values in a table column (FC property).][sum-table] --> Answer C below
 
 <details closed>
@@ -90,7 +90,7 @@ Work through the steps below to solve the [theme within regions][area03] area pr
 ### Define CUTTERS.    
 
 1. [Load feature collection from address][load-fc] --> data.cadastre.college.fc_address 
-2. [Print the number of objects in the collection.][print-size] --> Answer A below  
+2. [Print size collection.][print-size] --> Answer A below  
 
 ### Define binary THEME.  
 
@@ -105,7 +105,7 @@ Work through the steps below to solve the [theme within regions][area03] area pr
 ### Define the DOUGH.  
 
 1. [Make pixel area image.][pixel-area]   
-2. [Erase values at locations without a mask.][erase-local] --> pixel area and theme binary 
+2. [Erase values at locations with binary.][erase-local] --> pixel area and theme binary 
 
 ### Compute Zonal Summary (zs).  
 
@@ -113,8 +113,8 @@ Work through the steps below to solve the [theme within regions][area03] area pr
 
 ### Print results.
 
-1. [Print number of objects in the SUBJECT collection.][print-size] --> Answer B below
-2. [Sum the values in a table column (FC property).][sum-table] --> Answer C below
+1. [Print size of collection.][print-size] --> Answer B below
+2. [Sum the values in a table column.][sum-table] --> Answer C below
 
 
 <details closed>
@@ -141,7 +141,7 @@ Work through the steps below to solve the [theme within sites across regions][ar
 ### Define SITES.
 
 1. [Load feature collection from address][load-fc] --> data.cadastre.college.fc_address 
-2. [Print the number of objects in the collection.][print-size] --> Answer A below     
+2. [Print size of collection.][print-size] --> Answer A below     
 3. [Convert FC to binary image.][convert-fc-binary] --> Use SITES as input.
 
 ### Define REGIONS.
@@ -163,7 +163,7 @@ Work through the steps below to solve the [theme within sites across regions][ar
 ### Define the DOUGH. 
 
 1. [Make pixel area image.][pixel-area]   
-2. [Erase values at locations without a mask.][erase-local] --> pixel area and theme binary and sites binary
+2. [Erase values at locations with binary.][erase-local] --> pixel area and theme binary and sites binary
 
 ### Compute Zonal Summary (zs). 
 
@@ -171,8 +171,8 @@ Work through the steps below to solve the [theme within sites across regions][ar
 
 ### Print results.  
 
-1. [Print number of objects in the SUBJECT collection.][print-size] --> Answer C below
-2. [Sum the values in a table column (FC property).][sum-table] --> Answer D below  
+1. [Print size of collection.][print-size] --> Answer C below
+2. [Sum the values in a table column.][sum-table] --> Answer D below  
 
 <details closed>
 <summary>Check your answers for THEME IN SITES ACROSS REGIONS raster solution.</summary>
@@ -205,7 +205,7 @@ var dough = dough_theme_sites.addBands(dough_theme);
 
 ---   
 [area-problems]: ../problems/area-problems.md  
-[ee-methods]: ../methods/ee.md  
+[ee-methods]: ../methods/intro.md  
 
 [area01]: ../problems/area-problems.md#vector-approach  
 [area02]: ../problems/area-problems.md#raster-approach  
@@ -213,19 +213,34 @@ var dough = dough_theme_sites.addBands(dough_theme);
 [area04]: ../problems/area-problems.md#theme-within-sites-across-regions  
 [area05]: ../problems/area-problems.md#challenge-problem
 
-[load-data-module]: ../methods/ee.md#data-module 
-[load-task-module]: ../methods/ee.md#tasks-module  
-[load-fc]: ../methods/ee.md#load-fc-from-address 
-[area-fc-acres]: ../methods/ee.md#area-of-features-acres-in-fc  
-[print-size]: ../methods/ee.md#print-number-of-objects-in-a-collection  
-[sum-table]: ../methods/ee.md#sum-the-values-in-a-table-column-fc-propoerty  
 
-[pixel-area]: ../methods/ee.md#make-pixel-area-image  
-[zonal-sum]: ../methods/ee.md#zonal-summary-of-dough-within-cutters  
+[load-data-module]: ../methods/load-modules.md#data-module 
+[load-task-module]: ../methods/load-modules.md#tasks-module
 
-[print-first]: ../methods/ee.md#print-first-feature-in-fc
-[print-unique]: ../methods/ee.md#print-unique-values-in-fc  
-[convert-fc-binary]: ../methods/ee.md#convert-fc-to-binary-image  
-[erase-local]: ../methods/ee.md#erase-values-at-locations-without-a-mask  
+[load-fc]: ../methods/load-data.md#feature-collection-from-address 
+[load-ic]: ../methods/load-data.md#image-collection-from-address  
+[load-i]: ../methods/load-data.md#image-from-address
 
-[filter-bounds]: ../methods/ee.md#filter-collection-by-bounds  
+[print-first]: ../methods/inspect-properties.md#print-first-feature-in-fc
+[print-unique]: ../methods/inspect-properties.md#print-unique-values-in-fc  
+[print-size]: ../methods/inspect-properties.md#print-size-of-collection
+
+
+[filter-collection]: ../methods/filter-collection.md#by-attribute  
+[filter-bounds]: ../methods/filter-collection.md#by-bounds  
+
+[convert-fc-binary]: ../methods/convert-data-model.md#feature-collection-to-binary  
+
+[area-fc-acres]: ../methods/area.md#acres-of-each-feature-in-collection  
+[area-fc-sq-km]: ../methods/area.md#sq-km-of-each-feature-in-collection      
+
+[pixel-area]: ../methods/area.md#make-pixel-area-image    
+
+
+[sum-table]: ../methods/aggregate-table.md#sum-the-values-in-a-table-column  
+[dissolve-by-prop]: ../methods/aggregate-table.md#dissolve-features-in-collection-by-property  
+
+
+[erase-local]: ../methods/local-operations.md#erase-values-at-locations-with-binary  
+
+[zonal-sum]: ../methods/zonal-operations.md#zonal-summary-of-dough-within-cutters  

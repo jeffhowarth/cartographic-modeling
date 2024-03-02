@@ -234,6 +234,7 @@ Insert a code snippet like this as a header:
 
 //  Last modified: insert date
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ```
 
 You should be able to recycle the majority of your last solution. You just need to do a little surgery. 

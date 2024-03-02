@@ -55,7 +55,7 @@ theme:
     # - tabs
     - navigation.instant
     - navigation.instant.progress  
-    - navigation.sections
+    # - navigation.sections
     - navigation.indexes 
     - navigation.footer 
 
@@ -144,16 +144,30 @@ nav:
     - spatial: concepts/spatial.md  
     - planning: concepts/planning.md  
     - change: concepts/change.md     
-    - data models: concepts/data-models.md  
-    - data operations: concepts/data-operations.md    
+    - data models: concepts/data-models.md    
   - METHODS:  
-    - earth engine: methods/ee.md
+    - introduction: methods/intro.md
+    - load modules: methods/load-modules.md  
+    - load data: methods/load-data.md  
+    - inspect properties: methods/inspect-properties.md  
+    - filter collection: methods/filter-collection.md  
+    - convert data model: methods/convert-data-model.md  
+    - measure area: methods/area.md  
+    - aggregate table: methods/aggregate-table.md  
+    - local operations: methods/local-operations.md
+    - zonal operations: methods/zonal-operations.md  
+    - naip images: methods/naip.md 
+    - image viz: methods/image-viz.md  
   - PROBLEMS:  
     - area problems: problems/area-problems.md  
     - nominal problems: problems/nominal-problems.md  
-  - WORKFLOWS:  
+    - proximity problems: problems/proximity-problems.md  
+  - WORKED FLOWS:  
     - area workflows: workflows/area-workflows.md  
-    - nominal workflows: workflows/nominal-workflows.md   
+    - nominal workflows: workflows/nominal-workflows.md  
+    - proximity workflows: workflows/proximity-workflows.md     
+  - CHALLENGES: 
+    - clearings: challenges/clearings.md    
 
 
   
