@@ -86,7 +86,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/local-operations/</loc>
+         <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/local-one-layer/</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/local-two-layers/</loc>
          <lastmod>2024-03-02</lastmod>
          <changefreq>daily</changefreq>
     </url>

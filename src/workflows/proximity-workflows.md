@@ -4,7 +4,7 @@ It is good practice to self check your work by printing new outputs to the conso
 
 ---  
 
-## Define college lands study sites.
+### Define study sites
 
 ```js
 // -------------------------------------------------------------
@@ -17,7 +17,7 @@ It is good practice to self check your work by printing new outputs to the conso
 
 ---  
 
-## Load building roofprints on college lands.
+### Map features of interest
 
 ```js
 // -------------------------------------------------------------
@@ -30,7 +30,7 @@ It is good practice to self check your work by printing new outputs to the conso
 
 ---  
 
-## Map 100 foot zones of influence for each building on college lands.   
+### Map zones of interest  
 
 ```js
 // -------------------------------------------------------------
@@ -42,7 +42,7 @@ It is good practice to self check your work by printing new outputs to the conso
 
 ---  
 
-## Map binary proximity zone
+### Map binary proximity zone
 
 ```js
 // -------------------------------------------------------------
@@ -54,14 +54,14 @@ It is good practice to self check your work by printing new outputs to the conso
 
 ---  
 
-## Challenge Problems   
+### Challenge Problems   
 
 1. Could you solve step 3 with a raster solution (where you do not use the f.buffer method to map proximity)?
 2. Could you solve step 4 with a vector solution (what you do not convert fc to binary image)?  
 
 ---  
 
-## Reflections  
+### Reflections  
 
 1. What are pros and cons of vector solution to define proximity zones compared to raster solution?    
 2. What are pros and cons of raster solution to make binary image versus the vector solution of dissolving features?    

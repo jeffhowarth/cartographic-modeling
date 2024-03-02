@@ -375,6 +375,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -543,6 +545,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#euclidean-distance-image" class="md-nav__link">
+    Euclidean distance image
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -572,8 +581,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../local-operations/" class="md-nav__link">
-        local operations
+      <a href="../local-one-layer/" class="md-nav__link">
+        local - one layer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../local-two-layers/" class="md-nav__link">
+        local - two layers
       </a>
     </li>
   
@@ -882,6 +905,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#euclidean-distance-image" class="md-nav__link">
+    Euclidean distance image
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -910,6 +940,32 @@
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">OUTPUT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">INPUT</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">bufferFeet</span><span class="p">(</span><span class="nx">DISTANCE</span><span class="p">));</span>
+</code></pre></div>
+<hr />
+<h2 id="euclidean-distance-image">Euclidean distance image</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -----------------------------------------------------------------------------</span>
+<span class="c1">//  EUCLIDEAN DISTANCE</span>
+<span class="c1">//</span>
+<span class="c1">//  euc_distance output represents the euclidean distance to the nearest non-zero pixel of input.</span>
+<span class="c1">//  Input must be image with 0 as background value.</span>
+<span class="c1">// -----------------------------------------------------------------------------</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">crs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;EPSG:32145&quot;</span><span class="p">;</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">kr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="p">;</span><span class="w">                   </span><span class="c1">// Diameter of kernel, or zone to compute distance over. </span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">euc_distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">distance</span><span class="p">(</span><span class="nx">ee</span><span class="p">.</span><span class="nx">Kernel</span><span class="p">.</span><span class="nx">euclidean</span><span class="p">({</span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="nx">kr</span><span class="p">,</span><span class="w"> </span><span class="nx">units</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;meters&#39;</span><span class="p">}))</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">reproject</span><span class="p">({</span><span class="nx">crs</span><span class="o">:</span><span class="w"> </span><span class="nx">crs</span><span class="p">})</span><span class="w">                                         </span>
+<span class="w">  </span><span class="p">.</span><span class="nx">rename</span><span class="p">(</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="p">;</span>
+
+<span class="c1">// Fun palette for distance images. </span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">inferno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;#000004&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#320A5A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#781B6C&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#BB3654&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#EC6824&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#FBB41A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#FCFFA4&quot;</span><span class="p">].</span><span class="nx">reverse</span><span class="p">();</span>
+
+<span class="c1">// Add layer to map with fun palette. </span>
+
+<span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">euc_distance</span><span class="p">,</span><span class="w">  </span><span class="p">{</span><span class="nx">min</span><span class="o">:</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">max</span><span class="o">:</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="nx">palette</span><span class="o">:</span><span class="w"> </span><span class="nx">inferno</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;Euclidean distance image&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
 </code></pre></div>
 <hr />
 

@@ -1,27 +1,68 @@
-# __nominal workflows__
+# __nominal workflows__  
 
 It is good practice to self check your work by printing new outputs to console and adding new outputs as layers to the map. Try to get into the habit of pausing your progress after each step so that you can check if your output looks right before continuing.     
 
-## __Define study site__  
+---
+
+### Define study site  
+
+```js
+// -------------------------------------------------------------
+//  DEFINE STUDY SITE. 
+// -------------------------------------------------------------
+```
 
 1. [Load FC from address.][load-fc] --> data.cadastre.college 
 
-### Make ag binary. 
+--- 
+
+### Make binary 
+
+```js
+// -------------------------------------------------------------
+//  MAKE BINARY OF AG. 
+// -------------------------------------------------------------
+```
 
 1. [Load FC from address.][load-fc] --> data.lc.ag
 2. [Convert ag FC to binary image.][convert-fc-binary]    
 
-### Generalize base layer to make grass/shrub/bare binary  
+---
 
-1. Reclassify a nominal image.  
+### Generalize layer   
 
-### Isolate ag land in grass/shrub/bare lands to bring into land cover. 
+```js
+// -------------------------------------------------------------
+//  GENERALIZE LC LAYER.
+// -------------------------------------------------------------
+```
 
-1. Intersect two binaries. 
+1. [Reclassify a nominal image.][local-reclass]  
 
-### Classify grass/shrub/bare lands that are agricultural.  
+---  
 
-1. Output max values of locations. 
+### Isolate subregion 
+
+```js
+// -------------------------------------------------------------
+//  ISOLATE LC SUBREGION.
+// -------------------------------------------------------------
+```
+
+1. [Intersect two binaries.][local-intersection]   
+
+---  
+
+### Specify new LC names  
+
+```js
+// -------------------------------------------------------------
+//  SPECIFY NEW LC NAMES.
+// -------------------------------------------------------------
+```
+
+1. [Multiply image by constant][local-multiply-constant]  
+2. [Maximum at locations.][local-max] 
 
 ---
 
@@ -51,7 +92,11 @@ It is good practice to self check your work by printing new outputs to console a
 [sum-table]: ../methods/aggregate-table.md#sum-the-values-in-a-table-column  
 [dissolve-by-prop]: ../methods/aggregate-table.md#dissolve-features-in-collection-by-property  
 
+[local-reclass]: ../methods/local-one-layer.md#reclassify-nominal-values 
+[local-multiply-constant]: ../methods/local-one-layer.md#multiply-image-by-constant
 
-[erase-local]: ../methods/local-operations.md#erase-values-at-locations-with-binary  
+[local-erase]: ../methods/local-two-layers.md#erase-values-at-locations-with-binary  
+[local-intersection]: ../methods/local-two-layers.md#intersect-two-binaries
+[local-max]: ../methods/local-two-layers.md#maximum-at-locations  
 
 [zonal-sum]: ../methods/zonal-operations.md#zonal-summary-of-dough-within-cutters  

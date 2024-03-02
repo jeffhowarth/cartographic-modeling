@@ -156,9 +156,10 @@ nav:
     - measure area: methods/area.md  
     - measure distance: methods/distance.md  
     - aggregate table: methods/aggregate-table.md  
-    - local operations: methods/local-operations.md
+    - local - one layer: methods/local-one-layer.md  
+    - local - two layers: methods/local-two-layers.md 
     - zonal operations: methods/zonal-operations.md  
-    -  viz: methods/image-viz.md  
+    - viz: methods/image-viz.md  
     - naip images: methods/naip.md 
   - PROBLEMS:  
     - area problems: problems/area-problems.md  
