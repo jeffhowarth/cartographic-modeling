@@ -16,7 +16,7 @@ I found this approach to require a simpler model (with fewer steps) than the alt
 
 ## challenge  
 
-Make a binary map of clearings for a study region, where clearings use these inputs:  
+Make a binary map of clearings for a test region, where clearings use these inputs:  
 
 ---  
 
