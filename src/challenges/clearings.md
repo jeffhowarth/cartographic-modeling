@@ -44,10 +44,10 @@ Clearings should identify locations that meet one or more of these 10 conditions
 | CONDITION | DESCRIPTION                                                                                           |  
 | :---:     | :---                                                                                                  |
 | 1         | Buildings, roads, other pavement, and railroad land cover classes are all clearings.                  |
-| 2         | Orchards clear all other land cover classes.                                                          |
-| 3         | Quarries clear all other land covers.                                                                 | 
-| 4         | Stadiums clear all other land cover.                                                                  |
-| 5         | Pistes (ski runs) clear all other land cover.                                                         |
+| 2         | Farm/Vineyard clear all other land cover classes.                                                     |
+| 3         | Quarry/Mine clear all other land covers.                                                              | 
+| 4         | Stadium/Arena clear all other land cover.                                                             |
+| 5         | All Alpine glades or trails (both Expert and Easiest) clear all other land cover.                     |
 | 6         | Airports clear all other land cover.                                                                  |
 | 7         | Buildings have a zone of influence that clears all other land cover within 100 feet.                  |
 | 8         | All railroads and roads (except Class 4 roads) clear all other land cover within 50 feet.             |  
