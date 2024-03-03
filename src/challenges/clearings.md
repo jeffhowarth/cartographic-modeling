@@ -60,9 +60,11 @@ Clearings should identify locations that meet one or more of these 10 conditions
 
 ---  
 
-Although you could run this analysis for the entire state of Vermont, it is good practice to develop and test a model for a smaller region so that you do not have to wait as long for processes to complete while you write and test your code. For a test region, please select Middlebury from the Vermont towns collection (data.gov.town). Use the test region to filter all the feature collections used in your solution.  
+Although you could run this analysis for the entire state of Vermont, it is good practice to develop and test a model for a smaller region so that you do not have to wait as long for processes to complete while you write and test your code. For a test region, please select Addison from the county collection (data.gov.county). Use the test region to filter all the feature collections used in your solution.  
 
-Please note that this problem will require you to select features by attribute for some layers. For example, you will need to isolate orchards from the e911 footprint layer. To do this, you may find it helpful to look at the "Entity and Attribute Information" in the layer's metadata. You can find links to metadata in the data repo for e911 footprints and roads. 
+If your model still runs slowly, you can use a smaller test site (for example, one town in Vermont). Ideally, you want your test site to be small but still representative of the larger study region. For example, in our case, an ideal test site would have both farms/vineyards and ski pistes.   
+
+Please note that this problem will require you to select features by attribute for some layers. For example, you will need to isolate farms/vineyards from the e911 footprint layer. To do this, you may find it helpful to look at the "Entity and Attribute Information" in the layer's metadata. You can find links to metadata in the data repo for e911 footprints and roads. 
 
 ## starter  
 
