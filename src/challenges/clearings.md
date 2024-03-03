@@ -16,7 +16,7 @@ I found this approach to require a simpler model (with fewer steps) than the alt
 
 ## challenge  
 
-Make a binary map of clearings, where clearings use these inputs:  
+Make a binary map of clearings for a study region, where clearings use these inputs:  
 
 ---  
 
@@ -60,11 +60,37 @@ Clearings should identify locations that meet one or more of these 10 conditions
 
 ---  
 
-Please note that this problem will require you to select features by attribute for some layers. For example, you will need to isolate orchards from the e911 footprint layer. To do this, you may find it helpful to look at the "Entity and Attribute Information" in the layer's metadata. You can find links to metadata in the data repo for e911 footprints and roads.   
+Although you could run this analysis for the entire state of Vermont, it is good practice to develop and test a model for a smaller region so that you do not have to wait as long for processes to complete while you write and test your code. For a test region, please select Middlebury from the Vermont towns collection (data.gov.town). Use the test region to filter all the feature collections used in your solution.  
+
+Please note that this problem will require you to select features by attribute for some layers. For example, you will need to isolate orchards from the e911 footprint layer. To do this, you may find it helpful to look at the "Entity and Attribute Information" in the layer's metadata. You can find links to metadata in the data repo for e911 footprints and roads. 
+
+## starter  
+
+```js
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  CHALLENGE PROBLEM
+//  Clearings in Middlebury, Vermont. 
+
+//  Last modified: insert date
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+var data = require('users/jhowarth/public:modules/data.js');       
+print('DATA', data);
+
+var t = require('users/jhowarth/public:modules/tasks.js');
+```
 
 ## deliverable  
 
-Write a script that produces a single binary image that satisfies the ten conditions described above. Please take care to organize your script into meaningful chunks and comment your work.   
+Write a script that produces a single binary image that satisfies the ten conditions described above.  
+
+Please take care to organize your script into meaningful chunks and comment your work. I recommend that you use the header template shown below to keep signify the chunks of your code that satisfies each condition.
+
+```js
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+//  CONDITION #
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+```
 
 No pressure. Give it your best shot. Let me know if you have questions.  
 
