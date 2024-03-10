@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/jeffhowarth/cartographic-modeling/challenges/water-story/</loc>
+         <lastmod>2024-03-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/concepts/change/</loc>
          <lastmod>2024-03-10</lastmod>
          <changefreq>daily</changefreq>
