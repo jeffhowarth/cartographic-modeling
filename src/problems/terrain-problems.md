@@ -16,7 +16,7 @@ Use the [USGS 3DEP 1m National Map](https://developers.google.com/earth-engine/d
 
 <iframe src=https://ee-edu-apps.projects.earthengine.app/view/gg0352-shaded-relief title="Shaded Relief example" height=720 width=720 allowfullscreen= true></iframe> 
 
-Start a new script called __0401_shaded_relief.js__.
+Start a new script called __wk04_01_shaded_relief.js__.
 
 Insert a header, then load the data and task modules.   
 
@@ -48,7 +48,7 @@ Use the [USGS 3DEP 1m National Map](https://developers.google.com/earth-engine/d
 
 <iframe src=https://ee-edu-apps.projects.earthengine.app/view/gg0352-slope-class title="Shaded Relief example" height=720 width=720 allowfullscreen= true></iframe>
 
-Start a new script called __0402_slope_class.js__.
+Start a new script called __wk04_02_slope_class.js__.
 
 Insert a header, then load the data and task modules.   
 

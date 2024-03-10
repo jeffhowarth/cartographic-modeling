@@ -10,7 +10,7 @@ This problem is also motivated by a personal pet peeve: I am bothered by maps th
 
 Please do the following:  
 
-1. Make a copy of your shaded relief script (called it 0403_water_story_challenge.md).
+1. Make a copy of your shaded relief script (called it wk04_03_water_story_challenge.md).
 2. Copy the starter script below and paste it into the new script after the shaded relief part.    
 3. Read through the script and play with it to try to understand how the wetlands section works. 
 4. Try to finish styling the stream, ditch, and pond data by completing the last section where I leave you hanging. 
