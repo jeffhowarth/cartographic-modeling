@@ -377,6 +377,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -467,8 +469,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter-collection/" class="md-nav__link">
-        filter collection
+      <a href="../filter-data/" class="md-nav__link">
+        filter data
       </a>
     </li>
   
@@ -496,7 +498,7 @@
   
     <li class="md-nav__item">
       <a href="../area/" class="md-nav__link">
-        measure area
+        area operations
       </a>
     </li>
   
@@ -510,7 +512,7 @@
   
     <li class="md-nav__item">
       <a href="../distance/" class="md-nav__link">
-        measure distance
+        distance operations
       </a>
     </li>
   
@@ -574,6 +576,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#classify-image-by-equal-interval" class="md-nav__link">
+    Classify image by equal interval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#threshold-an-image" class="md-nav__link">
     Threshold an image
   </a>
@@ -618,6 +627,20 @@
     <li class="md-nav__item">
       <a href="../zonal-operations/" class="md-nav__link">
         zonal operations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terrain/" class="md-nav__link">
+        terrain operations
       </a>
     </li>
   
@@ -681,6 +704,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -737,6 +762,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problems/terrain-problems/" class="md-nav__link">
+        terrain problems
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -759,6 +798,8 @@
       <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
+        
+          
         
           
         
@@ -816,6 +857,20 @@
     <li class="md-nav__item">
       <a href="../../workflows/proximity-workflows/" class="md-nav__link">
         proximity workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/terrain-workflows/" class="md-nav__link">
+        terrain workflows
       </a>
     </li>
   
@@ -913,6 +968,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#classify-image-by-equal-interval" class="md-nav__link">
+    Classify image by equal interval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#threshold-an-image" class="md-nav__link">
     Threshold an image
   </a>
@@ -953,10 +1015,9 @@
 <span class="c1">//  determines the from --&gt; to reclassification.</span>
 <span class="c1">//  &#39;BAND_NAME&#39; is name of band to reclassify (default is first band).</span>
 <span class="c1">//  OUTPUT is name for new reclassified image. </span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">remap</span><span class="p">(</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">remap</span><span class="p">(</span>
 <span class="w">  </span><span class="p">{</span>
 <span class="w">    </span><span class="kr">from</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">,</span><span class="mf">4</span><span class="p">],</span>
 <span class="w">    </span><span class="nx">to</span><span class="o">:</span><span class="w">   </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">],</span>
@@ -964,6 +1025,26 @@
 <span class="w">  </span><span class="p">}</span>
 
 <span class="p">);</span><span class="w"> </span>
+
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<hr />
+<h2 id="classify-image-by-equal-interval">Classify image by equal interval</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  CLASSIFY AN IMAGE BY AN EQUAL INTERVAL</span>
+
+<span class="c1">//  INPUT is an image with continuous values (like a DEM).</span>
+<span class="c1">//  INTERVAL is an integer that defines equal interval of scheme. </span>
+
+<span class="c1">//  OUTPUT is an image, where values represent quotient as integer;</span>
+<span class="c1">//    input = dividend, </span>
+<span class="c1">//    interval = divisor,  </span>
+<span class="c1">//    remainder is ignored.</span>
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">divide</span><span class="p">(</span><span class="nx">interval</span><span class="p">).</span><span class="nx">ceil</span><span class="p">();</span>
+
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
 <hr />
 <h2 id="threshold-an-image">Threshold an image</h2>
@@ -980,11 +1061,13 @@
 <span class="c1">//</span>
 <span class="c1">//  OUTPUT is binary, where all pixels that satisfy criterion are 1</span>
 <span class="c1">//  and all other pixels are 0. </span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">THRESHOLD</span><span class="p">(</span><span class="nx">VALUE</span><span class="p">);</span><span class="w"> </span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">THRESHOLD</span><span class="p">(</span><span class="nx">VALUE</span><span class="p">);</span><span class="w"> </span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
+<hr />
 <h2 id="multiply-image-by-constant">multiply image by constant</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 <span class="c1">//  MULTIPLY IMAGE LAYER BY CONSTANT</span>
@@ -992,10 +1075,11 @@
 <span class="c1">//  i1 is an image.</span>
 <span class="c1">//  c is constant.</span>
 <span class="c1">//  output is an image.</span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">i1</span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">i1</span><span class="p">.</span><span class="nx">multiply</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
 <hr />
 

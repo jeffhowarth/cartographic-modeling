@@ -12,10 +12,10 @@
 //  ZS will be a feature collection.
 //  The name of ZS property will reflect the REDUCER.   
 //  In below example, ZS property is 'sum'.  
+// -------------------------------------------------------------
 ```
 
 ```js  
-// -------------------------------------------------------------
 
 var crs = "EPSG:32145";             // Good for Vermont.
 
@@ -29,6 +29,9 @@ var zs = dough
     }
   )
 ;
+
+// -------------------------------------------------------------
+
 ```
 
 ---

@@ -25,7 +25,7 @@
     
     
       
-        <title>measure distance - cartographic modeling</title>
+        <title>distance operations - cartographic modeling</title>
       
     
     
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              measure distance
+              distance operations
             
           </span>
         </div>
@@ -377,6 +377,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -467,8 +469,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter-collection/" class="md-nav__link">
-        filter collection
+      <a href="../filter-data/" class="md-nav__link">
+        filter data
       </a>
     </li>
   
@@ -496,7 +498,7 @@
   
     <li class="md-nav__item">
       <a href="../area/" class="md-nav__link">
-        measure area
+        area operations
       </a>
     </li>
   
@@ -517,12 +519,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          measure distance
+          distance operations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        measure distance
+        distance operations
       </a>
       
         
@@ -549,6 +551,19 @@
   <a href="#euclidean-distance-image" class="md-nav__link">
     Euclidean distance image
   </a>
+  
+    <nav class="md-nav" aria-label="Euclidean distance image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#practical-tip-for-crs" class="md-nav__link">
+    Practical tip for crs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -623,6 +638,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../terrain/" class="md-nav__link">
+        terrain operations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../image-viz/" class="md-nav__link">
         viz
       </a>
@@ -667,6 +696,8 @@
       <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
+        
+          
         
           
         
@@ -730,6 +761,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problems/terrain-problems/" class="md-nav__link">
+        terrain problems
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -752,6 +797,8 @@
       <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
+        
+          
         
           
         
@@ -809,6 +856,20 @@
     <li class="md-nav__item">
       <a href="../../workflows/proximity-workflows/" class="md-nav__link">
         proximity workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/terrain-workflows/" class="md-nav__link">
+        terrain workflows
       </a>
     </li>
   
@@ -910,6 +971,19 @@
     Euclidean distance image
   </a>
   
+    <nav class="md-nav" aria-label="Euclidean distance image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#practical-tip-for-crs" class="md-nav__link">
+    Practical tip for crs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -927,7 +1001,7 @@
                   
 
 
-  <h1>measure distance</h1>
+  <h1>distance operations</h1>
 
 <h2 id="buffer-features-in-collection-by-feet">Buffer features in collection by feet</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
@@ -935,27 +1009,29 @@
 
 <span class="c1">//  INPUT is a feature collection. </span>
 <span class="c1">//  DISTANCE is a number in units feet.</span>
-<span class="c1">//  OUTPUT is a single part feature collection of polygons.  </span>
+<span class="c1">//  OUTPUT is a single part feature collection of polygons. </span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">OUTPUT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">INPUT</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">bufferFeet</span><span class="p">(</span><span class="nx">DISTANCE</span><span class="p">));</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">OUTPUT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">INPUT</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">bufferFeet</span><span class="p">(</span><span class="nx">DISTANCE</span><span class="p">));</span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
+<p>You can access the underlying code for this function in the <a href="https://code.earthengine.google.com/?accept_repo=users/jhowarth/public" target="_blank">tasks module</a>. </p>
 <hr />
 <h2 id="euclidean-distance-image">Euclidean distance image</h2>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -----------------------------------------------------------------------------</span>
+<p><div class="language-js highlight"><pre><span></span><code><span class="c1">// -----------------------------------------------------------------------------</span>
 <span class="c1">//  EUCLIDEAN DISTANCE</span>
 <span class="c1">//</span>
 <span class="c1">//  euc_distance output represents the euclidean distance to the nearest non-zero pixel of input.</span>
 <span class="c1">//  Input must be image with 0 as background value.</span>
 <span class="c1">// -----------------------------------------------------------------------------</span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">crs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;EPSG:32145&quot;</span><span class="p">;</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">crs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;EPSG:32145&quot;</span><span class="p">;</span>
 <span class="kd">var</span><span class="w"> </span><span class="nx">kr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="p">;</span><span class="w">                   </span><span class="c1">// Diameter of kernel, or zone to compute distance over. </span>
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">euc_distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">distance</span><span class="p">(</span><span class="nx">ee</span><span class="p">.</span><span class="nx">Kernel</span><span class="p">.</span><span class="nx">euclidean</span><span class="p">({</span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="nx">kr</span><span class="p">,</span><span class="w"> </span><span class="nx">units</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;meters&#39;</span><span class="p">}))</span>
-<span class="w">  </span><span class="p">.</span><span class="nx">reproject</span><span class="p">({</span><span class="nx">crs</span><span class="o">:</span><span class="w"> </span><span class="nx">crs</span><span class="p">})</span><span class="w">                                         </span>
+<span class="w">  </span><span class="p">.</span><span class="nx">reproject</span><span class="p">({</span><span class="nx">crs</span><span class="o">:</span><span class="w"> </span><span class="nx">crs</span><span class="p">})</span><span class="w">       </span><span class="c1">// This can slow down analysis, especially over large extents.                                   </span>
 <span class="w">  </span><span class="p">.</span><span class="nx">rename</span><span class="p">(</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
 <span class="w">  </span><span class="p">;</span>
 
@@ -966,7 +1042,12 @@
 <span class="c1">// Add layer to map with fun palette. </span>
 
 <span class="nb">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">euc_distance</span><span class="p">,</span><span class="w">  </span><span class="p">{</span><span class="nx">min</span><span class="o">:</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">max</span><span class="o">:</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="nx">palette</span><span class="o">:</span><span class="w"> </span><span class="nx">inferno</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;Euclidean distance image&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
-</code></pre></div>
+
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div></p>
+<h3 id="practical-tip-for-crs">Practical tip for crs</h3>
+<p>The <code>.reproject({crs: crs})</code> line allows you to force earth engine to calculate distance in a specified coordinate system. Without this, ee will compute distance with web mercator and the distance measurement will not be accurate. With this, it can slow down the computation because ee essentially has to make a new image and then make the calculation on it.  </p>
+<p>One strategy then is to comment out the crs line when you are drafting your script to speed up visualizing and checking your work. If you do this, you will need to remember to uncomment the line when you are producing final results.  </p>
 <hr />
 
 
@@ -989,7 +1070,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../area/" class="md-footer__link md-footer__link--prev" aria-label="Previous: measure area" rel="prev">
+          <a href="../area/" class="md-footer__link md-footer__link--prev" aria-label="Previous: area operations" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -998,7 +1079,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                measure area
+                area operations
               </div>
             </div>
           </a>

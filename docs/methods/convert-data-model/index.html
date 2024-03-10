@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/methods/convert-data-model/">
       
       
-        <link rel="prev" href="../filter-collection/">
+        <link rel="prev" href="../filter-data/">
       
       
         <link rel="next" href="../area/">
@@ -377,6 +377,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -467,8 +469,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter-collection/" class="md-nav__link">
-        filter collection
+      <a href="../filter-data/" class="md-nav__link">
+        filter data
       </a>
     </li>
   
@@ -517,6 +519,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mosaic-image-collection-to-image" class="md-nav__link">
+    mosaic image collection to image
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-to-rgb" class="md-nav__link">
+    image to rgb
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -533,7 +549,7 @@
   
     <li class="md-nav__item">
       <a href="../area/" class="md-nav__link">
-        measure area
+        area operations
       </a>
     </li>
   
@@ -547,7 +563,7 @@
   
     <li class="md-nav__item">
       <a href="../distance/" class="md-nav__link">
-        measure distance
+        distance operations
       </a>
     </li>
   
@@ -616,6 +632,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../terrain/" class="md-nav__link">
+        terrain operations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../image-viz/" class="md-nav__link">
         viz
       </a>
@@ -660,6 +690,8 @@
       <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
+        
+          
         
           
         
@@ -723,6 +755,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problems/terrain-problems/" class="md-nav__link">
+        terrain problems
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -745,6 +791,8 @@
       <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
+        
+          
         
           
         
@@ -802,6 +850,20 @@
     <li class="md-nav__item">
       <a href="../../workflows/proximity-workflows/" class="md-nav__link">
         proximity workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/terrain-workflows/" class="md-nav__link">
+        terrain workflows
       </a>
     </li>
   
@@ -898,6 +960,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mosaic-image-collection-to-image" class="md-nav__link">
+    mosaic image collection to image
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-to-rgb" class="md-nav__link">
+    image to rgb
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -915,34 +991,48 @@
 
   <h1>convert data model</h1>
 
-<h3 id="feature-collection-to-binary-image">feature collection to binary image.</h3>
+<h2 id="feature-collection-to-binary-image">feature collection to binary image.</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
 <span class="c1">//  CONVERT FEATURE COLLECTION TO BINARY IMAGE. </span>
 
-<span class="c1">//  INPUT must be a feature collection. </span>
-<span class="c1">//  BINARY will be an image with a single band named &#39;THEME&#39;.</span>
-<span class="c1">//  Alter THEME to give the band a custom name.  </span>
-<span class="c1">//  Follow naming conventions for bands (no spaces). </span>
+<span class="c1">//  INPUT must be a feature collection.</span>
+<span class="c1">//  OUTPUT will be a binary raster.  </span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">fc2Binary</span><span class="p">(</span><span class="nx">input</span><span class="p">);</span>
+
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<p>You can access the underlying code for this function in the <a href="https://code.earthengine.google.com/?accept_repo=users/jhowarth/public" target="_blank">tasks module</a>. </p>
+<hr />
+<h2 id="mosaic-image-collection-to-image">mosaic image collection to image</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  MOSAIC IMAGE COLLECTION   </span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">binary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
-<span class="w">  </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">f</span><span class="p">){</span><span class="k">return</span><span class="w"> </span><span class="nx">f</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)})</span>
-<span class="w">  </span><span class="p">.</span><span class="nx">reduceToImage</span><span class="p">(</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">properties</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;tag&#39;</span><span class="p">],</span><span class="w"> </span>
-<span class="w">      </span><span class="nx">reducer</span><span class="o">:</span><span class="w"> </span><span class="nx">ee</span><span class="p">.</span><span class="nx">Reducer</span><span class="p">.</span><span class="nx">max</span><span class="p">()</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">)</span>
-<span class="w">  </span><span class="p">.</span><span class="nx">unmask</span><span class="p">()</span>
-<span class="w">  </span><span class="p">.</span><span class="nx">rename</span><span class="p">([</span><span class="s1">&#39;THEME&#39;</span><span class="p">])</span>
-<span class="p">;</span>
+<span class="c1">//  INPUT must be an image collection with a &#39;quilt patch&#39; structure.</span>
+<span class="c1">//  OUTPUT will be a image with a &#39;quilted&#39; structure.  </span>
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">mosaic</span><span class="p">();</span>
 
-<span class="nx">print</span><span class="p">(</span>
-<span class="w">  </span><span class="s2">&quot;BINARY&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">binary</span>
-<span class="w">  </span><span class="p">)</span>
-<span class="p">;</span>
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<hr />
+<h2 id="image-to-rgb">image to rgb</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------------------</span>
+<span class="c1">//  IMAGE TO RGB  </span>
+
+<span class="c1">//  INPUT is an image.</span>
+<span class="c1">//  min, max, gamma, etc are should call viz parameters</span>
+<span class="c1">//  OUTPUT is three band (RGB) image. </span>
+<span class="c1">// -------------------------------------------------------------------------</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output_rgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">visualize</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">min</span><span class="o">:</span><span class="w"> </span><span class="nx">viz</span><span class="p">.</span><span class="nx">min</span><span class="p">,</span><span class="w"> </span>
+<span class="w">  </span><span class="nx">max</span><span class="o">:</span><span class="w"> </span><span class="nx">viz</span><span class="p">.</span><span class="nx">max</span><span class="p">,</span><span class="w"> </span>
+<span class="w">  </span><span class="nx">gamma</span><span class="o">:</span><span class="w"> </span><span class="nx">viz</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">forceRgbOutput</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">});</span>
 </code></pre></div>
 <hr />
 
@@ -966,7 +1056,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../filter-collection/" class="md-footer__link md-footer__link--prev" aria-label="Previous: filter collection" rel="prev">
+          <a href="../filter-data/" class="md-footer__link md-footer__link--prev" aria-label="Previous: filter data" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -975,20 +1065,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                filter collection
+                filter data
               </div>
             </div>
           </a>
         
         
           
-          <a href="../area/" class="md-footer__link md-footer__link--next" aria-label="Next: measure area" rel="next">
+          <a href="../area/" class="md-footer__link md-footer__link--next" aria-label="Next: area operations" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                measure area
+                area operations
               </div>
             </div>
             <div class="md-footer__button md-icon">

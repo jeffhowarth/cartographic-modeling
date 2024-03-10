@@ -12,20 +12,20 @@
         <meta name="author" content="Jeff Howarth">
       
       
-        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/methods/aggregate-table/">
+        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/methods/filter-data/">
       
       
-        <link rel="prev" href="../distance/">
+        <link rel="prev" href="../map-layers/">
       
       
-        <link rel="next" href="../local-one-layer/">
+        <link rel="next" href="../convert-data-model/">
       
       <link rel="icon" href="../../assets/myIcon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>aggregate table - cartographic modeling</title>
+        <title>filter data - cartographic modeling</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sum-the-values-in-a-table-column" class="md-skip">
+        <a href="#by-attribute" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aggregate table
+              filter data
             
           </span>
         </div>
@@ -467,11 +467,62 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../filter-data/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          filter data
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         filter data
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#by-attribute" class="md-nav__link">
+    by attribute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#by-bounds" class="md-nav__link">
+    by bounds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select-image-band" class="md-nav__link">
+    select image band
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -523,68 +574,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          aggregate table
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../aggregate-table/" class="md-nav__link">
         aggregate table
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sum-the-values-in-a-table-column" class="md-nav__link">
-    sum the values in a table column
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dissolve-features-in-collection-by-property" class="md-nav__link">
-    dissolve features in collection by property
-  </a>
-  
-    <nav class="md-nav" aria-label="dissolve features in collection by property">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#practical-tip" class="md-nav__link">
-    practical tip
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -960,29 +954,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sum-the-values-in-a-table-column" class="md-nav__link">
-    sum the values in a table column
+  <a href="#by-attribute" class="md-nav__link">
+    by attribute
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dissolve-features-in-collection-by-property" class="md-nav__link">
-    dissolve features in collection by property
-  </a>
-  
-    <nav class="md-nav" aria-label="dissolve features in collection by property">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#practical-tip" class="md-nav__link">
-    practical tip
+  <a href="#by-bounds" class="md-nav__link">
+    by bounds
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#select-image-band" class="md-nav__link">
+    select image band
+  </a>
   
 </li>
       
@@ -1001,52 +989,58 @@
                   
 
 
-  <h1>aggregate table</h1>
+  <h1>filter data</h1>
 
-<h2 id="sum-the-values-in-a-table-column">sum the values in a table column</h2>
+<h2 id="by-attribute">by attribute</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  SUM THE VALUES IN A TABLE COLUMN (FC PROPERTY) </span>
+<span class="c1">//  FILTER COLLECTION BY ATTRIBUTE. </span>
 
-<span class="c1">//  Input must be a feature collection.</span>
-<span class="c1">//  Replace &#39;PROPERTY&#39; with the property name (STRING) to sum.  </span>
-<span class="c1">//  Output is a number object.</span>
+<span class="c1">//  Input must be a collection.</span>
+<span class="c1">//  Output is a collection, where each object in collection satisfies criterion.</span>
+
+<span class="c1">//  Set CRITERION (see options in ee.Filter docs).</span>
+<span class="c1">//  Set &quot;property_name&quot;.</span>
+<span class="c1">//  Set &quot;value&quot;.</span>
 <span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">aggregate_sum</span><span class="p">(</span><span class="s1">&#39;PROPERTY&#39;</span><span class="p">);</span>
-
-<span class="c1">// Print results to console.  </span>
-
-<span class="nx">print</span><span class="p">(</span>
-<span class="w">  </span><span class="s1">&#39;ANSWER&#39;</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">answer</span><span class="p">,</span><span class="w">                 </span><span class="c1">//  This will report the answer with eleven decimal places.</span>
-<span class="w">  </span><span class="nx">answer</span><span class="p">.</span><span class="nx">round</span><span class="p">()</span><span class="w">          </span><span class="c1">//  This will round to nearest integer.</span>
-<span class="p">);</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">ee</span><span class="p">.</span><span class="nx">Filter</span><span class="p">.</span><span class="nx">CRITERION</span><span class="p">(</span><span class="s2">&quot;property_name&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="p">))</span>
+<span class="p">;</span>
 
 <span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
 <hr />
-<h2 id="dissolve-features-in-collection-by-property">dissolve features in collection by property</h2>
+<h2 id="by-bounds">by bounds</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-<span class="c1">//  DISSOLVE FEATURES IN COLLECTION BY PROPERTY. </span>
+<span class="c1">//  FILTER COLLECTION BY REGION. </span>
 
 <span class="c1">//  Input must be a feature collection.</span>
-<span class="c1">//  Replace &#39;PROPERTY&#39; with the property name to dissolve features.  </span>
-<span class="c1">//  Output is a feature collection (with singlepart and multipart features),</span>
-<span class="c1">//  where each feature represents the region of a unique property value. </span>
+<span class="c1">//  BOUNDS may be a point, line, or polygon geometry, feature, or feature collection.</span>
+<span class="c1">//  Output is a collection, where each object intersects.</span>
 <span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">dissolveByProperty</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;PROPERTY&#39;</span><span class="p">);</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">filterBounds</span><span class="p">(</span><span class="nx">BOUNDS</span><span class="p">)</span>
+<span class="p">;</span>
 
 <span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<p>You can access the underlying code for this function in the <a href="https://code.earthengine.google.com/?accept_repo=users/jhowarth/public" target="_blank">tasks module</a>. </p>
-<h3 id="practical-tip">practical tip</h3>
-<p>If you would like to dissolve all features in a collection (produce one multipart feature from a collection) without distinguishing subclasses based on a property in the function, then first run this snippet to add a property to all features that holds the same value.</p>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">//  Give all features in collection a new property with the same value. </span>
+<hr />
+<h2 id="select-image-band">select image band</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  SELECT IMAGE BAND. </span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">prep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">f</span><span class="p">){</span><span class="k">return</span><span class="w"> </span><span class="nx">f</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)});</span><span class="w">  </span>
+<span class="c1">//  Input must be an image or image collection.</span>
+<span class="c1">//  &#39;Band_name&#39; is name of band as a string or list of bands (list of strings).</span>
+<span class="c1">//  Output is same data type as input. </span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<p>Then use <code>prep</code> as input and <code>'tag'</code> as property.    </p>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s1">&#39;band_name&#39;</span><span class="p">)</span>
+<span class="p">;</span>
+
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
 <hr />
 
 
@@ -1069,7 +1063,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../distance/" class="md-footer__link md-footer__link--prev" aria-label="Previous: distance operations" rel="prev">
+          <a href="../map-layers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: map layers" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1078,20 +1072,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                distance operations
+                map layers
               </div>
             </div>
           </a>
         
         
           
-          <a href="../local-one-layer/" class="md-footer__link md-footer__link--next" aria-label="Next: local - one layer" rel="next">
+          <a href="../convert-data-model/" class="md-footer__link md-footer__link--next" aria-label="Next: convert data model" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                local - one layer
+                convert data model
               </div>
             </div>
             <div class="md-footer__button md-icon">

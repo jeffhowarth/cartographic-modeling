@@ -78,8 +78,8 @@ It is good practice to self check your work by printing new outputs to console a
 [print-size]: ../methods/inspect-properties.md#print-size-of-collection
 
 
-[filter-collection]: ../methods/filter-collection.md#by-attribute  
-[filter-bounds]: ../methods/filter-collection.md#by-bounds  
+[filter-attribute]: ../methods/filter-data.md#by-attribute  
+[filter-bounds]: ../methods/filter-data.md#by-bounds  
 
 [convert-fc-binary]: ../methods/convert-data-model.md#feature-collection-to-binary  
 

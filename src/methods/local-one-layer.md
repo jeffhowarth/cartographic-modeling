@@ -10,10 +10,10 @@
 //  determines the from --> to reclassification.
 //  'BAND_NAME' is name of band to reclassify (default is first band).
 //  OUTPUT is name for new reclassified image. 
+// -------------------------------------------------------------
 ```
 
 ```js
-// -------------------------------------------------------------
 
 var output = input.remap(
   {
@@ -23,6 +23,34 @@ var output = input.remap(
   }
 
 ); 
+
+// -------------------------------------------------------------
+
+```
+
+---
+
+## Classify image by equal interval  
+
+```js
+// -------------------------------------------------------------
+//  CLASSIFY AN IMAGE BY AN EQUAL INTERVAL
+
+//  INPUT is an image with continuous values (like a DEM).
+//  INTERVAL is an integer that defines equal interval of scheme. 
+
+//  OUTPUT is an image, where values represent quotient as integer;
+//    input = dividend, 
+//    interval = divisor,  
+//    remainder is ignored.
+// -------------------------------------------------------------
+```
+
+```js
+
+var output = input.divide(interval).ceil();
+
+// -------------------------------------------------------------
 
 ```
 
@@ -44,16 +72,18 @@ var output = input.remap(
 //
 //  OUTPUT is binary, where all pixels that satisfy criterion are 1
 //  and all other pixels are 0. 
+// -------------------------------------------------------------
 ```
 
 ```js
-// -------------------------------------------------------------
 
 var output = input.THRESHOLD(VALUE); 
 
+// -------------------------------------------------------------
+
 ```
 
-
+---   
 
 ## multiply image by constant    
 
@@ -64,12 +94,14 @@ var output = input.THRESHOLD(VALUE);
 //  i1 is an image.
 //  c is constant.
 //  output is an image.
+// -------------------------------------------------------------
 ```
 
 ```js
-// -------------------------------------------------------------
 
 var output = i1.multiply(c);
+
+// -------------------------------------------------------------
 
 ```
 
@@ -78,3 +110,4 @@ var output = i1.multiply(c);
 
 [local-reclass]: ../methods/local-one-layer.md#reclassify-nominal-values  
 [local-multiply-constant]: ../methods/local-one-layer.md#multiply-image-by-constant
+[local-classify-intervals]: ../methods/local-one-layer.md#classify-image-by-equal-interval  

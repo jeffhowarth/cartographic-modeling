@@ -25,7 +25,7 @@
     
     
       
-        <title>measure area - cartographic modeling</title>
+        <title>area operations - cartographic modeling</title>
       
     
     
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              measure area
+              area operations
             
           </span>
         </div>
@@ -377,6 +377,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -467,8 +469,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter-collection/" class="md-nav__link">
-        filter collection
+      <a href="../filter-data/" class="md-nav__link">
+        filter data
       </a>
     </li>
   
@@ -503,12 +505,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          measure area
+          area operations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        measure area
+        area operations
       </a>
       
         
@@ -561,7 +563,7 @@
   
     <li class="md-nav__item">
       <a href="../distance/" class="md-nav__link">
-        measure distance
+        distance operations
       </a>
     </li>
   
@@ -630,6 +632,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../terrain/" class="md-nav__link">
+        terrain operations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../image-viz/" class="md-nav__link">
         viz
       </a>
@@ -674,6 +690,8 @@
       <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
+        
+          
         
           
         
@@ -737,6 +755,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problems/terrain-problems/" class="md-nav__link">
+        terrain problems
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -759,6 +791,8 @@
       <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
+        
+          
         
           
         
@@ -816,6 +850,20 @@
     <li class="md-nav__item">
       <a href="../../workflows/proximity-workflows/" class="md-nav__link">
         proximity workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/terrain-workflows/" class="md-nav__link">
+        terrain workflows
       </a>
     </li>
   
@@ -941,7 +989,7 @@
                   
 
 
-  <h1>measure area</h1>
+  <h1>area operations</h1>
 
 <h2 id="acres-of-each-feature-in-collection">acres of each feature in collection</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
@@ -956,14 +1004,16 @@
 <span class="c1">//  Output is a feature collection.</span>
 <span class="c1">//  Each output feature has new property &#39;acres&#39; that holds the area of feature.</span>
 <span class="c1">//  Replace &#39;acres&#39; with something else to define an alternative property name. </span>
-<span class="c1">//  Remember to following naming rules for properties.   </span>
+<span class="c1">//  Remember to following naming rules for properties. </span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">howManyAcres</span><span class="p">(</span><span class="nx">crs</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;acres&#39;</span><span class="p">))</span>
 <span class="p">;</span>
+
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
+<p>You can access the underlying code for this function in the <a href="https://code.earthengine.google.com/?accept_repo=users/jhowarth/public" target="_blank">tasks module</a>. </p>
 <hr />
 <h2 id="sq-km-of-each-features-in-collection">sq km of each features in collection</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
@@ -979,13 +1029,15 @@
 <span class="c1">//  Each output feature has new property &#39;sq_km&#39; that holds the area of feature.</span>
 <span class="c1">//  Replace &#39;sq_km&#39; with something else to define an alternative property name.  </span>
 <span class="c1">//  Remember to following naming rules for properties (no spaces).</span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">howManySqKm</span><span class="p">(</span><span class="nx">crs</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;sq_km&#39;</span><span class="p">))</span>
 <span class="p">;</span>
+
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
+<p>You can access the underlying code for this function in the <a href="https://code.earthengine.google.com/?accept_repo=users/jhowarth/public" target="_blank">tasks module</a>. </p>
 <hr />
 <h2 id="make-pixel-area-image">make pixel area image</h2>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
@@ -993,11 +1045,12 @@
 
 <span class="c1">//  Returns an image with values that represent pixel area in acres. </span>
 <span class="c1">//  Modify second line to alter units. </span>
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ee</span><span class="p">.</span><span class="nx">Image</span><span class="p">.</span><span class="nx">pixelArea</span><span class="p">()</span>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ee</span><span class="p">.</span><span class="nx">Image</span><span class="p">.</span><span class="nx">pixelArea</span><span class="p">()</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">divide</span><span class="p">(</span><span class="mf">4046.86</span><span class="p">)</span><span class="w">                  </span><span class="c1">// converts to acres</span>
+
+<span class="c1">// -------------------------------------------------------------</span>
 </code></pre></div>
 <hr />
 
@@ -1037,13 +1090,13 @@
         
         
           
-          <a href="../distance/" class="md-footer__link md-footer__link--next" aria-label="Next: measure distance" rel="next">
+          <a href="../distance/" class="md-footer__link md-footer__link--next" aria-label="Next: distance operations" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                measure distance
+                distance operations
               </div>
             </div>
             <div class="md-footer__button md-icon">

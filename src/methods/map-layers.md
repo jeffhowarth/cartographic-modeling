@@ -128,8 +128,8 @@ Map.addLayer(
 
 var VIZ = 
     {
-        color: '#DA70D6'
-        weight: 2 
+        color: '#DA70D6',
+        width: 2, 
         fillColor: '#DA70D600'
     }
 ;

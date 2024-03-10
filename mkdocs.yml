@@ -151,24 +151,27 @@ nav:
     - load data: methods/load-data.md  
     - inspect properties: methods/inspect-properties.md  
     - map layers: methods/map-layers.md  
-    - filter collection: methods/filter-collection.md  
+    - filter data: methods/filter-data.md  
     - convert data model: methods/convert-data-model.md  
-    - measure area: methods/area.md  
-    - measure distance: methods/distance.md  
+    - area operations: methods/area.md  
+    - distance operations: methods/distance.md  
     - aggregate table: methods/aggregate-table.md  
     - local - one layer: methods/local-one-layer.md  
     - local - two layers: methods/local-two-layers.md 
     - zonal operations: methods/zonal-operations.md  
+    - terrain operations: methods/terrain.md  
     - viz: methods/image-viz.md  
     - naip images: methods/naip.md 
   - PROBLEMS:  
     - area problems: problems/area-problems.md  
     - nominal problems: problems/nominal-problems.md  
-    - proximity problems: problems/proximity-problems.md  
+    - proximity problems: problems/proximity-problems.md 
+    - terrain problems: problems/terrain-problems.md 
   - WORKED FLOWS:  
     - area workflows: workflows/area-workflows.md  
     - nominal workflows: workflows/nominal-workflows.md  
-    - proximity workflows: workflows/proximity-workflows.md     
+    - proximity workflows: workflows/proximity-workflows.md    
+    - terrain workflows: workflows/terrain-workflows.md   
   - CHALLENGES: 
     - clearings: challenges/clearings.md    
 

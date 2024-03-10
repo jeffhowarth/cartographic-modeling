@@ -226,8 +226,8 @@ var dough = dough_theme_sites.addBands(dough_theme);
 [print-size]: ../methods/inspect-properties.md#print-size-of-collection
 
 
-[filter-collection]: ../methods/filter-collection.md#by-attribute  
-[filter-bounds]: ../methods/filter-collection.md#by-bounds  
+[filter-attribute]: ../methods/filter-data.md#by-attribute  
+[filter-bounds]: ../methods/filter-data.md#by-bounds  
 
 [convert-fc-binary]: ../methods/convert-data-model.md#feature-collection-to-binary  
 
