@@ -10,13 +10,13 @@ Two classic terrain problems involve:
 
 2. classifying the degree of change in a surface as illustrated by a _slope map_.    
 
-## Shaded Relief        
+## __SHADED RELIEF__         
 
 Use the [USGS 3DEP 1m National Map](https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_1m){target=_blank} hosted by Google to make a hyposmetric shaded relief map (as shown below).
 
 <iframe src=https://ee-edu-apps.projects.earthengine.app/view/gg0352-shaded-relief title="Shaded Relief example" height=720 width=720 allowfullscreen= true></iframe> 
 
-Start a new script called __shaded_relief.js__.
+Start a new script called __0401_shaded_relief.js__.
 
 Insert a header, then load the data and task modules.   
 
@@ -36,25 +36,27 @@ var t = require('users/jhowarth/public:modules/tasks.js');
 
 ```
 
-Now write a script that produces the layers shown in the app below.  
+Now write a script that produces the layers shown in the app above.    
 
 If you would like a template, then [here is a workflow][terrain01].
 
 ---  
 
-## Classified slope map  
+## __CLASSIFIED SLOPE MAP__  
 
 Use the [USGS 3DEP 1m National Map](https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_1m){target=_blank} hosted by Google to make a slope map with classes defined by the [USDA][usda]{target=_blank}.  
 
-Start a new script called __shaded_relief.js__.
+<iframe src=https://ee-edu-apps.projects.earthengine.app/view/gg0352-slope-class title="Shaded Relief example" height=720 width=720 allowfullscreen= true></iframe>
+
+Start a new script called __0402_slope_class.js__.
 
 Insert a header, then load the data and task modules.   
 
 ```js
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//  SHADED RELIEF  
+//  CLASSIFIED SLOPE MAP
 
-//  Make a blended hypsometric shaded relief.  
+//  Make a slope map with classes defined by USDA.  
 
 //  Last modified: insert date
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,13 +68,14 @@ var t = require('users/jhowarth/public:modules/tasks.js');
 
 ```
 
-Now write a script that produces the layers shown in the app below.  
+Now write a script that produces the layers shown in the app above.  
 
-If you would like a template, then [here is a workflow][terrain01].
+If you would like a template, then [here is a workflow][terrain02].
 
 [usda]: https://www.nrcs.usda.gov/sites/default/files/2022-10/Basic_Soils_AK_Curriculm%20-%20UPDATED.pdf
 
-[terrain01]: ../workflows/terrain-workflows.md#shaded-relief     
+[terrain01]: ../workflows/terrain-workflows.md#shaded-relief  
+[terrain02]: ../workflows/terrain-workflows.md#classified-slope-map       
 
 
 

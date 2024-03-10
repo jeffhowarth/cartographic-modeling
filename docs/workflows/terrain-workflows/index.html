@@ -915,8 +915,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#slope-class" class="md-nav__link">
-    SLOPE CLASS
+  <a href="#classified-slope-map" class="md-nav__link">
+    CLASSIFIED SLOPE MAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-study-region_1" class="md-nav__link">
+    Define study region
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-elevation-data_1" class="md-nav__link">
+    Load elevation data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculate-percent-of-slope" class="md-nav__link">
+    Calculate percent of slope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classify-slope-with-usda-criteria" class="md-nav__link">
+    Classify slope with USDA criteria
   </a>
   
 </li>
@@ -1086,8 +1114,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#slope-class" class="md-nav__link">
-    SLOPE CLASS
+  <a href="#classified-slope-map" class="md-nav__link">
+    CLASSIFIED SLOPE MAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-study-region_1" class="md-nav__link">
+    Define study region
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-elevation-data_1" class="md-nav__link">
+    Load elevation data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculate-percent-of-slope" class="md-nav__link">
+    Calculate percent of slope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classify-slope-with-usda-criteria" class="md-nav__link">
+    Classify slope with USDA criteria
   </a>
   
 </li>
@@ -1108,7 +1164,8 @@
 
 
 <h1 id="terrain-workflows"><strong>terrain workflows</strong></h1>
-<p>It is good practice to self check your work by printing new outputs to the console panel and adding new outputs as layers to the map panel. The workflow below does not prompt you to do this; you should be in the habit of doing this automatically. Please reference the <a href="../../methods/inspect-properties/" target="_blank">inspect properties</a> and <a href="../../methods/map-layers/" target_blank="target_blank">map layer</a> methods as needed.</p>
+<p>It is good practice to self check your work by printing new outputs to the console panel and adding new outputs as layers to the map panel. The workflow below does not prompt you to do this; you should be in the habit of doing this automatically. Please reference the <a href="../../methods/inspect-properties/" target="_blank">inspect properties</a> and <a href="../../methods/map-layers/" target_blank="target_blank">map layer</a> methods as needed.  </p>
+<p><em>In general, you should try to print and/or add a layer to each map in each chunk of the problem.</em>  </p>
 <hr />
 <h2 id="shaded-relief"><strong>SHADED RELIEF</strong></h2>
 <h2 id="define-study-region">Define study region</h2>
@@ -1127,7 +1184,7 @@
 <ol>
 <li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address</a> &rarr; data.gov.town</li>
 <li><a href="../../methods/filter-data/#by-attribute">Filter by attribute</a> &rarr; &lsquo;MIDDLEBURY&rsquo;</li>
-<li><a href="../../methods/convert-data-model/#feature-collection-to-binary">Feature collection to binary image</a>    </li>
+<li><a href="../../methods/convert-data-model/#feature-collection-to-binary-image">Feature collection to binary image</a>    </li>
 </ol>
 <hr />
 <h2 id="load-elevation-data">Load elevation data</h2>
@@ -1159,7 +1216,7 @@
 <span class="c1">// ------------------------------------------------------------- </span>
 </code></pre></div>
 <ol>
-<li><a href="../../methods/image-viz/#print-min-max-of-an-image">Print min and max of image</a>  </li>
+<li><a href="../../methods/image-viz/#print-min-and-max-of-an-image">Print min and max of image</a>  </li>
 <li>Define viz parameters &rarr; use min and max that were printed to console  </li>
 </ol>
 <hr />
@@ -1191,7 +1248,7 @@
 <ol>
 <li><a href="../../methods/local-two-layers/#mask-values-at-locations">Mask values at locations</a> &rarr; study_region_binary  </li>
 <li><a href="../../methods/local-one-layer/#multiply-image-by-constant">Multiply image by constant</a> &rarr; 3.28084  </li>
-<li><a href="../../methods/image-viz/#print-min-max-of-an-image">Print min and max of image</a>    </li>
+<li><a href="../../methods/image-viz/#print-min-and-max-of-an-image">Print min and max of image</a>    </li>
 </ol>
 <hr />
 <h2 id="classify-hypsography">Classify hypsography</h2>
@@ -1201,7 +1258,7 @@
 </code></pre></div>
 <ol>
 <li><a href="../../methods/local-one-layer/#classify-image-by-equal-interval">Classify image by equal intervals</a> &rarr; 100  </li>
-<li><a href="../../methods/image-viz/#print-min-max-of-an-image">Print min and max of image</a>  </li>
+<li><a href="../../methods/image-viz/#print-min-and-max-of-an-image">Print min and max of image</a>  </li>
 </ol>
 <div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">hypso_palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;#bfd3b5&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#cbdabf&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#e2e0c3&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#efdeba&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#edd2a3&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#eaca91&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#e6c084&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#dbad70&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#ce975b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#c68d51&#39;</span><span class="p">];</span>
 </code></pre></div>
@@ -1217,7 +1274,54 @@
 <li><a href="../../methods/image-viz/#blend-two-images">Blend two images</a>      </li>
 </ol>
 <hr />
-<h2 id="slope-class"><strong>SLOPE CLASS</strong></h2>
+<h2 id="classified-slope-map"><strong>CLASSIFIED SLOPE MAP</strong></h2>
+<h2 id="define-study-region_1">Define study region</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  DEFINE STUDY REGION</span>
+<span class="c1">//</span>
+<span class="c1">//  Make two versions of your study region: </span>
+<span class="c1">//  1. a feature collection</span>
+<span class="c1">//  2. a binary image</span>
+<span class="c1">//</span>
+<span class="c1">//  Then set up your map:</span>
+<span class="c1">//  1. center on study region at zoom 13</span>
+<span class="c1">//  2. change base map to hybrid</span>
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<ol>
+<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address</a> &rarr; data.gov.town</li>
+<li><a href="../../methods/filter-data/#by-attribute">Filter by attribute</a> &rarr; &lsquo;MIDDLEBURY&rsquo;</li>
+<li><a href="../../methods/convert-data-model/#feature-collection-to-binary-image">Feature collection to binary image</a>    </li>
+</ol>
+<hr />
+<h2 id="load-elevation-data_1">Load elevation data</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  LOAD ELEVATION DATA: 3DEP 1m DEM</span>
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<ol>
+<li><a href="../../methods/load-data/#image-collection-from-address">Load image collection from address</a> &rarr; &lsquo;USGS/3DEP/1m&rsquo;  </li>
+<li><a href="../../methods/filter-data/#by-bounds">Filter by bounds</a> &rarr; study_region  </li>
+<li><a href="../../methods/filter-data/#select-image-band">Select image band</a> &rarr; &lsquo;elevation&rsquo;</li>
+</ol>
+<hr />
+<h2 id="calculate-percent-of-slope">Calculate percent of slope</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  CALCULATE PERCENT OF SLOPE  </span>
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<ol>
+<li><a href="../../methods/terrain/#calculate-slope-as-percent-from-collection">Calculate slope as percent from collection</a>  </li>
+<li><a href="../../methods/image-viz/#print-min-and-max-of-an-image">Print min and max of image</a>  </li>
+</ol>
+<h2 id="classify-slope-with-usda-criteria">Classify slope with USDA criteria</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------------------</span>
+<span class="c1">//  CLASSIFY WITH USDA CRITERIA   </span>
+<span class="c1">// -------------------------------------------------------------------------</span>
+</code></pre></div>
+<ol>
+<li><a href="../../methods/terrain/#classify-slope-with-usda-criteria">Classify slope with USDA criteria</a>  </li>
+</ol>
 <hr />
 
 

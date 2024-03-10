@@ -110,11 +110,11 @@ Map.addLayer(output, {}, "RGB1 and RGB2 blend");
 
 ```
 
-Read the [gee-blend docs]-gee-blend-docs]{target=_blank} to learn more about this useful module for cartography with ee.  
+Read the [gee-blend docs][gee-blend-docs]{target=_blank} to learn more about this useful module for cartography with ee.  
 
 
 [make-histogram]: ../methods/image-viz.md#make-histogram-of-image-values 
-[print-min-max]: ../methods/image-viz.md#print-min-max-of-an-image   
+[print-min-max]: ../methods/image-viz.md#print-min-and-max-of-an-image   
 [viz-gamma]: ../methods/image-viz.md#viz-with-gamma-to-influence-midtones  
 [viz-blend]: ../methods/image-viz.md#blend-two-images  
 

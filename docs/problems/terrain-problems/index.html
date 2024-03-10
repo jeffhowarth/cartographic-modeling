@@ -752,14 +752,14 @@
       
         <li class="md-nav__item">
   <a href="#shaded-relief" class="md-nav__link">
-    Shaded Relief
+    SHADED RELIEF
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#classified-slope-map" class="md-nav__link">
-    Classified slope map
+    CLASSIFIED SLOPE MAP
   </a>
   
 </li>
@@ -968,14 +968,14 @@
       
         <li class="md-nav__item">
   <a href="#shaded-relief" class="md-nav__link">
-    Shaded Relief
+    SHADED RELIEF
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#classified-slope-map" class="md-nav__link">
-    Classified slope map
+    CLASSIFIED SLOPE MAP
   </a>
   
 </li>
@@ -1007,11 +1007,11 @@
 <p>classifying the degree of change in a surface as illustrated by a <em>slope map</em>.    </p>
 </li>
 </ol>
-<h2 id="shaded-relief">Shaded Relief</h2>
+<h2 id="shaded-relief"><strong>SHADED RELIEF</strong></h2>
 <p>Use the <a href="https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_1m" target="_blank">USGS 3DEP 1m National Map</a> hosted by Google to make a hyposmetric shaded relief map (as shown below).</p>
 <iframe src=https://ee-edu-apps.projects.earthengine.app/view/gg0352-shaded-relief title="Shaded Relief example" height=720 width=720 allowfullscreen= true></iframe>
 
-<p>Start a new script called <strong>shaded_relief.js</strong>.</p>
+<p>Start a new script called <strong>0401_shaded_relief.js</strong>.</p>
 <p>Insert a header, then load the data and task modules.   </p>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
 <span class="c1">//  SHADED RELIEF  </span>
@@ -1026,17 +1026,19 @@
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;users/jhowarth/public:modules/tasks.js&#39;</span><span class="p">);</span>
 </code></pre></div>
-<p>Now write a script that produces the layers shown in the app below.  </p>
+<p>Now write a script that produces the layers shown in the app above.    </p>
 <p>If you would like a template, then <a href="../../workflows/terrain-workflows/#shaded-relief">here is a workflow</a>.</p>
 <hr />
-<h2 id="classified-slope-map">Classified slope map</h2>
+<h2 id="classified-slope-map"><strong>CLASSIFIED SLOPE MAP</strong></h2>
 <p>Use the <a href="https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_1m" target="_blank">USGS 3DEP 1m National Map</a> hosted by Google to make a slope map with classes defined by the <a href="https://www.nrcs.usda.gov/sites/default/files/2022-10/Basic_Soils_AK_Curriculm%20-%20UPDATED.pdf" target="_blank">USDA</a>.  </p>
-<p>Start a new script called <strong>shaded_relief.js</strong>.</p>
+<iframe src=https://ee-edu-apps.projects.earthengine.app/view/gg0352-slope-class title="Shaded Relief example" height=720 width=720 allowfullscreen= true></iframe>
+
+<p>Start a new script called <strong>0402_slope_class.js</strong>.</p>
 <p>Insert a header, then load the data and task modules.   </p>
 <div class="language-js highlight"><pre><span></span><code><span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-<span class="c1">//  SHADED RELIEF  </span>
+<span class="c1">//  CLASSIFIED SLOPE MAP</span>
 
-<span class="c1">//  Make a blended hypsometric shaded relief.  </span>
+<span class="c1">//  Make a slope map with classes defined by USDA.  </span>
 
 <span class="c1">//  Last modified: insert date</span>
 <span class="c1">// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
@@ -1046,8 +1048,8 @@
 
 <span class="kd">var</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;users/jhowarth/public:modules/tasks.js&#39;</span><span class="p">);</span>
 </code></pre></div>
-<p>Now write a script that produces the layers shown in the app below.  </p>
-<p>If you would like a template, then <a href="../../workflows/terrain-workflows/#shaded-relief">here is a workflow</a>.</p>
+<p>Now write a script that produces the layers shown in the app above.  </p>
+<p>If you would like a template, then <a href="../../workflows/terrain-workflows/#classified-slope-map">here is a workflow</a>.</p>
 
 
 

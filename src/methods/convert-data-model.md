@@ -1,4 +1,4 @@
-## feature collection to binary image.  
+## feature collection to binary image  
 
 ```js
 // -------------------------------------------------------------
@@ -68,7 +68,8 @@ var output_rgb = input.visualize({
 
 ---   
 
-[convert-fc-binary]: ../methods/convert-data-model.md#convert-fc-to-binary-image  
+[convert-fc-binary]: ../methods/convert-data-model.md#feature-collection-to-binary-image  
+
 [mosaic-ic]: ../methods/convert-data-model.md#mosaic-image-collection-to-image   
 [convert-image-rgb]: ../methods/convert-data-model.md#image-to-rgb  
 

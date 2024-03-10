@@ -617,6 +617,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#calculate-slope-as-percent-from-collection" class="md-nav__link">
+    Calculate slope as percent from collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classify-slope-with-usda-criteria" class="md-nav__link">
+    Classify slope with usda criteria
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -946,6 +960,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#calculate-slope-as-percent-from-collection" class="md-nav__link">
+    Calculate slope as percent from collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classify-slope-with-usda-criteria" class="md-nav__link">
+    Classify slope with usda criteria
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -983,7 +1011,36 @@
 <span class="w">  </span><span class="p">.</span><span class="nx">rename</span><span class="p">(</span><span class="s1">&#39;hillshade&#39;</span><span class="p">)</span>
 <span class="p">;</span>
 </code></pre></div>
+<p>You can access the underlying code for this function in the <a href="https://code.earthengine.google.com/?accept_repo=users/jhowarth/public" target="_blank">tasks module</a>. </p>
 <hr />
+<h2 id="calculate-slope-as-percent-from-collection">Calculate slope as percent from collection</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  CALCULATE SLOPE AS PERCENT FROM COLLECTION  </span>
+<span class="c1">//  </span>
+<span class="c1">//  INPUT is a collection of DEM images.  </span>
+<span class="c1">//  OUTPUT is a an image where each pixel reports slope as percent.</span>
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">percentSlopeCollection</span><span class="p">)</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">mosaic</span><span class="p">()</span>
+<span class="p">;</span>
+</code></pre></div>
+<p>You can access the underlying code for this function in the <a href="https://code.earthengine.google.com/?accept_repo=users/jhowarth/public" target="_blank">tasks module</a>. </p>
+<hr />
+<h2 id="classify-slope-with-usda-criteria">Classify slope with usda criteria</h2>
+<div class="language-js highlight"><pre><span></span><code><span class="c1">// -------------------------------------------------------------</span>
+<span class="c1">//  CLASSIFY SLOPE WITH USDA CRITERIA  </span>
+<span class="c1">//  </span>
+<span class="c1">//  INPUT is a slope image in units PERCENT.  </span>
+<span class="c1">//  OUTPUT is a dictionary with four keys:</span>
+<span class="c1">//    i: nominal image based on USDA slope classes,</span>
+<span class="c1">//    layer_name: &#39;USDA slope classification&#39;  </span>
+<span class="c1">//    class_names: names of each class,</span>
+<span class="c1">//    viz: viz parameters for the image.  </span>
+<span class="c1">// -------------------------------------------------------------</span>
+</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">classSlopeUSDA</span><span class="p">(</span><span class="nx">input</span><span class="p">);</span>
+</code></pre></div>
 <p>You can access the underlying code for this function in the <a href="https://code.earthengine.google.com/?accept_repo=users/jhowarth/public" target="_blank">tasks module</a>. </p>
 <hr />
 

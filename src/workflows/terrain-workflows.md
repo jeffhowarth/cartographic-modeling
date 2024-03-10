@@ -1,6 +1,8 @@
 # __terrain workflows__    
 
-It is good practice to self check your work by printing new outputs to the console panel and adding new outputs as layers to the map panel. The workflow below does not prompt you to do this; you should be in the habit of doing this automatically. Please reference the [inspect properties][inspect-properties]{target=_blank} and [map layer][map-layer]{target_blank} methods as needed.
+It is good practice to self check your work by printing new outputs to the console panel and adding new outputs as layers to the map panel. The workflow below does not prompt you to do this; you should be in the habit of doing this automatically. Please reference the [inspect properties][inspect-properties]{target=_blank} and [map layer][map-layer]{target_blank} methods as needed.  
+
+_In general, you should try to print and/or add a layer to each map in each chunk of the problem._  
 
 ---  
 
@@ -141,7 +143,65 @@ var hypso_palette = ['#bfd3b5', '#cbdabf', '#e2e0c3', '#efdeba', '#edd2a3', '#ea
 
 ---  
 
-## __SLOPE CLASS__  
+## __CLASSIFIED SLOPE MAP__  
+
+## Define study region  
+
+```js
+// -------------------------------------------------------------
+//  DEFINE STUDY REGION
+//
+//  Make two versions of your study region: 
+//  1. a feature collection
+//  2. a binary image
+//
+//  Then set up your map:
+//  1. center on study region at zoom 13
+//  2. change base map to hybrid
+// -------------------------------------------------------------
+```
+
+1. [Load feature collection from address][load-fc] --> data.gov.town
+2. [Filter by attribute][filter-attribute] --> 'MIDDLEBURY'
+3. [Feature collection to binary image][convert-fc-binary]    
+
+---  
+
+## Load elevation data   
+
+```js
+// -------------------------------------------------------------
+//  LOAD ELEVATION DATA: 3DEP 1m DEM
+// -------------------------------------------------------------
+```
+
+1. [Load image collection from address][load-ic] --> 'USGS/3DEP/1m'  
+2. [Filter by bounds][filter-bounds] --> study_region  
+3. [Select image band][select-band] --> 'elevation'
+
+---   
+
+## Calculate percent of slope  
+
+```js
+// -------------------------------------------------------------
+//  CALCULATE PERCENT OF SLOPE  
+// -------------------------------------------------------------
+```
+
+1. [Calculate slope as percent from collection][terrain-percent-slope-ic]  
+2. [Print min and max of image][print-min-max]  
+
+## Classify slope with USDA criteria  
+
+```js
+// -------------------------------------------------------------------------
+//  CLASSIFY WITH USDA CRITERIA   
+// -------------------------------------------------------------------------
+```
+
+1. [Classify slope with USDA criteria][terrain-usda-class]  
+
 
 ---  
 
@@ -157,11 +217,11 @@ var hypso_palette = ['#bfd3b5', '#cbdabf', '#e2e0c3', '#efdeba', '#edd2a3', '#ea
 [filter-bounds]: ../methods/filter-data.md#by-bounds  
 [select-band]: ../methods/filter-data.md#select-image-band
 
-[convert-fc-binary]: ../methods/convert-data-model.md#feature-collection-to-binary  
+[convert-fc-binary]: ../methods/convert-data-model.md#feature-collection-to-binary-image  
 [mosaic-ic]: ../methods/convert-data-model.md#mosaic-image-collection-to-image  
 [convert-image-rgb]: ../methods/convert-data-model.md#image-to-rgb  
 
-[print-min-max]: ../methods/image-viz.md#print-min-max-of-an-image  
+[print-min-max]: ../methods/image-viz.md#print-min-and-max-of-an-image    
 
 [area-fc-acres]: ../methods/area.md#acres-of-each-feature-in-collection  
 [area-fc-sq-km]: ../methods/area.md#sq-km-of-each-feature-in-collection      
@@ -170,7 +230,9 @@ var hypso_palette = ['#bfd3b5', '#cbdabf', '#e2e0c3', '#efdeba', '#edd2a3', '#ea
 
 [buffer-feet]: ../methods/distance.md#buffer-features-in-collection-by-feet  
 
-[terrain-hs-ic]: ../methods/terrain.md#make-hillshade-from-collection
+[terrain-hs-ic]: ../methods/terrain.md#make-hillshade-from-collection  
+[terrain-percent-slope-ic]: ../methods/terrain.md#calculate-slope-as-percent-from-collection  
+[terrain-usda-class]: ../methods/terrain.md#classify-slope-with-usda-criteria
 
 [sum-table]: ../methods/aggregate-table.md#sum-the-values-in-a-table-column  
 [dissolve-by-prop]: ../methods/aggregate-table.md#dissolve-features-in-collection-by-property  
