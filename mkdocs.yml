@@ -145,7 +145,7 @@ nav:
     - planning: concepts/planning.md  
     - change: concepts/change.md     
     - data models: concepts/data-models.md    
-  - METHODS:  
+  - METHODS EE:  
     - introduction: methods/intro.md
     - load modules: methods/load-modules.md  
     - load data: methods/load-data.md  
@@ -162,12 +162,14 @@ nav:
     - terrain operations: methods/terrain.md  
     - viz: methods/image-viz.md  
     - naip images: methods/naip.md 
+  - METHODS WB:
+    - hello whitebox: wb-methods/hello-whitebox.md  
   - PROBLEMS:  
     - area problems: problems/area-problems.md  
     - nominal problems: problems/nominal-problems.md  
     - proximity problems: problems/proximity-problems.md 
     - terrain problems: problems/terrain-problems.md 
-  - WORKED FLOWS:  
+  - WORKED FLOWS EE:  
     - area workflows: workflows/area-workflows.md  
     - nominal workflows: workflows/nominal-workflows.md  
     - proximity workflows: workflows/proximity-workflows.md    

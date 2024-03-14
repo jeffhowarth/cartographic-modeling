@@ -1,4 +1,4 @@
-## Buffer features in collection by feet  
+## buffer features in collection by feet  
 
 ```js
 // -------------------------------------------------------------
@@ -23,7 +23,7 @@ You can access the underlying code for this function in the [tasks module][tasks
 
 ---  
 
-## Euclidean distance image    
+## euclidean distance image    
 
 ```js
 
@@ -57,7 +57,7 @@ Map.addLayer(euc_distance,  {min:0, max: 100, palette: inferno}, "Euclidean dist
 // -------------------------------------------------------------
 
 ```
-### Practical tip for crs  
+### practical tip for crs  
 
 The ``` .reproject({crs: crs}) ``` line allows you to force earth engine to calculate distance in a specified coordinate system. Without this, ee will compute distance with web mercator and the distance measurement will not be accurate. With this, it can slow down the computation because ee essentially has to make a new image and then make the calculation on it.  
 

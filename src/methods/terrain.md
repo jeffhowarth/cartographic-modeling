@@ -27,7 +27,7 @@ You can access the underlying code for this function in the [tasks module][tasks
 
 ---  
 
-## Calculate slope as percent from collection  
+## calculate slope as percent from collection  
 
 ```js
 // -------------------------------------------------------------
@@ -48,7 +48,7 @@ You can access the underlying code for this function in the [tasks module][tasks
 
 ---
 
-## Classify slope with usda criteria  
+## classify slope with usda criteria  
 
 ```js
 // -------------------------------------------------------------

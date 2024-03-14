@@ -30,7 +30,7 @@ var output = input.remap(
 
 ---
 
-## Classify image by equal interval  
+## classify image by equal interval  
 
 ```js
 // -------------------------------------------------------------
@@ -56,7 +56,7 @@ var output = input.divide(interval).ceil();
 
 ---
 
-## Threshold an image
+## threshold an image
 
 ```js
 // -------------------------------------------------------------
