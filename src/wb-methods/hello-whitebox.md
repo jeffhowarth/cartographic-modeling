@@ -52,7 +52,8 @@ out = work + "jhowarth/outputs/"
 
 # Declare a name for our test data
 
-dem = work + "DATA/test_dsm.tif"
+dsm = work + "DATA/_test_dsm.tif"
+
 ```
 
 ## call a whitebox operation  
@@ -61,7 +62,7 @@ dem = work + "DATA/test_dsm.tif"
 # Call the slope tool and define parameters
 
 wbt.slope(
-    dem = dem,
+    dem = dsm,
     output = out + "_test_slope.tif",
     zfactor=None,
     units="degrees"

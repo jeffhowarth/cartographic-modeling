@@ -1184,13 +1184,13 @@
 
 <span class="c1"># Declare a name for our test data</span>
 
-<span class="n">dem</span> <span class="o">=</span> <span class="n">work</span> <span class="o">+</span> <span class="s2">&quot;DATA/test_dsm.tif&quot;</span>
+<span class="n">dsm</span> <span class="o">=</span> <span class="n">work</span> <span class="o">+</span> <span class="s2">&quot;DATA/_test_dsm.tif&quot;</span>
 </code></pre></div>
 <h2 id="call-a-whitebox-operation">call a whitebox operation</h2>
 <div class="language-py highlight"><pre><span></span><code><span class="c1"># Call the slope tool and define parameters</span>
 
 <span class="n">wbt</span><span class="o">.</span><span class="n">slope</span><span class="p">(</span>
-    <span class="n">dem</span> <span class="o">=</span> <span class="n">dem</span><span class="p">,</span>
+    <span class="n">dem</span> <span class="o">=</span> <span class="n">dsm</span><span class="p">,</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">out</span> <span class="o">+</span> <span class="s2">&quot;_test_slope.tif&quot;</span><span class="p">,</span>
     <span class="n">zfactor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">units</span><span class="o">=</span><span class="s2">&quot;degrees&quot;</span>
