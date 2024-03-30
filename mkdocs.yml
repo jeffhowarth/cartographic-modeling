@@ -162,8 +162,12 @@ nav:
     - terrain operations: methods/terrain.md  
     - viz: methods/image-viz.md  
     - naip images: methods/naip.md 
+    - export: methods/export.md  
   - METHODS WB:
     - hello whitebox: wb-methods/hello-whitebox.md  
+  - METHODS Q:  
+    - google base maps: q-methods/add-google-xyz.md  
+    - vermont lidar: q-methods/vermont-lidar.md  
   - PROBLEMS:  
     - area problems: problems/area-problems.md  
     - nominal problems: problems/nominal-problems.md  
@@ -174,9 +178,13 @@ nav:
     - nominal workflows: workflows/nominal-workflows.md  
     - proximity workflows: workflows/proximity-workflows.md    
     - terrain workflows: workflows/terrain-workflows.md   
-  - CHALLENGES: 
+  - CHALLENGES EE: 
     - clearings: challenges/clearings.md    
     - water story: challenges/water-story.md  
+  - CHALLENGES WB:
+    - workflow diagrams: challenges-wb/workflow-diagrams.md  
+    - extract streams from dem: challenges-wb/extract-streams.md  
+
 
 
   

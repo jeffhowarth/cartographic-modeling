@@ -241,6 +241,6 @@ var dough = dough_theme_sites.addBands(dough_theme);
 [dissolve-by-prop]: ../methods/aggregate-table.md#dissolve-features-in-collection-by-property  
 
 
-[erase-local]: ../methods/local-operations.md#erase-values-at-locations-with-binary  
+[erase-local]: ../methods/local-two-layers.md#erase-values-at-locations-with-binary
 
 [zonal-sum]: ../methods/zonal-operations.md#zonal-summary-of-dough-within-cutters  

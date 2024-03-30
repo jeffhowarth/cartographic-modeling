@@ -1,0 +1,12 @@
+GIMP Palette
+Name: baseLandCover[8]  
+Columns: 4
+#
+171 217 152 treeCanopy    
+235 240 156 grassShrub  
+245 245 245 bareGround  
+149 230 213 water  
+82 82 82 buildings  
+255 255 255 roads  
+200 200 200 otherPavement  
+198 152 217 railroads  
