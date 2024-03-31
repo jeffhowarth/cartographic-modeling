@@ -23,13 +23,11 @@ wbt.work_dir = work
 
 out = work + "jhowarth/outputs/viewsheds/"
 
-
-
 # Declare a name for our test data
 
-dsm = work + "data/elevation/dsm_clip_practice.tif"
-dem = work + "data/elevation/dem_clip_practice.tif"
-view_point = work + "data/practice_supplements/view_point.shp"
+dsm = work + "jhowarth/outputs/elevation/dsm_clipped_practice.tif"
+dem = work + "jhowarth/outputs/elevation/dem_clipped_practice.tif"
+view_point = work + "jhowarth/x0352/view_point/knoll.shp"
 
 # -----------------------------------------------------------------------
 
@@ -37,7 +35,7 @@ wbt.viewshed(
     dem = dsm, 
     stations = view_point, 
     output = out + "_01_test_shed_dsm.tif", 
-    height=1.8, 
+    height = 1.7, 
     # callback=default_callback
 )
 
@@ -45,20 +43,30 @@ wbt.viewshed(
     dem = dem, 
     stations = view_point, 
     output = out + "_02_test_shed_dem.tif", 
-    height=1.8, 
+    height = 1.7, 
     # callback=default_callback
 )
 
+wbt.resample(
+    inputs = out + "_02_test_shed_dem.tif", 
+    output = out + "_03_test_shed_dem_2mama.tif", 
+    cell_size=None, 
+    base=out + "_01_test_shed_dsm.tif", 
+    method="nn", 
+    # callback=default_callback
+)
+
+
 wbt.multiply(
-    input1 = out + "_02_test_shed_dem.tif", 
+    input1 = out + "_03_test_shed_dem_2mama.tif", 
     input2 = 10, 
-    output = out + "_03_test_shed_dem_10.tif", 
+    output = out + "_04_test_shed_dem_2mama_10.tif", 
     # callback=default_callback
 )
 
 wbt.add(
     input1 = out + "_01_test_shed_dsm.tif", 
-    input2 = out + "_03_test_shed_dem_10.tif", 
-    output = out + "_04_test_shed_comparison.tif", 
+    input2 = out + "_04_test_shed_dem_2mama_10.tif", 
+    output = out + "_05_test_compare_sheds.tif", 
     # callback=default_callback
 )

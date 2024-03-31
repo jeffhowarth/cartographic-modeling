@@ -165,6 +165,7 @@ nav:
     - export: methods/export.md  
   - METHODS WB:
     - hello whitebox: wb-methods/hello-whitebox.md  
+    - mama raster: wb-methods/mama-raster.md  
   - METHODS Q:  
     - google base maps: q-methods/add-google-xyz.md  
     - vermont lidar: q-methods/vermont-lidar.md  
@@ -184,6 +185,7 @@ nav:
   - CHALLENGES WB:
     - workflow diagrams: challenges-wb/workflow-diagrams.md  
     - extract streams from dem: challenges-wb/extract-streams.md  
+    - viewshed comparison: challenges-wb/viewshed-comparison.md  
 
 
 

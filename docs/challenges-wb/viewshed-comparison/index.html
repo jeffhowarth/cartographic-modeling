@@ -12,8 +12,10 @@
         <meta name="author" content="Jeff Howarth">
       
       
-        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/q-methods/symbolize-layers/">
+        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/challenges-wb/viewshed-comparison/">
       
+      
+        <link rel="prev" href="../extract-streams/">
       
       
       <link rel="icon" href="../../assets/myIcon.png">
@@ -21,7 +23,7 @@
     
     
       
-        <title>Symbolize layers - cartographic modeling</title>
+        <title>viewshed comparison - cartographic modeling</title>
       
     
     
@@ -71,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#symbolize-continuous" class="md-skip">
+        <a href="#viewshed-comparison-from-dem-and-dsm" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Symbolize layers
+              viewshed comparison
             
           </span>
         </div>
@@ -652,6 +654,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -674,6 +678,20 @@
     <li class="md-nav__item">
       <a href="../../wb-methods/hello-whitebox/" class="md-nav__link">
         hello whitebox
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wb-methods/mama-raster/" class="md-nav__link">
+        mama raster
       </a>
     </li>
   
@@ -727,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../add-google-xyz/" class="md-nav__link">
+      <a href="../../q-methods/add-google-xyz/" class="md-nav__link">
         google base maps
       </a>
     </li>
@@ -741,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vermont-lidar/" class="md-nav__link">
+      <a href="../../q-methods/vermont-lidar/" class="md-nav__link">
         vermont lidar
       </a>
     </li>
@@ -1032,16 +1050,20 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
       
       
+        
+          
         
           
         
@@ -1054,7 +1076,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           CHALLENGES WB
@@ -1067,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges-wb/workflow-diagrams/" class="md-nav__link">
+      <a href="../workflow-diagrams/" class="md-nav__link">
         workflow diagrams
       </a>
     </li>
@@ -1081,9 +1103,78 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges-wb/extract-streams/" class="md-nav__link">
+      <a href="../extract-streams/" class="md-nav__link">
         extract streams from dem
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          viewshed comparison
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        viewshed comparison
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tour-of-outputs" class="md-nav__link">
+    Tour of outputs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1112,6 +1203,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1120,8 +1213,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#symbolize-continuous" class="md-nav__link">
-    Symbolize continuous
+  <a href="#problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tour-of-outputs" class="md-nav__link">
+    Tour of outputs
   </a>
   
 </li>
@@ -1141,9 +1248,45 @@
                   
 
 
-  <h1>Symbolize layers</h1>
+<h1 id="viewshed-comparison-from-dem-and-dsm"><strong>viewshed comparison from dem and dsm</strong></h1>
+<h2 id="problem">Problem</h2>
+<p>Please write a python script that uses Whitebox tools to compare visibility computed from a DEM and DSM for a single viewpoint. Please use the &ldquo;dem_clipped_practice.tif&rdquo; and &ldquo;dsm_clipped_practice.tif files from the <a href="../../q-methods/vermont-lidar/" target="_blank">vermont lidar tutorial</a>. Please use the &lsquo;knoll.shp&rsquo; file from the shared DATA/view-points folder. </p>
+<p>Please note that the two surface images (DEM and DSM) have a minor difference in extent which complicates the workflow. To understand why we need to do the Resample step in this problem, please refer to the <a href="../../wb-methods/mama-raster/">mama raster</a> page. </p>
+<h2 id="workflow">Workflow</h2>
+<p><center></p>
+<pre class="mermaid"><code>graph TD
+  01((DEM)) ;
+  03[Viewshed] ;
+  02((DSM)) ;
+  04[Viewshed] ;
+  05[Resample] ;
+  06[Multiply] ;
+  07[Add] ;
+  08((&amp;#128526)) ;
 
-<h2 id="symbolize-continuous">Symbolize continuous</h2>
+  01 --&gt; 03
+  02 --&gt; 04 
+  04 --&gt; 05
+  03 --&gt; 05  
+  05 --&gt; 06
+  03 --&gt; 07
+  06 --&gt; 07
+  07 --&gt; 08 ;
+
+  style 01 fill:#E6DEA1,stroke-width:0px
+  style 02 fill:#E6DEA1,stroke-width:0px
+  style 03 fill:#C5E6A1,stroke-width:0px
+  style 04 fill:#C5E6A1,stroke-width:0px
+  style 05 fill:#C5E6A1,stroke-width:0px
+  style 06 fill:#C5E6A1,stroke-width:0px
+  style 07 fill:#C5E6A1,stroke-width:0px
+  style 08 fill:#E6DEA100,stroke-width:0px
+
+</code></pre>
+<p></center></p>
+<h2 id="tour-of-outputs">Tour of outputs</h2>
+<p>This video tours the output layers from this model in QGIS. </p>
+<p><em>Coming soon (need a quiet space to record).</em></p>
 
 
 
@@ -1160,6 +1303,27 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../extract-streams/" class="md-footer__link md-footer__link--prev" aria-label="Previous: extract streams from dem" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                extract streams from dem
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

@@ -10,13 +10,17 @@ Please write a python script that uses whitebox tools to extract streams from a 
 
 ``` mermaid
 graph TD
+
+  00((DEM)) ;
   01[BreachDepressionsLeastCost] ;
   02[Rho8Pointer] ;
   03[Rho8FlowAccumulation] ;
   04[ExtractStreams] ;
   05[StrahlerStreamOrder] ;
   06[RasterStreamsToVector] ;
+  07((&#128526)) ;
 
+  00 --> 01
   01 --> 02 
   02 --> 03  
   03 --> 04
@@ -24,14 +28,18 @@ graph TD
   02 --> 05
   05 --> 06
   02 --> 06
+  06 --> 07 
 
 
+  style 00 fill:#E6DEA1,stroke-width:0px
   style 01 fill:#C5E6A1,stroke-width:0px
   style 02 fill:#C5E6A1,stroke-width:0px
   style 03 fill:#C5E6A1,stroke-width:0px
   style 04 fill:#C5E6A1,stroke-width:0px
   style 05 fill:#C5E6A1,stroke-width:0px
   style 06 fill:#E1C3E6,stroke-width:0px
+  style 07 fill:#E6DEA100,stroke-width:0px
+
 
 ```
 
