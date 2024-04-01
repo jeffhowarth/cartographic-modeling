@@ -12,20 +12,18 @@
         <meta name="author" content="Jeff Howarth">
       
       
-        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/workflows/area-workflows/">
+        <link rel="canonical" href="https://github.com/jeffhowarth/cartographic-modeling/challenges-wb/least-cost-path/">
       
       
-        <link rel="prev" href="../../problems/terrain-problems/">
+        <link rel="prev" href="../viewshed-comparison/">
       
-      
-        <link rel="next" href="../nominal-workflows/">
       
       <link rel="icon" href="../../assets/myIcon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>area workflows - cartographic modeling</title>
+        <title>least cost path - cartographic modeling</title>
       
     
     
@@ -75,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#area-workflows" class="md-skip">
+        <a href="#least-cost-path-practice" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              area workflows
+              least cost path
             
           </span>
         </div>
@@ -882,16 +880,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
       
       
         
@@ -910,7 +906,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           WORKED FLOWS EE
@@ -921,258 +917,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          area workflows
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../workflows/area-workflows/" class="md-nav__link">
         area workflows
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#vector-approach" class="md-nav__link">
-    Vector approach
-  </a>
-  
-    <nav class="md-nav" aria-label="Vector approach">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load-modules" class="md-nav__link">
-    Load modules.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-a-subject" class="md-nav__link">
-    Define a SUBJECT.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#calculate-area-of-each-subject-feature" class="md-nav__link">
-    Calculate area of each SUBJECT feature.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#print-results" class="md-nav__link">
-    Print results.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#raster-approach" class="md-nav__link">
-    Raster approach
-  </a>
-  
-    <nav class="md-nav" aria-label="Raster approach">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load-modules_1" class="md-nav__link">
-    Load modules.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-cutters" class="md-nav__link">
-    Define CUTTERS.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-the-dough" class="md-nav__link">
-    Define the DOUGH.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compute-zonal-summary-zs" class="md-nav__link">
-    Compute Zonal Summary (zs).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#print-results_1" class="md-nav__link">
-    Print results.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#theme-within-regions" class="md-nav__link">
-    Theme within regions
-  </a>
-  
-    <nav class="md-nav" aria-label="Theme within regions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load-modules_2" class="md-nav__link">
-    Load modules.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-cutters_1" class="md-nav__link">
-    Define CUTTERS.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-binary-theme" class="md-nav__link">
-    Define binary THEME.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-the-dough_1" class="md-nav__link">
-    Define the DOUGH.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compute-zonal-summary-zs_1" class="md-nav__link">
-    Compute Zonal Summary (zs).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#print-results_2" class="md-nav__link">
-    Print results.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#theme-within-sites-across-regions" class="md-nav__link">
-    Theme within sites across regions
-  </a>
-  
-    <nav class="md-nav" aria-label="Theme within sites across regions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load-modules_3" class="md-nav__link">
-    Load modules.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-sites" class="md-nav__link">
-    Define SITES.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-regions" class="md-nav__link">
-    Define REGIONS.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-theme" class="md-nav__link">
-    Define THEME.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-the-dough_2" class="md-nav__link">
-    Define the DOUGH.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compute-zonal-summary-zs_2" class="md-nav__link">
-    Compute Zonal Summary (zs).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#print-results_3" class="md-nav__link">
-    Print results.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge-problem" class="md-nav__link">
-    Challenge problem
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1184,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nominal-workflows/" class="md-nav__link">
+      <a href="../../workflows/nominal-workflows/" class="md-nav__link">
         nominal workflows
       </a>
     </li>
@@ -1198,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proximity-workflows/" class="md-nav__link">
+      <a href="../../workflows/proximity-workflows/" class="md-nav__link">
         proximity workflows
       </a>
     </li>
@@ -1212,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terrain-workflows/" class="md-nav__link">
+      <a href="../../workflows/terrain-workflows/" class="md-nav__link">
         terrain workflows
       </a>
     </li>
@@ -1301,14 +1050,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
       
       
         
@@ -1327,7 +1078,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           CHALLENGES WB
@@ -1340,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges-wb/workflow-diagrams/" class="md-nav__link">
+      <a href="../workflow-diagrams/" class="md-nav__link">
         workflow diagrams
       </a>
     </li>
@@ -1354,7 +1105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges-wb/extract-streams/" class="md-nav__link">
+      <a href="../extract-streams/" class="md-nav__link">
         extract streams from dem
       </a>
     </li>
@@ -1368,7 +1119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges-wb/viewshed-comparison/" class="md-nav__link">
+      <a href="../viewshed-comparison/" class="md-nav__link">
         viewshed comparison
       </a>
     </li>
@@ -1380,11 +1131,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../challenges-wb/least-cost-path/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          least cost path
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         least cost path
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tour-of-outputs" class="md-nav__link">
+    Tour of outputs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1423,214 +1229,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vector-approach" class="md-nav__link">
-    Vector approach
+  <a href="#problem" class="md-nav__link">
+    Problem
   </a>
-  
-    <nav class="md-nav" aria-label="Vector approach">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load-modules" class="md-nav__link">
-    Load modules.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-a-subject" class="md-nav__link">
-    Define a SUBJECT.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#calculate-area-of-each-subject-feature" class="md-nav__link">
-    Calculate area of each SUBJECT feature.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#print-results" class="md-nav__link">
-    Print results.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#raster-approach" class="md-nav__link">
-    Raster approach
+  <a href="#workflow" class="md-nav__link">
+    Workflow
   </a>
-  
-    <nav class="md-nav" aria-label="Raster approach">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load-modules_1" class="md-nav__link">
-    Load modules.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-cutters" class="md-nav__link">
-    Define CUTTERS.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-the-dough" class="md-nav__link">
-    Define the DOUGH.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compute-zonal-summary-zs" class="md-nav__link">
-    Compute Zonal Summary (zs).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#print-results_1" class="md-nav__link">
-    Print results.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#theme-within-regions" class="md-nav__link">
-    Theme within regions
-  </a>
-  
-    <nav class="md-nav" aria-label="Theme within regions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load-modules_2" class="md-nav__link">
-    Load modules.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-cutters_1" class="md-nav__link">
-    Define CUTTERS.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-binary-theme" class="md-nav__link">
-    Define binary THEME.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-the-dough_1" class="md-nav__link">
-    Define the DOUGH.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compute-zonal-summary-zs_1" class="md-nav__link">
-    Compute Zonal Summary (zs).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#print-results_2" class="md-nav__link">
-    Print results.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#theme-within-sites-across-regions" class="md-nav__link">
-    Theme within sites across regions
-  </a>
-  
-    <nav class="md-nav" aria-label="Theme within sites across regions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load-modules_3" class="md-nav__link">
-    Load modules.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-sites" class="md-nav__link">
-    Define SITES.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-regions" class="md-nav__link">
-    Define REGIONS.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-theme" class="md-nav__link">
-    Define THEME.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-the-dough_2" class="md-nav__link">
-    Define the DOUGH.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compute-zonal-summary-zs_2" class="md-nav__link">
-    Compute Zonal Summary (zs).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#print-results_3" class="md-nav__link">
-    Print results.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge-problem" class="md-nav__link">
-    Challenge problem
+  <a href="#tour-of-outputs" class="md-nav__link">
+    Tour of outputs
   </a>
   
 </li>
@@ -1650,206 +1264,50 @@
                   
 
 
-<h1 id="area-workflows"><strong>area workflows</strong></h1>
-<p>This page outlines workflows to solve the <a href="../../problems/area-problems/">area problems</a> with earth engine methods defined on the <a href="../../methods/intro/">methods pages</a>.  </p>
-<hr />
-<h2 id="vector-approach"><strong>Vector approach</strong></h2>
-<p>Here is a workflow to solve the <a href="../../problems/area-problems/#vector-approach">vector-based approach</a> to the area problem.</p>
-<h3 id="load-modules">Load modules.</h3>
-<ol>
-<li><a href="../../methods/load-modules/#data-module">Load the data module.</a>  </li>
-<li><a href="../../methods/load-modules/#tasks-module">Load the tasks module.</a></li>
-</ol>
-<h3 id="define-a-subject">Define a SUBJECT.</h3>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address</a> &rarr; data.cadastre.college.fc_address </li>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print the number of objects in the collection.</a> &rarr; Answer A below  </li>
-</ol>
-<h3 id="calculate-area-of-each-subject-feature">Calculate area of each SUBJECT feature.</h3>
-<ol>
-<li><a href="../../methods/area/#acres-of-each-feature-in-collection">Area of features (acres) in FC.</a></li>
-</ol>
-<h3 id="print-results">Print results.</h3>
-<ol>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print size of collection.</a> &rarr; Answer B below</li>
-<li><a href="../../methods/aggregate-table/#sum-the-values-in-a-table-column">Sum the values in a table column.</a> &rarr; Answer C below</li>
-</ol>
-<details closed>
-<summary>Check your answers for vector solution.</summary>
-<br>
-(A) Number of parcels owned by the college: <b>286</b> 
-<br>
-(B) Number of objects in SUBJECT collection: <b>286</b> 
-<br> 
-(C) Total acres of college-owned parcels: <b>7009</b>  
-</details>
-
-<hr />
-<h2 id="raster-approach"><strong>Raster approach</strong></h2>
-<p>Work through the steps below to solve the <a href="../../problems/area-problems/#raster-approach">raster-based approach</a> to the area problem.  </p>
-<h3 id="load-modules_1">Load modules.</h3>
-<ol>
-<li><a href="../../methods/load-modules/#data-module">Load the data module.</a>  </li>
-<li><a href="../../methods/load-modules/#tasks-module">Load the tasks module.</a>  </li>
-</ol>
-<h3 id="define-cutters">Define CUTTERS.</h3>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address</a> &rarr; data.cadastre.college.fc_address </li>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print size collection.</a> &rarr; Answer A below  </li>
-</ol>
-<h3 id="define-the-dough">Define the DOUGH.</h3>
-<ol>
-<li><a href="../../methods/area/#make-pixel-area-image">Make pixel area image.</a>   </li>
-</ol>
-<h3 id="compute-zonal-summary-zs">Compute Zonal Summary (zs).</h3>
-<ol>
-<li><a href="../../methods/zonal-operations/#zonal-summary-of-dough-within-cutters">Zonal summary of dough within cutters.</a> </li>
-</ol>
-<h3 id="print-results_1">Print results.</h3>
-<ol>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print size of collection.</a> &rarr; Answer B below</li>
-<li><a href="../../methods/aggregate-table/#sum-the-values-in-a-table-column">Sum the values in a table column (FC property).</a> &rarr; Answer C below</li>
-</ol>
-<details closed>
-<summary>Check your answers for raster-based solution.</summary>
-<br>
-(A) Number of parcels owned by the college: <b>286</b> 
-<br>
-(B) Number of objects in zs collection: <b>286</b> 
-<br> 
-(C) Total acres of college-owned parcels: <b>7009</b>  
-</details>
-
-<hr />
-<h2 id="theme-within-regions"><strong>Theme within regions</strong></h2>
-<p>Work through the steps below to solve the <a href="../../problems/area-problems/#theme-within-regions">theme within regions</a> area problem.  </p>
-<h3 id="load-modules_2">Load modules.</h3>
-<ol>
-<li><a href="../../methods/load-modules/#data-module">Load the data module.</a>  </li>
-<li><a href="../../methods/load-modules/#tasks-module">Load the tasks module.</a>  </li>
-</ol>
-<h3 id="define-cutters_1">Define CUTTERS.</h3>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address</a> &rarr; data.cadastre.college.fc_address </li>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print size collection.</a> &rarr; Answer A below  </li>
-</ol>
-<h3 id="define-binary-theme">Define binary THEME.</h3>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address.</a> &rarr; data.rarity.vt.nc.fc_address </li>
-<li>Inspect the properties of the feature collection.<ol>
-<li><a href="../../methods/inspect-properties/#print-first-feature-in-fc">Print first feature in FC.</a></li>
-<li><a href="../../methods/inspect-properties/#print-unique-values-in-fc">Print unique values in FC.</a><ol>
-<li>Explore &lsquo;S_RANK&rsquo;.</li>
-<li>Explore &lsquo;S_NAME&rsquo;.  </li>
-</ol>
-</li>
-<li><a href="../../methods/convert-data-model/#feature-collection-to-binary">Convert FC to binary image.</a> &rarr; THEME as input</li>
-</ol>
-</li>
-</ol>
-<h3 id="define-the-dough_1">Define the DOUGH.</h3>
-<ol>
-<li><a href="../../methods/area/#make-pixel-area-image">Make pixel area image.</a>   </li>
-<li><a href="../../methods/local-two-layers/#erase-values-at-locations-with-binary">Erase values at locations with binary.</a> &rarr; pixel area and theme binary </li>
-</ol>
-<h3 id="compute-zonal-summary-zs_1">Compute Zonal Summary (zs).</h3>
-<ol>
-<li><a href="../../methods/zonal-operations/#zonal-summary-of-dough-within-cutters">Zonal summary of dough within cutters.</a> </li>
-</ol>
-<h3 id="print-results_2">Print results.</h3>
-<ol>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print size of collection.</a> &rarr; Answer B below</li>
-<li><a href="../../methods/aggregate-table/#sum-the-values-in-a-table-column">Sum the values in a table column.</a> &rarr; Answer C below</li>
-</ol>
-<details closed>
-<summary>Check your answers for THEME IN REGIONS raster solution.</summary>
-<br>
-(A) Number of parcels owned by the college: <b>286</b> 
-<br>
-(B) Number of objects in zs collection: <b>286</b> 
-<br> 
-(C) Total acres of rare natural communities on college-owned parcels: <b>1284</b>  
-</details>
-
-<hr />
-<h2 id="theme-within-sites-across-regions"><strong>Theme within sites across regions</strong></h2>
-<p>Work through the steps below to solve the <a href="../../problems/area-problems/#theme-within-sites-across-regions">theme within sites across regions</a> area problem.</p>
-<h3 id="load-modules_3">Load modules.</h3>
-<ol>
-<li><a href="../../methods/load-modules/#data-module">Load the data module.</a>  </li>
-<li><a href="../../methods/load-modules/#tasks-module">Load the tasks module.</a>  </li>
-</ol>
-<h3 id="define-sites">Define SITES.</h3>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address</a> &rarr; data.cadastre.college.fc_address </li>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print size of collection.</a> &rarr; Answer A below     </li>
-<li><a href="../../methods/convert-data-model/#feature-collection-to-binary">Convert FC to binary image.</a> &rarr; Use SITES as input.</li>
-</ol>
-<h3 id="define-regions">Define REGIONS.</h3>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address</a> &rarr; data.gov.town.fc_address    </li>
-<li><a href="../../methods/filter-data/#by-bounds">Filter collection by bounds.</a> &rarr; towns that intersect college parcels</li>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print the number of objects in the collection.</a> &rarr; Answer ABbelow </li>
-</ol>
-<h3 id="define-theme">Define THEME.</h3>
-<ol>
-<li><a href="../../methods/load-data/#feature-collection-from-address">Load feature collection from address.</a> &rarr; data.rarity.vt.nc.fc_address </li>
-<li>Inspect the properties of the feature collection.<ol>
-<li><a href="../../methods/inspect-properties/#print-first-feature-in-fc">Print first feature in FC.</a></li>
-<li><a href="../../methods/inspect-properties/#print-unique-values-in-fc">Print unique values in FC.</a><ol>
-<li>Explore &lsquo;S_RANK&rsquo;.</li>
-<li>Explore &lsquo;S_NAME&rsquo;.  </li>
-</ol>
-</li>
-</ol>
-</li>
-<li><a href="../../methods/convert-data-model/#feature-collection-to-binary">Convert FC to binary image.</a> &rarr; THEME as input  </li>
-</ol>
-<h3 id="define-the-dough_2">Define the DOUGH.</h3>
-<ol>
-<li><a href="../../methods/area/#make-pixel-area-image">Make pixel area image.</a>   </li>
-<li><a href="../../methods/local-two-layers/#erase-values-at-locations-with-binary">Erase values at locations with binary.</a> &rarr; pixel area and theme binary and sites binary</li>
-</ol>
-<h3 id="compute-zonal-summary-zs_2">Compute Zonal Summary (zs).</h3>
-<ol>
-<li><a href="../../methods/zonal-operations/#zonal-summary-of-dough-within-cutters">Zonal summary of dough within cutters.</a> &rarr; REGIONS as cutters!</li>
-</ol>
-<h3 id="print-results_3">Print results.</h3>
-<ol>
-<li><a href="../../methods/inspect-properties/#print-size-of-collection">Print size of collection.</a> &rarr; Answer C below</li>
-<li><a href="../../methods/aggregate-table/#sum-the-values-in-a-table-column">Sum the values in a table column.</a> &rarr; Answer D below  </li>
-</ol>
-<details closed>
-<summary>Check your answers for THEME IN SITES ACROSS REGIONS raster solution.</summary>
-<br>
-(A) Number of parcels owned by the college: <b>286</b> 
-<br>
-(B) Number of towns that intersect college lands: <b>9</b> 
-<br> 
-(C) Number of REGIONS in the zs output: <b>9</b> 
-<br> 
-(D) Total acres of rare natural communities on college-owned parcels: <b>1301</b>  
-</details>
-
-<h2 id="challenge-problem"><strong>Challenge problem</strong></h2>
-<p>Here are some clues to solve the <a href="../../problems/area-problems/#challenge-problem">area challenge problem</a>.  </p>
-<ul>
-<li>Your dough will need two bands.<ol>
-<li>One of pixel areas for locations that are THEME and SITE.</li>
-<li>Another of pixel areas for locations that are THEME.  </li>
-</ol>
-</li>
-</ul>
-<div class="language-js highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">dough</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">dough_theme_sites</span><span class="p">.</span><span class="nx">addBands</span><span class="p">(</span><span class="nx">dough_theme</span><span class="p">);</span>
+<h1 id="least-cost-path-practice"><strong>least cost path practice</strong></h1>
+<h2 id="problem">Problem</h2>
+<p>Please write a python script that uses whitebox tools to find the least cost path from BiHall to the Knoll. </p>
+<p>Please use the base_land_cover.tif from the <a href="../../methods/export/#export-nominal-raster">GEE export example</a> for the land cover input. And use the &ldquo;od_lcp_practice.tif&rdquo; on the shared <a href="https://drive.google.com/drive/folders/14cNeBnCgU2Huk18968AdDdLNGh6hZQIm?usp=drive_link" target="_blank">DATA/od/</a> directory for the origin-destination input.  </p>
+<p>You will need to derive the friction values for the land cover reclass on your own. Try to assign values so that the least cost path that results resembles the one that you would take if you were to walk from the back of BiHall to the Knoll. Please know that all pixels must have some cost that accumulates (so make the lowest friction 1 rather than 0). Also remember that the whitebox reclass operation requires a string of &ldquo;new value;old value&rdquo; pairs. So you will need to adapt the string below by replacing the &lsquo;x#&rsquo; with a cost associated with the following land cover class:  </p>
+<div class="language-text highlight"><pre><span></span><code>&quot;x1;1;x2;2;x3;3;x4;4;x5;5;x6;6;x7;7;x8;8&quot;
 </code></pre></div>
-<ul>
-<li>You will need to alter some parameters in the Chart to reflect that you are charting two series:  <ol>
-<li>yProperties  </li>
-<li>.setSeriesNames  </li>
-<li>colors   </li>
-</ol>
-</li>
-</ul>
+<h2 id="workflow">Workflow</h2>
+<p><center></p>
+<pre class="mermaid"><code>graph TD
+
+  00((origin-destination)) ;
+  01[EqualTo] ;
+  02[EqualTo] ;
+  03((land-cover)) ;
+  04[Reclass] ;
+  05[CostDistance] ;
+  06[CostPathway] ;
+  07((&amp;#128526)) ;
+
+  00 --&gt; 01 ;
+  00 --&gt; 02 ;
+  03 --&gt; 04 ;
+  01 --&gt; 05 ;
+  04 --&gt; 05 ;
+  02 --&gt; 06 ;
+  05 --&gt; 06 ;
+  06 --&gt; 07 ; 
+
+
+  style 00 fill:#C5E6A1,stroke-width:0px
+  style 01 fill:#C5E6A1,stroke-width:0px
+  style 02 fill:#C5E6A1,stroke-width:0px
+  style 03 fill:#C5E6A1,stroke-width:0px
+  style 04 fill:#C5E6A1,stroke-width:0px
+  style 05 fill:#C5E6A1,stroke-width:0px
+  style 06 fill:#C5E6A1,stroke-width:0px
+  style 07 fill:#E6DEA100,stroke-width:0px
+
+</code></pre>
+<p></center></p>
+<h2 id="tour-of-outputs">Tour of outputs</h2>
+<p>The video tours the output layers from this model in QGIS.  </p>
+<p><em>forthcoming</em>  </p>
 <hr />
 
 
@@ -1872,7 +1330,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../problems/terrain-problems/" class="md-footer__link md-footer__link--prev" aria-label="Previous: terrain problems" rel="prev">
+          <a href="../viewshed-comparison/" class="md-footer__link md-footer__link--prev" aria-label="Previous: viewshed comparison" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1881,26 +1339,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                terrain problems
+                viewshed comparison
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../nominal-workflows/" class="md-footer__link md-footer__link--next" aria-label="Next: nominal workflows" rel="next">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                nominal workflows
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     

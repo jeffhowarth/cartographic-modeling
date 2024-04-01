@@ -31,3 +31,27 @@ graph LR
 
   
 ```
+
+</center>
+
+Shape distinguishes data objects and operations. The example below takes a vector and raster object as inputs and outputs a raster.       
+
+<center>
+
+``` mermaid
+graph LR
+
+  01((raster object)) ;
+  02((vector object))
+  03[operation] ;
+
+  01 --> 03 
+  02 --> 03
+
+  style 01 fill:#C5E6A1,stroke-width:0px
+  style 02 fill:#E1C3E6,stroke-width:0px
+  style 03 fill:#C5E6A1,stroke-width:0px
+  
+```
+
+</center>

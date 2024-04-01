@@ -2,197 +2,202 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/challenges/clearings/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/challenges/water-story/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/challenges-wb/extract-streams/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/jeffhowarth/cartographic-modeling/challenges-wb/least-cost-path/</loc>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/challenges-wb/viewshed-comparison/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/challenges-wb/workflow-diagrams/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/concepts/change/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/concepts/data-models/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/concepts/planning/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/concepts/spatial/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/aggregate-table/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/area/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/convert-data-model/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/distance/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/export/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/filter-data/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/image-viz/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/inspect-properties/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/intro/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/load-data/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/load-modules/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/local-one-layer/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/local-two-layers/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/map-layers/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/naip/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/terrain/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/zonal-operations/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/problems/area-problems/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/problems/nominal-problems/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/problems/proximity-problems/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/problems/terrain-problems/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/q-methods/add-google-xyz/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/q-methods/vermont-lidar/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/wb-methods/hello-whitebox/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/wb-methods/mama-raster/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/workflows/area-workflows/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/workflows/nominal-workflows/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/workflows/proximity-workflows/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/workflows/terrain-workflows/</loc>
-         <lastmod>2024-03-31</lastmod>
+         <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

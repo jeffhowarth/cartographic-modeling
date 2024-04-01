@@ -18,6 +18,8 @@
         <link rel="prev" href="../extract-streams/">
       
       
+        <link rel="next" href="../least-cost-path/">
+      
       <link rel="icon" href="../../assets/myIcon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
@@ -1069,6 +1071,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -1180,6 +1184,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../least-cost-path/" class="md-nav__link">
+        least cost path
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1250,12 +1268,14 @@
 
 <h1 id="viewshed-comparison-from-dem-and-dsm"><strong>viewshed comparison from dem and dsm</strong></h1>
 <h2 id="problem">Problem</h2>
-<p>Please write a python script that uses Whitebox tools to compare visibility computed from a DEM and DSM for a single viewpoint. Please use the &ldquo;dem_clipped_practice.tif&rdquo; and &ldquo;dsm_clipped_practice.tif files from the <a href="../../q-methods/vermont-lidar/" target="_blank">vermont lidar tutorial</a>. Please use the &lsquo;knoll.shp&rsquo; file from the shared DATA/view-points folder. </p>
+<p>Please write a python script that uses Whitebox tools to compare visibility computed from a DEM and DSM for a single viewpoint. Please use the &ldquo;dem_clipped_practice.tif&rdquo; and &ldquo;dsm_clipped_practice.tif files from the <a href="../../q-methods/vermont-lidar/" target="_blank">vermont lidar tutorial</a>. Please use the &lsquo;knoll.shp&rsquo; file from the shared <a href="https://drive.google.com/drive/folders/12baPaAPbsDo1krUFv-IekYzGCBeyMjPE?usp=drive_link" target="_blank">DATA/view-points/</a> directory. </p>
 <p>Please note that the two surface images (DEM and DSM) have a minor difference in extent which complicates the workflow. To understand why we need to do the Resample step in this problem, please refer to the <a href="../../wb-methods/mama-raster/">mama raster</a> page. </p>
 <h2 id="workflow">Workflow</h2>
 <p><center></p>
 <pre class="mermaid"><code>graph TD
-  01((DEM)) ;
+
+  00((DEM)) ;
+  01((view-point)) ;
   03[Viewshed] ;
   02((DSM)) ;
   04[Viewshed] ;
@@ -1264,17 +1284,20 @@
   07[Add] ;
   08((&amp;#128526)) ;
 
-  01 --&gt; 03
-  02 --&gt; 04 
-  04 --&gt; 05
-  03 --&gt; 05  
-  05 --&gt; 06
-  03 --&gt; 07
-  06 --&gt; 07
+  00 --&gt; 03 ;
+  01 --&gt; 03 ;
+  01 --&gt; 04 ;
+  02 --&gt; 04 ;
+  03 --&gt; 05 ;  
+  04 --&gt; 05 ;
+  05 --&gt; 06 ;
+  03 --&gt; 07 ;
+  06 --&gt; 07 ;
   07 --&gt; 08 ;
 
-  style 01 fill:#E6DEA1,stroke-width:0px
-  style 02 fill:#E6DEA1,stroke-width:0px
+  style 00 fill:#C5E6A1,stroke-width:0px
+  style 01 fill:#E1C3E6,stroke-width:0px
+  style 02 fill:#C5E6A1,stroke-width:0px
   style 03 fill:#C5E6A1,stroke-width:0px
   style 04 fill:#C5E6A1,stroke-width:0px
   style 05 fill:#C5E6A1,stroke-width:0px
@@ -1322,6 +1345,21 @@
             </div>
           </a>
         
+        
+          
+          <a href="../least-cost-path/" class="md-footer__link md-footer__link--next" aria-label="Next: least cost path" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                least cost path
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

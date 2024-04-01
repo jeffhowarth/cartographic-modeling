@@ -31,7 +31,7 @@ graph TD
   06 --> 07 
 
 
-  style 00 fill:#E6DEA1,stroke-width:0px
+  style 00 fill:#C5E6A1,stroke-width:0px
   style 01 fill:#C5E6A1,stroke-width:0px
   style 02 fill:#C5E6A1,stroke-width:0px
   style 03 fill:#C5E6A1,stroke-width:0px

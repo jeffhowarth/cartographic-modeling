@@ -1149,6 +1149,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -1199,6 +1201,20 @@
     <li class="md-nav__item">
       <a href="../../challenges-wb/viewshed-comparison/" class="md-nav__link">
         viewshed comparison
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges-wb/least-cost-path/" class="md-nav__link">
+        least cost path
       </a>
     </li>
   
@@ -1301,12 +1317,13 @@
   <h1>vermont lidar</h1>
 
 <h2 id="introduction">Introduction</h2>
-<p>You can access lidar raster projects from VCGI one tile at a time through the <a href="https://maps.vcgi.vermont.gov/LidarFinder/" target="_blank">Vermont Lidar Finder</a>. This will require a lot of clicks and post-processing (mosaic tiles).  </p>
-<p>Recently, the folks at VCGI have developed a seamless cloud optimized geotiff (COG) product hosted that you can access through QGIS. These datasets support a much simpler workflow for accessing high resolution (70 cm) datasets that involves two steps:   </p>
+<p>You can access lidar raster products from VCGI one tile at a time through the <a href="https://maps.vcgi.vermont.gov/LidarFinder/" target="_blank">Vermont Lidar Finder</a>. This will require a lot of clicks and post-processing (mosaic tiles).  </p>
+<p>Recently, the folks at VCGI have developed a seamless cloud optimized geotiff (COG) product that you can access through QGIS. These datasets support a simple two-step workflow for accessing high resolution (70 cm) datasets for custom subregions within Vermont:   </p>
 <ol>
 <li>Add a COG to QGIS with a cloud protocol.</li>
 <li>Extract data from a subregion.  </li>
 </ol>
+<p>On 3/30/2024, I tested this workflow with QGIS 3.32.2 Lima. If you are not able to add the COG with the cloud protocol, you may need to update your QGIS to the latest stable version.</p>
 <h2 id="cloud-protocols">Cloud protocols</h2>
 <p>As of 3/30/2024, VCGI provides a hydro-flattened DEM and a DSM (from first returns) in the COG format.  </p>
 <h3 id="demhf">DEMHF</h3>
@@ -1325,6 +1342,10 @@
 <p>The second step involves extracting values from a subregion of the COG with a vector layer.  </p>
 <hr />
 <iframe width="720" height="405" src="https://www.youtube.com/embed/ha6146r0mbw?si=sr_HI2FiobfF1KQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr />
+<p>GG0352 students: Please note that I placed copies of the two extracted datasets in the shared DATA/elevation folder for you to use in the whitebox challenge problems if you have trouble extracting the lidar datasets. </p>
+<hr />
 
 
 

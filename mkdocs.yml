@@ -186,6 +186,7 @@ nav:
     - workflow diagrams: challenges-wb/workflow-diagrams.md  
     - extract streams from dem: challenges-wb/extract-streams.md  
     - viewshed comparison: challenges-wb/viewshed-comparison.md  
+    - least cost path: challenges-wb/least-cost-path.md  
 
 
 
