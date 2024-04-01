@@ -91,6 +91,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/import/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/methods/inspect-properties/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>

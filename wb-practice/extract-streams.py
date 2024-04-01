@@ -49,7 +49,6 @@ wbt.rho8_pointer(
     esri_pntr=False
 )
 
-
 # Flow accumulation 
 
 wbt.rho8_flow_accumulation(

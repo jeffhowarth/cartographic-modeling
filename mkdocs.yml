@@ -163,6 +163,7 @@ nav:
     - viz: methods/image-viz.md  
     - naip images: methods/naip.md 
     - export: methods/export.md  
+    - import: methods/import.md  
   - METHODS WB:
     - hello whitebox: wb-methods/hello-whitebox.md  
     - mama raster: wb-methods/mama-raster.md  
