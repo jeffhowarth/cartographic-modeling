@@ -166,6 +166,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/jeffhowarth/cartographic-modeling/q-methods/custom-palettes/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/jeffhowarth/cartographic-modeling/q-methods/vermont-lidar/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>

@@ -725,6 +725,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -761,6 +763,20 @@
     <li class="md-nav__item">
       <a href="../../q-methods/vermont-lidar/" class="md-nav__link">
         vermont lidar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../q-methods/custom-palettes/" class="md-nav__link">
+        custom palettes
       </a>
     </li>
   
@@ -1265,12 +1281,14 @@
 
 
 <h1 id="least-cost-path-practice"><strong>least cost path practice</strong></h1>
+<hr />
 <h2 id="problem">Problem</h2>
 <p>Please write a python script that uses whitebox tools to find the least cost path from BiHall to the Knoll. </p>
 <p>Please use the base_land_cover.tif from the <a href="../../methods/export/#export-nominal-raster">GEE export example</a> for the land cover input. And use the &ldquo;od_lcp_practice.tif&rdquo; on the shared <a href="https://drive.google.com/drive/folders/14cNeBnCgU2Huk18968AdDdLNGh6hZQIm?usp=drive_link" target="_blank">DATA/od/</a> directory for the origin-destination input.  </p>
 <p>You will need to derive the friction values for the land cover reclass on your own. Try to assign values so that the least cost path that results resembles the one that you would take if you were to walk from the back of BiHall to the Knoll. Please know that all pixels must have some cost that accumulates (so make the lowest friction 1 rather than 0). Also remember that the whitebox reclass operation requires a string of &ldquo;new value;old value&rdquo; pairs. So you will need to adapt the string below by replacing the &lsquo;x#&rsquo; with a cost associated with the following land cover class:  </p>
 <div class="language-text highlight"><pre><span></span><code>&quot;x1;1;x2;2;x3;3;x4;4;x5;5;x6;6;x7;7;x8;8&quot;
 </code></pre></div>
+<hr />
 <h2 id="workflow">Workflow</h2>
 <p><center></p>
 <pre class="mermaid"><code>graph TD
@@ -1305,9 +1323,11 @@
 
 </code></pre>
 <p></center></p>
+<hr />
 <h2 id="tour-of-outputs">Tour of outputs</h2>
-<p>The video tours the output layers from this model in QGIS.  </p>
-<p><em>forthcoming</em>  </p>
+<p>The video below tours the input and output layers from this model in QGIS.  </p>
+<iframe width="720" height="405" src="https://www.youtube.com/embed/0gzaBBHOUDg?si=nqwr_939_7f2RsBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <hr />
 
 

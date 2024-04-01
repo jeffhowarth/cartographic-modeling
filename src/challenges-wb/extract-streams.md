@@ -1,8 +1,12 @@
 # __extract streams from dem__  
 
+---  
+
 ## Problem  
 
 Please write a python script that uses whitebox tools to extract streams from a DEM. Please use the "dem_clipped_practice.tif" from the [vermont lidar tutorial][vcgi-lidar-cog]{target=_blank}.  
+
+---  
 
 ## Workflow  
 
@@ -44,6 +48,8 @@ graph TD
 ```
 
 </center>
+
+---  
 
 ## Tour of outputs  
 

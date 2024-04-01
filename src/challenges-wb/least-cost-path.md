@@ -1,5 +1,7 @@
 # __least cost path practice__  
 
+---   
+
 ## Problem  
 
 Please write a python script that uses whitebox tools to find the least cost path from BiHall to the Knoll. 
@@ -11,6 +13,8 @@ You will need to derive the friction values for the land cover reclass on your o
 ```
 "x1;1;x2;2;x3;3;x4;4;x5;5;x6;6;x7;7;x8;8"
 ```
+
+---  
 
 ## Workflow  
 
@@ -52,11 +56,13 @@ graph TD
 
 </center>
 
+---  
+
 ## Tour of outputs  
 
-The video tours the output layers from this model in QGIS.  
+The video below tours the input and output layers from this model in QGIS.  
 
-_forthcoming_  
+<iframe width="720" height="405" src="https://www.youtube.com/embed/0gzaBBHOUDg?si=nqwr_939_7f2RsBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
 
 ---  
 

@@ -169,6 +169,7 @@ nav:
   - METHODS Q:  
     - google base maps: q-methods/add-google-xyz.md  
     - vermont lidar: q-methods/vermont-lidar.md  
+    - custom palettes: q-methods/custom-palettes.md  
   - PROBLEMS:  
     - area problems: problems/area-problems.md  
     - nominal problems: problems/nominal-problems.md  
